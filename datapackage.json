@@ -1,0 +1,55 @@
+{
+  "sources": [
+    {
+      "name": "Status of Ratification of the Convention",
+      "web": "http://unfccc.int/essential_background/convention/status_of_ratification/items/2631.php"
+    }
+  ],
+  "resources": [
+    {
+      "name": "unfccc",
+      "path": "data/unfccc.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 11645,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3) or EUU for European Union"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Name of Participant"
+          },
+          {
+            "name": "Signature",
+            "type": "date",
+            "description": "Date of Signature"
+          },
+          {
+            "name": "Ratification-Acceptance-Accession-Approval-Succession",
+            "type": "date",
+            "description": "Date of Ratification, Acceptance, Accession, Approval, or Succession to the Convention"
+          },
+          {
+            "name": "Kind",
+            "type": "string",
+            "description": "Kind of Ratification, Acceptance, Accession, Approval, or Succession to the Convention"
+          },
+          {
+            "name": "Entry-Into-Force",
+            "type": "date",
+            "description": "Date of entry into force"
+          }
+        ],
+        "primaryKey": "Code"
+      }
+    }
+  ],
+  "name": "unfccc",
+  "title": "Status of Ratification of the UNFCCC",
+  "description": "Status of Ratification of the United Nations Framework Convention on Climate Change"
+}
