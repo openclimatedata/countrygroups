@@ -27,6 +27,15 @@ Parties listed in Annex I of the convention are classified as industrialized (de
 
 Members of the UNFCCC not part of Annex I.
 
+## Least Developed Countries (LDCs)
+
+[data/ldcs.csv](data/ldcs.csv)
+[data/graduated-ldcs.csv](data/graduated-ldcs.csv)
+
+The list of Least Developed Countries (LDCs) is taken from
+<https://www.un.org/development/desa/dpad/least-developed-country-category/ldcs-at-a-glance.html>
+and turned into CSV files for current LDCs and graduated countries.
+
 
 ## Preparation
 

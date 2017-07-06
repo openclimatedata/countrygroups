@@ -1,4 +1,4 @@
-all: data/unfccc.csv data/annex-one.csv data/non-annex-one.csv
+all: data/unfccc.csv data/annex-one.csv data/non-annex-one.csv data/ldcs.csv data/graduated-ldcs.csv
 
 data/unfccc.csv: scripts/unfccc.py venv
 	@echo $@
@@ -12,6 +12,9 @@ data/non-annex-one.csv: scripts/non-annex-one.py venv
 	@echo $@
 	@./venv/bin/python $<
 
+data/ldcs.csv data/graduated-ldcs.csv: scripts/ldcs.py
+	@echo $@
+	@./venv/bin/python $<
 
 venv: scripts/requirements.txt
 	[ -d ./venv ] || python3 -m venv venv

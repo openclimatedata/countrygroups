@@ -3,6 +3,22 @@
     {
       "name": "Status of Ratification of the Convention",
       "web": "http://unfccc.int/essential_background/convention/status_of_ratification/items/2631.php"
+    },
+    {
+      "name": "List of Annex I Parties to the Convention",
+      "web": "http://unfccc.int/parties_and_observers/parties/annex_i/items/2774.php"
+    },
+    {
+      "name": "List of Non-Annex I Parties to the Convention",
+      "web": "http://unfccc.int/parties_and_observers/parties/non_annex_i/items/2833.php"
+    },
+    {
+      "name": "LDCs at a Glance: List of all LDCs in PDF format, (updated June 2017)",
+      "web": "https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/publication/ldc_list.pdf"
+    },
+    {
+      "name": "LDCs at a Glance",
+      "web": "https://www.un.org/development/desa/dpad/least-developed-country-category/ldcs-at-a-glance.html"
     }
   ],
   "resources": [
@@ -87,6 +103,65 @@
             "name": "Name",
             "type": "string",
             "description": "Party Name"
+          }
+        ],
+        "primaryKey": "Code"
+      }
+    },
+        {
+      "name": "graduated-ldcs",
+      "path": "data/graduated-ldcs.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 162,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Name of country"
+          },
+          {
+            "name": "Year-Of-Inclusion",
+            "type": "integer",
+            "description": "Year of inclusion in LDCs"
+          },
+          {
+            "name": "Graduation",
+            "type": "integer",
+            "description": "Year of graduation from LDCs"
+          }
+        ],
+        "primaryKey": "Code"
+      }
+    },
+    {
+      "name": "ldcs",
+      "path": "data/ldcs.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 960,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Name of country"
+          },
+          {
+            "name": "Year-Of-Inclusion",
+            "type": "integer",
+            "description": "Year of inclusion in LDCs"
           }
         ],
         "primaryKey": "Code"
