@@ -213,7 +213,7 @@
           {
             "name": "Code",
             "type": "string",
-            "description": "Country Code (ISO3166-1-Alpha-3)""
+            "description": "Country Code (ISO3166-1-Alpha-3)"
           },
           {
             "name": "Name",
