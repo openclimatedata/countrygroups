@@ -23,6 +23,10 @@
     {
       "name": "EU member countries in brief",
       "web": "https://europa.eu/european-union/about-eu/countries/member-countries_en"
+    },
+    {
+      "name": "Small Island Developing States, List of SIDS",
+      "web": "https://sustainabledevelopment.un.org/topics/sids/list"
     }
   ],
   "resources": [
@@ -112,7 +116,7 @@
         "primaryKey": "Code"
       }
     },
-        {
+    {
       "name": "graduated-ldcs",
       "path": "data/graduated-ldcs.csv",
       "format": "csv",
@@ -197,8 +201,54 @@
         ],
         "primaryKey": "Code"
       }
+    },
+    {
+      "name": "sids-non-un-or-regional-commissions-associates",
+      "path": "data/sids-non-un-or-regional-commissions-associates.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 382,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)""
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Name"
+          }
+        ]
+      }
+    },
+    {
+      "name": "sids",
+      "path": "data/sids.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 1419,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Country Name"
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "description": "Region of island"
+          }
+        ]
+      }
     }
-
   ],
   "name": "unfccc-groups",
   "title": "Groups in the UNFCCC",

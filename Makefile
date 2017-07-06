@@ -1,4 +1,4 @@
-all: data/unfccc.csv data/annex-one.csv data/non-annex-one.csv data/ldcs.csv data/graduated-ldcs.csv
+all: data/unfccc.csv data/annex-one.csv data/non-annex-one.csv data/ldcs.csv data/graduated-ldcs.csv data/eu-member-states.csv data/sids.csv data/sids-non-un-or-regional-commissions-associates.csv
 
 data/unfccc.csv: scripts/unfccc.py venv
 	@echo $@
@@ -17,6 +17,10 @@ data/ldcs.csv data/graduated-ldcs.csv: scripts/ldcs.py
 	@./venv/bin/python $<
 
 data/eu-member-states.csv: scripts/eu-member-states.py
+	@echo $@
+	@./venv/bin/python $<
+
+data/sids.csv data/sids-non-un-or-regional-commissions-associates.csv: scripts/sids.py
 	@echo $@
 	@./venv/bin/python $<
 

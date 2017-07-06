@@ -37,6 +37,15 @@ The list of Least Developed Countries (LDCs) is taken from
 <https://www.un.org/development/desa/dpad/least-developed-country-category/ldcs-at-a-glance.html>
 and turned into CSV files for current LDCs and graduated countries.
 
+### Small Island Developing States (SIDS)
+
+[data/sids.csv](data/sids.csv)
+
+[data/sids-non-un-or-regional-commissions-associates.csv](data/sids-non-un-or-regional-commissions-associates.csv)
+
+List of Small Island Developing States (SIDS) and list of Non-UN Members/Associate Members of Regional Commissions as CSV files, sourced from
+<https://sustainabledevelopment.un.org/topics/sids/list>.
+
 ### EU member states
 
 [data/eu-member-states.csv](data/eu-member-states.csv)
