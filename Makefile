@@ -1,7 +1,17 @@
-all: process
+all: data/unfccc.csv data/annex-one.csv data/non-annex-one.csv
 
-process: scripts/process.py venv
-	./venv/bin/python $<
+data/unfccc.csv: scripts/unfccc.py venv
+	@echo $@
+	@./venv/bin/python $<
+
+data/annex-one.csv: scripts/annex-one.py venv
+	@echo $@
+	@./venv/bin/python $<
+
+data/non-annex-one.csv: scripts/non-annex-one.py venv
+	@echo $@
+	@./venv/bin/python $<
+
 
 venv: scripts/requirements.txt
 	[ -d ./venv ] || python3 -m venv venv
