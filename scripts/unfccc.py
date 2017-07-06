@@ -81,5 +81,5 @@ df = df[[
 
 assert len(df)== 197
 assert sum(~df.Signature.isnull()) == 165
-#assert len(df.Name.unique()) == len(df)
+assert len(df.Participant.unique()) == len(df)
 df.to_csv(os.path.join(path, "../data/unfccc.csv"))
