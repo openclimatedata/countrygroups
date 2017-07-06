@@ -4,23 +4,7 @@ import os
 
 import pandas as pd
 
-from countrynames import to_alpha_3, to_name
-
-
-def to_code(name):
-    if name == "EUROPEAN UNION":
-        return "EUU"
-    elif name.startswith("UNITED KINGDOM OF GREAT"):
-        return "GBR"
-    else:
-        return to_alpha_3(name)
-
-
-def to_iso_name(code):
-    if code == "EUU":
-        return "European Union"
-    else:
-        return to_name(code)
+from util import to_code, to_short_name
 
 
 def get_kind(datestring):
@@ -64,7 +48,7 @@ df.index.name = "Code"
 # Check that all rows have an index.
 assert all(~df.index.isnull())
 
-df["Participant"] = [to_name(i) for i in df.index]
+df["Participant"] = [to_short_name(i) for i in df.index]
 
 # Check that all rows have a name.
 assert all(~df.Participant.isnull())
@@ -97,5 +81,5 @@ df = df[[
 
 assert len(df)== 197
 assert sum(~df.Signature.isnull()) == 165
-
+#assert len(df.Name.unique()) == len(df)
 df.to_csv(os.path.join(path, "../data/unfccc.csv"))
