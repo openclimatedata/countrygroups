@@ -37,6 +37,13 @@ The list of Least Developed Countries (LDCs) is taken from
 <https://www.un.org/development/desa/dpad/least-developed-country-category/ldcs-at-a-glance.html>
 and turned into CSV files for current LDCs and graduated countries.
 
+### EU member states
+
+[data/eu-member-states.csv](data/eu-member-states.csv)
+
+The data is sourced from <https://europa.eu/european-union/about-eu/countries/member-countries_en>
+and turned into a simple CSV file.
+
 
 ## Preparation
 

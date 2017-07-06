@@ -16,6 +16,10 @@ data/ldcs.csv data/graduated-ldcs.csv: scripts/ldcs.py
 	@echo $@
 	@./venv/bin/python $<
 
+data/eu-member-states.csv: scripts/eu-member-states.py
+	@echo $@
+	@./venv/bin/python $<
+
 venv: scripts/requirements.txt
 	[ -d ./venv ] || python3 -m venv venv
 	./venv/bin/pip install --upgrade pip

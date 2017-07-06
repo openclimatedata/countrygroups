@@ -19,6 +19,10 @@
     {
       "name": "LDCs at a Glance",
       "web": "https://www.un.org/development/desa/dpad/least-developed-country-category/ldcs-at-a-glance.html"
+    },
+    {
+      "name": "EU member countries in brief",
+      "web": "https://europa.eu/european-union/about-eu/countries/member-countries_en"
     }
   ],
   "resources": [
@@ -166,7 +170,35 @@
         ],
         "primaryKey": "Code"
       }
+    },
+    {
+      "name": "eu-members",
+      "path": "data/eu-member-states.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 675,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Country Name"
+          },
+          {
+            "name": "Member since",
+            "type": "date",
+            "description": "EU member country since"
+          }
+        ],
+        "primaryKey": "Code"
+      }
     }
+
   ],
   "name": "unfccc-groups",
   "title": "Groups in the UNFCCC",
