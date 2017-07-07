@@ -324,6 +324,28 @@
         ],
         "primaryKey": "Code"
       }
+    },
+    {
+      "name": "brics",
+      "path": "data/brics.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 81,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Country Name"
+          }
+        ],
+        "primaryKey": "Code"
+      }
     }
   ],
   "name": "unfccc-groups",

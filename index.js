@@ -46,6 +46,14 @@ exports.ANNEX_ONE = [
     "USA"
 ]
 
+exports.BRICS = [
+    "BRA",
+    "CHN",
+    "IND",
+    "RUS",
+    "ZAF"
+]
+
 exports.EU_MEMBERS = [
     "AUT",
     "BEL",

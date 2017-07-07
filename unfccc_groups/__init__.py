@@ -55,6 +55,14 @@ ANNEX_ONE = [
     "USA"
 ]
 
+BRICS = [
+    "BRA",
+    "CHN",
+    "IND",
+    "RUS",
+    "ZAF"
+]
+
 EU_MEMBERS = [
     "AUT",
     "BEL",
