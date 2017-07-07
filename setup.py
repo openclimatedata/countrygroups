@@ -38,5 +38,5 @@ setup(
     ],
     keywords=['unfccc', 'climate change'],
     cmdclass=cmdclass,
-    packages=['unfccc_group']
+    packages=['unfccc_groups']
 )
