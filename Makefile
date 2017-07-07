@@ -28,6 +28,10 @@ data/g20.csv: scripts/g20.py
 	@echo $@
 	@./venv/bin/python $<
 
+data/g7.csv: scripts/g7.py
+	@echo $@
+	@./venv/bin/python $<
+
 venv: scripts/requirements.txt
 	[ -d ./venv ] || python3 -m venv venv
 	./venv/bin/pip install --upgrade pip
