@@ -335,6 +335,44 @@ NON_ANNEX_ONE = [
     "ZWE"
 ]
 
+OECD = [
+    "AUS",
+    "AUT",
+    "BEL",
+    "CAN",
+    "CHE",
+    "CHL",
+    "CZE",
+    "DEU",
+    "DNK",
+    "ESP",
+    "EST",
+    "FIN",
+    "FRA",
+    "GBR",
+    "GRC",
+    "HUN",
+    "IRL",
+    "ISL",
+    "ISR",
+    "ITA",
+    "JPN",
+    "KOR",
+    "LUX",
+    "LVA",
+    "MEX",
+    "NLD",
+    "NOR",
+    "NZL",
+    "POL",
+    "PRT",
+    "SVK",
+    "SVN",
+    "SWE",
+    "TUR",
+    "USA"
+]
+
 SIDS = [
     "ATG",
     "BHS",
