@@ -53,6 +53,10 @@ List of Small Island Developing States (SIDS) and list of Non-UN Members/Associa
 The data is sourced from <https://europa.eu/european-union/about-eu/countries/member-countries_en>
 and turned into a simple CSV file.
 
+### G20 members
+
+[data/g20.csv](data/g20.csv)
+
 
 ## Preparation
 

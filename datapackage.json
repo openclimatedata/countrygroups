@@ -249,7 +249,30 @@
         ],
         "primaryKey": "Code"
       }
+    },
+    {
+      "name": "g20",
+      "path": "data/g20.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 276,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3) or EUU for European Union"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Country Name"
+          }
+        ],
+        "primaryKey": "Code"
+      }
     }
+
   ],
   "name": "unfccc-groups",
   "title": "Groups in the UNFCCC",
