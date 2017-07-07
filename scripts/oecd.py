@@ -24,3 +24,7 @@ oecd.Name = [to_short_name(code) for code in oecd.index]
 oecd.Ratification = pd.to_datetime(oecd.Ratification)
 
 oecd.to_csv(os.path.join(path, "../data/oecd.csv"))
+
+assert len(oecd) == 35
+assert len(oecd.index.unique()) == len(oecd)
+assert len(oecd.Name.unique()) == len(oecd)
