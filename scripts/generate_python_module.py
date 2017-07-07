@@ -25,7 +25,7 @@ for name, df in sorted(dp.items()):
     if isinstance(df.index, pd.RangeIndex):
         continue
     group_id = name.replace("-", "_").upper()
-    members = df.index.tolist()
+    members = sorted(df.index.tolist())
     out += "{} = [\n".format(group_id)
     for idx, item in enumerate(members):
         out += '    "{}"'.format(item)
