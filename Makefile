@@ -1,6 +1,6 @@
 CSV_FILES = data/unfccc.csv data/annex-one.csv data/non-annex-one.csv data/ldcs.csv data/graduated-ldcs.csv data/eu-member-states.csv data/sids.csv data/sids-non-un-or-regional-commissions-associates.csv data/g20.csv data/g7.csv data/oecd.csv
 
-all: $(CSV_FILES) unfccc_groups/__init__.py
+all: $(CSV_FILES) unfccc_groups/__init__.py index.js
 
 data/unfccc.csv: scripts/unfccc.py venv
 	@echo $@
@@ -38,7 +38,7 @@ data/oecd.csv: scripts/oecd.py
 	@echo $@
 	@./venv/bin/python $<
 
-unfccc_groups/__init__.py: scripts/generate_python_module.py $(CSV_FILES)
+index.js unfccc_groups/__init__.py: scripts/generate_modules.py $(CSV_FILES)
 	@echo $@
 	@./venv/bin/python $<
 
@@ -49,6 +49,6 @@ venv: scripts/requirements.txt
 	touch venv
 
 clean:
-	rm -rf data/*.csv venv
+	rm -rf index.js data/*.csv venv
 
 .PHONY: clean

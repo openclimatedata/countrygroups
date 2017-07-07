@@ -1,0 +1,24 @@
+{
+  "name": "unfccc-groups",
+  "version": "0.0.1",
+  "description": "Identifiers for country groups related to the UNFCCC process",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openclimatedata/unfccc-groups.git"
+  },
+  "keywords": [
+    "climate",
+    "change",
+    "unfccc"
+  ],
+  "author": "Robert Gieseke",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/openclimatedata/unfccc-groups/issues"
+  },
+  "homepage": "https://github.com/openclimatedata/unfccc-groups#readme"
+}
