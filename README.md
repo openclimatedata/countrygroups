@@ -63,6 +63,9 @@ and turned into a simple CSV file.
 
 Members of the Convention on the Organisation for Economic Co-operation and Development (OECD) and dates on which they deposited their instruments of ratification, sourced from <http://www.oecd.org/about/membersandpartners/list-oecd-member-countries.htm>.
 
+### BRICS
+
+[data/brics.csv](data/brics.csv)
 
 ## Preparation
 
