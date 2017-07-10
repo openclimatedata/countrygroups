@@ -71,6 +71,10 @@ Members of the Convention on the Organisation for Economic Co-operation and Deve
 
 [data/umbrella.csv](data/umbrella.csv)
 
+### OPEC
+
+[data/opec.csv](data/opec.csv)
+
 ### AOSIS
 
 [data/aosis.csv](data/aosis.csv)
