@@ -381,6 +381,23 @@ OECD = [
     "USA"
 ]
 
+OPEC = [
+    "AGO",
+    "ARE",
+    "DZA",
+    "ECU",
+    "GAB",
+    "GNQ",
+    "IRN",
+    "IRQ",
+    "KWT",
+    "LBY",
+    "NGA",
+    "QAT",
+    "SAU",
+    "VEN"
+]
+
 SIDS = [
     "ATG",
     "BHS",

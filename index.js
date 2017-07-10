@@ -372,6 +372,23 @@ exports.OECD = [
     "USA"
 ]
 
+exports.OPEC = [
+    "AGO",
+    "ARE",
+    "DZA",
+    "ECU",
+    "GAB",
+    "GNQ",
+    "IRN",
+    "IRQ",
+    "KWT",
+    "LBY",
+    "NGA",
+    "QAT",
+    "SAU",
+    "VEN"
+]
+
 exports.SIDS = [
     "ATG",
     "BHS",

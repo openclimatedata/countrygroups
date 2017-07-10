@@ -1,4 +1,4 @@
-CSV_FILES = data/unfccc.csv data/annex-one.csv data/non-annex-one.csv data/ldcs.csv data/graduated-ldcs.csv data/eu-member-states.csv data/sids.csv data/sids-non-un-or-regional-commissions-associates.csv data/g20.csv data/g7.csv data/oecd.csv data/brics.csv data/umbrella.csv
+CSV_FILES = data/unfccc.csv data/annex-one.csv data/non-annex-one.csv data/ldcs.csv data/graduated-ldcs.csv data/eu-member-states.csv data/sids.csv data/sids-non-un-or-regional-commissions-associates.csv data/g20.csv data/g7.csv data/oecd.csv data/brics.csv data/umbrella.csv data/opec.csv
 
 all: $(CSV_FILES) unfccc_groups/__init__.py index.js
 
@@ -43,6 +43,10 @@ data/brics.csv: scripts/brics.py
 	@./venv/bin/python $<
 
 data/umbrella.csv: scripts/umbrella.py
+	@echo $@
+	@./venv/bin/python $<
+
+data/opec.csv: scripts/opec.py
 	@echo $@
 	@./venv/bin/python $<
 
