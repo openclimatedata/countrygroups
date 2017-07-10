@@ -346,6 +346,28 @@
         ],
         "primaryKey": "Code"
       }
+    },
+    {
+      "name": "umbrella",
+      "path": "data/umbrella.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 133,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Country Name"
+          }
+        ],
+        "primaryKey": "Code"
+      }
     }
   ],
   "name": "unfccc-groups",

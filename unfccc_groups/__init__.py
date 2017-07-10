@@ -421,6 +421,18 @@ SIDS = [
     "WSM"
 ]
 
+UMBRELLA = [
+    "AUS",
+    "CAN",
+    "JPN",
+    "KAZ",
+    "NOR",
+    "NZL",
+    "RUS",
+    "UKR",
+    "USA"
+]
+
 UNFCCC = [
     "AFG",
     "AGO",

@@ -412,6 +412,18 @@ exports.SIDS = [
     "WSM"
 ]
 
+exports.UMBRELLA = [
+    "AUS",
+    "CAN",
+    "JPN",
+    "KAZ",
+    "NOR",
+    "NZL",
+    "RUS",
+    "UKR",
+    "USA"
+]
+
 exports.UNFCCC = [
     "AFG",
     "AGO",

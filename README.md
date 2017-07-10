@@ -67,6 +67,11 @@ Members of the Convention on the Organisation for Economic Co-operation and Deve
 
 [data/brics.csv](data/brics.csv)
 
+### Umbrella group
+
+[data/umbrella.csv](data/umbrella.csv)
+
+
 ## Preparation
 
 The `Makefile` used to generate the CSV files requires Python3 and will
