@@ -50,7 +50,7 @@ for name, df in sorted(dp.items()):
     py_out += "]\n\n"
     js_out += "]\n\n"
 
-with open(os.path.join(path, "../unfccc_groups/__init__.py"), "w") as f:
+with open(os.path.join(path, "../countrygroups/__init__.py"), "w") as f:
     f.write(py_out)
 
 with open(os.path.join(path, "../index.js"), "w") as f:
