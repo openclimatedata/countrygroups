@@ -52,7 +52,12 @@ venv: scripts/requirements.txt
 	./venv/bin/pip install -Ur $<
 	touch venv
 
-clean:
-	rm -rf index.js data/*.csv venv
+clean-generated-files:
+	rm -rf index.js data/*.csv
 
-.PHONY: clean
+clean-venv:
+	rm -rf venv
+
+clean: clean-generated-files clean-venv
+
+.PHONY: clean clean-generated-files clean-venv
