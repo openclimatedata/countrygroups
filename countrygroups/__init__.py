@@ -105,6 +105,14 @@ BRICS = [
     "ZAF"
 ]
 
+EIG = [
+    "CHE",
+    "KOR",
+    "LIE",
+    "MCO",
+    "MEX"
+]
+
 EU_MEMBERS = [
     "AUT",
     "BEL",

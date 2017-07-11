@@ -96,6 +96,14 @@ exports.BRICS = [
     "ZAF"
 ]
 
+exports.EIG = [
+    "CHE",
+    "KOR",
+    "LIE",
+    "MCO",
+    "MEX"
+]
+
 exports.EU_MEMBERS = [
     "AUT",
     "BEL",

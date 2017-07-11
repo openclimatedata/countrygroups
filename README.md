@@ -80,6 +80,11 @@ Members of the Convention on the Organisation for Economic Co-operation and Deve
 [data/aosis.csv](data/aosis.csv)
 
 
+### Environmental Integrity Group (EIG)
+
+[data/eig.csv](data/eig.csv)
+
+
 ## Preparation
 
 The `Makefile` used to generate the CSV files requires Python3 and will
