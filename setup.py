@@ -7,7 +7,7 @@ Install using ::
     pip install countrygroups
 
 See README.md and repository for details:
-    <https://github.com/openclimatedate/countrygroups>
+    https://github.com/openclimatedate/countrygroups
 """
 
 from setuptools import setup
@@ -28,7 +28,7 @@ setup(
     license='BSD',
     platforms='any',
     classifiers=[
-        'Development Status :: 4 - Beta',
+        "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
         "Operating System :: OS Independent",
         'Programming Language :: Python :: 2.7',
