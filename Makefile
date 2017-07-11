@@ -72,4 +72,7 @@ clean-venv:
 
 clean: clean-generated-files clean-venv
 
-.PHONY: clean clean-generated-files clean-venv
+tag:
+	./scripts/create_tag.sh
+
+.PHONY: clean clean-generated-files clean-venv tag
