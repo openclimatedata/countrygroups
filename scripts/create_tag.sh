@@ -6,6 +6,9 @@ if [[ `git status --porcelain` ]]; then
 else
   echo Current tags:
   git tag
+
+  echo Commits since last tag:
+  git log `git describe --tags --abbrev=0`..HEAD --oneline
   echo "Please enter next version (x.y.z):"
   read version
   echo "You entered: $version"
