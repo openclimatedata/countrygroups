@@ -47,6 +47,28 @@
   ],
   "resources": [
     {
+      "name": "shortnames",
+      "path": "data/shortnames.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 2636,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3) or EUU for European Union"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Short (inoffical) Country Name"
+          }
+        ],
+        "primaryKey": "Code"
+      }
+    },
+    {
       "name": "unfccc",
       "path": "data/unfccc.csv",
       "format": "csv",
