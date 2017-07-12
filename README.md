@@ -1,6 +1,12 @@
 Data Package, Python and JavaScript module with country groups, especially those in the United Nations Framework Convention on Climate Change (UNFCCC).
 
-# Python Module
+## Data Package
+
+The Data Package contains the lists used to build the language modules and can
+be loaded with respective [language tools](http://frictionlessdata.io/tools/).
+Some lists contain additional information like data of joining etc.
+
+## Python Module
 
 The Python module contains lists with three-letter codes and a dictionary
 mapping to short names: `shortnames`.
@@ -12,16 +18,10 @@ for member in EUROPEAN_UNION:
     print(shortnames[member])
 ```
 
-# JavaScript Module
+## JavaScript Module
 
 The module contains arrays with three-letter codes and an object mapping to
 short names: `shortnames`
-
-# Data Package
-
-The Data Package contains the lists used to build the language modules and can
-be loaded with respective [language tools](http://frictionlessdata.io/tools/).
-Some lists contain additional information like data of joining etc.
 
 ## Data
 
