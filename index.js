@@ -104,7 +104,7 @@ exports.EIG = [
     "MEX"
 ]
 
-exports.EU_MEMBERS = [
+exports.EUROPEAN_UNION = [
     "AUT",
     "BEL",
     "BGR",

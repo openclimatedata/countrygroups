@@ -47,4 +47,4 @@ df = df.sort_values("Name")
 
 assert len(df) == 28
 
-df.to_csv(os.path.join(data_path, "eu-member-states.csv"))
+df.to_csv(os.path.join(data_path, "european-union.csv"))

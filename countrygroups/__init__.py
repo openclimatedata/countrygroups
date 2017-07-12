@@ -113,7 +113,7 @@ EIG = [
     "MEX"
 ]
 
-EU_MEMBERS = [
+EUROPEAN_UNION = [
     "AUT",
     "BEL",
     "BGR",

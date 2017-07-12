@@ -197,8 +197,8 @@
       }
     },
     {
-      "name": "eu-members",
-      "path": "data/eu-member-states.csv",
+      "name": "european-union",
+      "path": "data/european-union.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "bytes": 675,

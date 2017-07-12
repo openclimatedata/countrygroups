@@ -46,9 +46,9 @@ and turned into CSV files for current LDCs and graduated countries.
 List of Small Island Developing States (SIDS) and list of Non-UN Members/Associate Members of Regional Commissions as CSV files, sourced from
 <https://sustainabledevelopment.un.org/topics/sids/list>.
 
-### EU member states
+### European Union member states
 
-[data/eu-member-states.csv](data/eu-member-states.csv)
+[data/european-union.csv](data/european-union.csv)
 
 The data is sourced from <https://europa.eu/european-union/about-eu/countries/member-countries_en>
 and turned into a simple CSV file.

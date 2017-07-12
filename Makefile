@@ -3,7 +3,7 @@ CSV_FILES = \
   data/aosis.csv \
   data/brics.csv \
   data/eig.csv \
-  data/eu-member-states.csv \
+  data/european-union.csv \
   data/g20.csv \
   data/g7.csv \
   data/g77.csv \
