@@ -13,7 +13,7 @@ from pandas_datapackage_reader import read_datapackage
 path = os.path.dirname(os.path.realpath(__file__))
 
 dp = read_datapackage(os.path.join(path, "../datapackage.json"))
-
+sn = read_datapackage("https://github.com/rgieseke/shortcountrynames")
 codes = []
 
 py_out = '''"""
@@ -34,7 +34,7 @@ js_out = '''// Country Groups
 '''
 
 for name, df in sorted(dp.items()):
-    if (name == "shortnames") or isinstance(df.index, pd.RangeIndex):
+    if isinstance(df.index, pd.RangeIndex):
         continue
     group_id = name.replace("-", "_").upper()
     members = sorted(df.index.tolist())
@@ -56,9 +56,8 @@ for name, df in sorted(dp.items()):
     py_out += "]\n\n"
     js_out += "]\n\n"
 
-assert len(codes) == len(dp["shortnames"])
 shortnames = pprint.pformat(
-    dp["shortnames"].to_dict(orient="dict")["Name"], indent=4)[1:-1]
+    sn.loc[codes].to_dict(orient="dict")["Name"], indent=4)[1:-1]
 py_out += "shortnames = {\n "
 py_out += shortnames
 py_out += "\n}\n"

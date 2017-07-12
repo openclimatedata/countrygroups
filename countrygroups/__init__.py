@@ -874,7 +874,7 @@ shortnames = {
     'CIV': 'Côte d’Ivoire',
     'CMR': 'Cameroon',
     'COD': 'DR Congo',
-    'COG': 'Republic of Congo',
+    'COG': 'Republic of the Congo',
     'COK': 'Cook Islands',
     'COL': 'Colombia',
     'COM': 'Comoros',
