@@ -498,8 +498,8 @@
     }
 
   ],
-  "name": "unfccc-groups",
-  "title": "Groups in the UNFCCC",
-  "description": "Groups in the United Nations Framework Convention on Climate Change (UNFCCC)",
+  "name": "countrygroups",
+  "title": "Country Groups",
+  "description": "Ccountry groups, especially those in the United Nations Framework Convention on Climate Change (UNFCCC).,
   "repository": "git://github.com/openclimatedata/unfccc-groups.git"
 }

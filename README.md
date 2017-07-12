@@ -1,4 +1,4 @@
-Data Package with groups in the United Nations Framework Convention on Climate Change (UNFCCC).
+Data Package with country groups, especially those in the United Nations Framework Convention on Climate Change (UNFCCC).
 
 ## Data
 
