@@ -85,6 +85,10 @@ Members of the Convention on the Organisation for Economic Co-operation and Deve
 [data/eig.csv](data/eig.csv)
 
 
+### G77
+
+[data/g77.csv](data/g77.csv)
+
 ## Preparation
 
 The `Makefile` used to generate the CSV files requires Python3 and will

@@ -43,7 +43,12 @@
     {
       "name": "AOSIS - Members",
       "web": "http://aosis.org/about/members/"
+    },
+    {
+      "name": "The Member States of the Group of 77",
+      "web": "http://www.g77.org/doc/members.html"
     }
+
   ],
   "resources": [
     {
@@ -468,7 +473,30 @@
         ],
         "primaryKey": "Code"
       }
+    },
+    {
+      "name": "g77",
+      "path": "data/g77.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 2062,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Country Name"
+          }
+        ],
+        "primaryKey": "Code"
+      }
     }
+
   ],
   "name": "unfccc-groups",
   "title": "Groups in the UNFCCC",
