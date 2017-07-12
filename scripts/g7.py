@@ -1,12 +1,8 @@
 # G20
 
-import os
-
 import pandas as pd
 
-from util import to_code
-
-path = os.path.dirname(os.path.realpath(__file__))
+from util import to_code, root
 
 # https://en.wikipedia.org/wiki/G7
 members = """Canada
@@ -30,4 +26,4 @@ assert len(df) == 7 + 1  # plus EU
 assert all(df.Code.unique())
 assert all(df.Name.unique())
 
-df.to_csv(os.path.join(path, "../data/g7.csv"), index=False)
+df.to_csv(root /  "data/g7.csv", index=False)

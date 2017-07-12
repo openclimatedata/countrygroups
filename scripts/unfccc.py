@@ -1,10 +1,8 @@
 # UNFCCC signatures and ratification
 
-import os
-
 import pandas as pd
 
-from util import to_code, to_short_name
+from util import to_code, to_short_name, root
 
 
 def get_kind(datestring):
@@ -28,7 +26,6 @@ def get_date_only(datestring):
     else:
         return datestring
 
-path = os.path.dirname(os.path.realpath(__file__))
 
 url = ("http://unfccc.int/essential_background/convention/"
        "status_of_ratification/items/2631.php")
@@ -82,4 +79,4 @@ df = df[[
 assert len(df)== 197
 assert sum(~df.Signature.isnull()) == 165
 assert len(df.Participant.unique()) == len(df)
-df.to_csv(os.path.join(path, "../data/unfccc.csv"))
+df.to_csv(root / "data/unfccc.csv")

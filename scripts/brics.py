@@ -1,10 +1,7 @@
 # BRICS
 
-import os
 import pandas as pd
-from util import to_code
-
-path = os.path.dirname(os.path.realpath(__file__))
+from util import to_code, root
 
 brics = ["Brazil", "Russian Federation", "India", "China", "South Africa"]
 
@@ -17,4 +14,4 @@ assert len(df) == 5
 assert len(df.index.unique()) == len(df)
 assert len(df.Name.unique()) == len(df)
 
-df.to_csv(os.path.join(path, "../data/brics.csv"))
+df.to_csv(root / "data/brics.csv")

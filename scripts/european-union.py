@@ -1,13 +1,12 @@
-import os
+# European Union Member States
 
 import pandas as pd
 import requests
 
 from countrynames import to_alpha_3, to_name
 from lxml import html
+from util import root
 
-path = os.path.dirname(os.path.realpath(__file__))
-data_path = os.path.join(path, "../data")
 
 url = "https://europa.eu/european-union/about-eu/countries/member-countries_en"
 
@@ -47,4 +46,4 @@ df = df.sort_values("Name")
 
 assert len(df) == 28
 
-df.to_csv(os.path.join(data_path, "european-union.csv"))
+df.to_csv(root /  "data/european-union.csv")

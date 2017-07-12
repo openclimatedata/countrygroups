@@ -1,12 +1,9 @@
 # Non Annex I parties
 
-import os
-
 import pandas as pd
 
-from util import to_code, to_short_name
+from util import to_code, to_short_name, root
 
-path = os.path.dirname(os.path.realpath(__file__))
 
 url = "http://unfccc.int/parties_and_observers/parties/non_annex_i/items/2833.php"
 
@@ -28,5 +25,4 @@ non_annex_one = pd.Series(
 non_annex_one.index.name = "Code"
 non_annex_one.name = "Name"
 
-non_annex_one.to_csv(
-    os.path.join(path, "../data/non-annex-one.csv"), header=True)
+non_annex_one.to_csv(root / "data/non-annex-one.csv", header=True)

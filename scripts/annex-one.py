@@ -1,12 +1,8 @@
 # Annex I parties
 
-import os
-
 import pandas as pd
 
-from util import to_code, to_short_name
-
-path = os.path.dirname(os.path.realpath(__file__))
+from util import to_code, to_short_name, root
 
 url = "http://unfccc.int/parties_and_observers/parties/annex_i/items/2774.php"
 
@@ -30,4 +26,4 @@ annex_one.name = "Name"
 
 assert len(annex_one) == 43
 
-annex_one.to_csv(os.path.join(path, "../data/annex-one.csv"), header=True)
+annex_one.to_csv(root / "data/annex-one.csv", header=True)

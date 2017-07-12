@@ -1,11 +1,7 @@
 # AOSIS
 
-import os
 import pandas as pd
-from util import to_code
-
-
-path = os.path.dirname(os.path.realpath(__file__))
+from util import to_code, root
 
 
 countries = [
@@ -62,6 +58,6 @@ index = [to_code(country) for country in countries]
 aosis = pd. DataFrame({"Name": countries}, index=index)
 aosis.index.name = "Code"
 
-aosis.to_csv(os.path.join(path, "../data/aosis.csv"))
+aosis.to_csv(root / "data/aosis.csv")
 
 assert len(aosis) == 44 - 5  # 44 States and observers

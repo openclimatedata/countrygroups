@@ -1,13 +1,9 @@
 # Small Island Developing States
 
-import os
-
 import pandas as pd
 
-from util import to_code, to_short_name
+from util import to_code, to_short_name, root
 
-
-path = os.path.dirname(os.path.realpath(__file__))
 
 # From https://sustainabledevelopment.un.org/topics/sids/list
 
@@ -76,4 +72,4 @@ assert len(sids_df) == 37
 assert len(sids_df.Code.unique()) == len(sids_df)
 assert len(sids_df.Name.unique()) == len(sids_df)
 
-sids_df.to_csv(os.path.join(path, "../data/sids.csv"), index=False)
+sids_df.to_csv(root / "data/sids.csv", index=False)

@@ -1,12 +1,9 @@
 # Graduated from LDCs
 
-import os
-
 import pandas as pd
 from countrynames import to_alpha_3, to_name
+from util import root
 
-
-path = os.path.dirname(os.path.realpath(__file__))
 
 # From Factsheets linked at
 # https://www.un.org/development/desa/dpad/
@@ -26,4 +23,4 @@ grad_df = pd.DataFrame(
 grad_df.index = grad_df.Name.apply(to_alpha_3)
 grad_df.index.name = "Code"
 
-grad_df.to_csv(os.path.join(path, "../data/graduated-ldcs.csv"))
+grad_df.to_csv(root / "data/graduated-ldcs.csv")

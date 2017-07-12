@@ -19,7 +19,7 @@ CSV_FILES = \
 
 all: $(CSV_FILES) countrygroups/__init__.py index.js
 
-data/%.csv: scripts/%.py venv
+data/%.csv: scripts/%.py scripts/util.py venv
 	@echo $@
 	@./venv/bin/python $<
 

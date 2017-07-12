@@ -1,12 +1,8 @@
 # LDCs
 
-import os
-
 import pandas as pd
 from countrynames import to_alpha_3, to_name
-
-
-path = os.path.dirname(os.path.realpath(__file__))
+from util import root
 
 # Copied from
 # https://www.un.org/development/desa/dpad/wp-content/uploads/
@@ -72,4 +68,4 @@ for line in ldc_string.splitlines():
 
 df = pd.DataFrame(ldcs, columns=["Code", "Name", "Year-Of-Inclusion"])
 df = df.sort_values("Name")
-df.to_csv(os.path.join(path, "../data/ldcs.csv"), index=False)
+df.to_csv(root / "data/ldcs.csv", index=False)
