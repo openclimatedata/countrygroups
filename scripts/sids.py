@@ -52,27 +52,6 @@ Tonga
 Tuvalu
 Vanuatu"""
 
-non_un_or_associates = """American Samoa
-Anguilla
-Aruba
-Bermuda
-British Virgin Islands
-Cayman Islands
-Commonwealth of Northern Marianas
-Cook Islands
-Curacao
-French Polynesia
-Guadeloupe
-Guam
-Martinique
-Montserrat
-New Caledonia
-Niue
-Puerto Rico
-Sint Maarten
-Turks and Caicos Islands
-U.S. Virgin Islands"""
-
 sids = []
 
 for party in aims.splitlines():
@@ -91,26 +70,10 @@ for party in pacific.splitlines():
     name = to_short_name(code)
     sids.append((code, name, "Pacific"))
 
-non_un = []
-
-for party in non_un_or_associates.splitlines():
-    code = to_code(party)
-    try:
-        name = to_short_name(code)
-    except KeyError:
-        name = party
-    non_un.append((code, name))
-
 sids_df = pd.DataFrame(sids, columns=["Code", "Name", "Region"])
-non_un_df = pd.DataFrame(non_un, columns=["Code", "Name"])
 
 assert len(sids_df) == 37
 assert len(sids_df.Code.unique()) == len(sids_df)
 assert len(sids_df.Name.unique()) == len(sids_df)
 
-assert len(non_un_df) == 20
-assert len(non_un_df.Code.unique()) == len(non_un_df)
-assert len(non_un_df.Name.unique()) == len(non_un_df)
-
 sids_df.to_csv(os.path.join(path, "../data/sids.csv"), index=False)
-non_un_df.to_csv(os.path.join(path, "../data/sids-non-un-or-regional-commissions-associates.csv"), index=False)
