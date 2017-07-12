@@ -1,3 +1,5 @@
+# LDCs
+
 import os
 
 import pandas as pd
@@ -58,17 +60,6 @@ Yemen (1971)
 Zambia (1991)
 """
 
-# From Factsheets linked at
-# https://www.un.org/development/desa/dpad/
-# least-developed-country-category/ldcs-at-a-glance.html
-graduated = [
-    ("Botswana", 1971, 1994),
-    ("Maldives", 1971, 2011),
-    ("Cabo Verde", 1977, 2007),
-    ("Samoa", 1971, 2014),
-    ("Equatorial Guinea", 1982, 2017),
-]
-
 ldcs = []
 
 for line in ldc_string.splitlines():
@@ -82,12 +73,3 @@ for line in ldc_string.splitlines():
 df = pd.DataFrame(ldcs, columns=["Code", "Name", "Year-Of-Inclusion"])
 df = df.sort_values("Name")
 df.to_csv(os.path.join(path, "../data/ldcs.csv"), index=False)
-
-grad_df = pd.DataFrame(
-    graduated,
-    columns=["Name", "Year-Of-Inclusion", "Graduation"]
-)
-grad_df.index = grad_df.Name.apply(to_alpha_3)
-grad_df.index.name = "Code"
-
-grad_df.to_csv(os.path.join(path, "../data/graduated-ldcs.csv"))
