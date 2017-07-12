@@ -5,7 +5,8 @@ import pandas as pd
 from util import to_code, to_short_name, root
 
 
-url = "http://www.oecd.org/about/membersandpartners/list-oecd-member-countries.htm"
+url = ("http://www.oecd.org/about/membersandpartners/"
+       "list-oecd-member-countries.htm")
 
 oecd = pd.read_html(url)[1]
 

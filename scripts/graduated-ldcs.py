@@ -1,7 +1,7 @@
 # Graduated from LDCs
 
 import pandas as pd
-from countrynames import to_alpha_3, to_name
+from countrynames import to_alpha_3
 from util import root
 
 

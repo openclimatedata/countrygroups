@@ -53,8 +53,11 @@ sids = []
 for party in aims.splitlines():
     code = to_code(party)
     name = to_short_name(code)
-    sids.append((code, name,
-        "Atlantic, Indian Ocean, Mediterranean and South China Sea (AIMS) "))
+    sids.append((
+        code,
+        name,
+        "Atlantic, Indian Ocean, Mediterranean and South China Sea (AIMS)"
+    ))
 
 for party in caribbean.splitlines():
     code = to_code(party)

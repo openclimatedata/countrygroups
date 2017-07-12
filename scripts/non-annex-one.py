@@ -5,9 +5,10 @@ import pandas as pd
 from util import to_code, to_short_name, root
 
 
-url = "http://unfccc.int/parties_and_observers/parties/non_annex_i/items/2833.php"
+url = ("http://unfccc.int/parties_and_observers/"
+       "parties/non_annex_i/items/2833.php")
 
-non_annex_one = pd.read_html(url, attrs = {'class': "list_table"})[0]
+non_annex_one = pd.read_html(url, attrs={'class': "list_table"})[0]
 
 non_annex_one = non_annex_one.iloc[1:, 1]
 

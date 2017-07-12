@@ -32,7 +32,7 @@ url = ("http://unfccc.int/essential_background/convention/"
 
 print(url)
 
-df = pd.read_html(url, attrs = {'class': "unfccc_table"})[0]
+df = pd.read_html(url, attrs={'class': "unfccc_table"})[0]
 
 df = df.iloc[1:]
 df.columns = df.iloc[0]
@@ -76,7 +76,7 @@ df = df[[
     'Entry-Into-Force',
 ]]
 
-assert len(df)== 197
+assert len(df) == 197
 assert sum(~df.Signature.isnull()) == 165
 assert len(df.Participant.unique()) == len(df)
 df.to_csv(root / "data/unfccc.csv")

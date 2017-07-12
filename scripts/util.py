@@ -1,9 +1,10 @@
 from pathlib import Path
-from countrynames import to_alpha_3, to_name
+from countrynames import to_alpha_3
 from pycountry import countries
 
 
 root = Path(__file__).parents[1]
+
 
 def to_code(name):
     if name.lower() == "european union":

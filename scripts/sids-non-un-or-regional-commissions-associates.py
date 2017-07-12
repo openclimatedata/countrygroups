@@ -1,14 +1,11 @@
 # Small Island Developing States Non-UN or Associates
 
-import os
-
 import pandas as pd
 
 from util import to_code, to_short_name, root
 
 
 # From https://sustainabledevelopment.un.org/topics/sids/list
-
 non_un_or_associates = """American Samoa
 Anguilla
 Aruba

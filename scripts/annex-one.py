@@ -6,7 +6,7 @@ from util import to_code, to_short_name, root
 
 url = "http://unfccc.int/parties_and_observers/parties/annex_i/items/2774.php"
 
-annex_one = pd.read_html(url, attrs = {'class': "list_table"})[0]
+annex_one = pd.read_html(url, attrs={'class': "list_table"})[0]
 
 annex_one = annex_one.iloc[1:, 1]
 

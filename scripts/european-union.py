@@ -8,13 +8,6 @@ from lxml import html
 from util import root
 
 
-url = "https://europa.eu/european-union/about-eu/countries/member-countries_en"
-
-page = requests.get(url)
-tree = html.fromstring(page.content)
-
-member_states = tree.xpath('//div[contains(@class, "member_state")]')
-
 def get_date(item):
     # Get only part matching date, can be written as
     # <strong>EU member country</strong>: since 1 January 1995
@@ -24,6 +17,14 @@ def get_date(item):
         'p[1]').text_content().rsplit(":")[-1].rsplit(
         "since")[-1].strip().replace("\xa0", " ").replace(
         " - More information on Brexit", "")
+
+
+url = "https://europa.eu/european-union/about-eu/countries/member-countries_en"
+
+page = requests.get(url)
+tree = html.fromstring(page.content)
+
+member_states = tree.xpath('//div[contains(@class, "member_state")]')
 
 members = {
     i.find('h2/a[1]').text: get_date(i) for i in member_states}
@@ -46,4 +47,4 @@ df = df.sort_values("Name")
 
 assert len(df) == 28
 
-df.to_csv(root /  "data/european-union.csv")
+df.to_csv(root / "data/european-union.csv")

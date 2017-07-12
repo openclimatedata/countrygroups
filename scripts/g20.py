@@ -30,7 +30,7 @@ United States
 g20_list = []
 
 for member in members.splitlines():
-  g20_list.append((to_code(member), member))
+    g20_list.append((to_code(member), member))
 
 df = pd.DataFrame(g20_list, columns=["Code", "Name"])
 
