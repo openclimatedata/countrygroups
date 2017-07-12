@@ -2,63 +2,7 @@ CSV_FILES = data/unfccc.csv data/annex-one.csv data/non-annex-one.csv data/ldcs.
 
 all: $(CSV_FILES) countrygroups/__init__.py index.js
 
-data/unfccc.csv: scripts/unfccc.py venv
-	@echo $@
-	@./venv/bin/python $<
-
-data/annex-one.csv: scripts/annex-one.py venv
-	@echo $@
-	@./venv/bin/python $<
-
-data/non-annex-one.csv: scripts/non-annex-one.py venv
-	@echo $@
-	@./venv/bin/python $<
-
-data/ldcs.csv data/graduated-ldcs.csv: scripts/ldcs.py
-	@echo $@
-	@./venv/bin/python $<
-
-data/eu-member-states.csv: scripts/eu-member-states.py
-	@echo $@
-	@./venv/bin/python $<
-
-data/sids.csv data/sids-non-un-or-regional-commissions-associates.csv: scripts/sids.py
-	@echo $@
-	@./venv/bin/python $<
-
-data/g20.csv: scripts/g20.py
-	@echo $@
-	@./venv/bin/python $<
-
-data/g7.csv: scripts/g7.py
-	@echo $@
-	@./venv/bin/python $<
-
-data/oecd.csv: scripts/oecd.py
-	@echo $@
-	@./venv/bin/python $<
-
-data/brics.csv: scripts/brics.py
-	@echo $@
-	@./venv/bin/python $<
-
-data/umbrella.csv: scripts/umbrella.py
-	@echo $@
-	@./venv/bin/python $<
-
-data/opec.csv: scripts/opec.py
-	@echo $@
-	@./venv/bin/python $<
-
-data/aosis.csv: scripts/aosis.py
-	@echo $@
-	@./venv/bin/python $<
-
-data/eig.csv: scripts/eig.py
-	@echo $@
-	@./venv/bin/python $<
-
-data/g77.csv: scripts/g77.py
+data/%.csv: scripts/%.py venv
 	@echo $@
 	@./venv/bin/python $<
 
