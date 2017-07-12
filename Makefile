@@ -1,6 +1,6 @@
 CSV_FILES = data/unfccc.csv data/annex-one.csv data/non-annex-one.csv data/ldcs.csv data/graduated-ldcs.csv data/eu-member-states.csv data/sids.csv data/sids-non-un-or-regional-commissions-associates.csv data/g20.csv data/g7.csv data/oecd.csv data/brics.csv data/umbrella.csv data/opec.csv data/aosis.csv data/eig.csv
 
-all: $(CSV_FILES) unfccc_groups/__init__.py index.js
+all: $(CSV_FILES) countrygroups/__init__.py index.js
 
 data/unfccc.csv: scripts/unfccc.py venv
 	@echo $@
@@ -58,7 +58,7 @@ data/eig.csv: scripts/eig.py
 	@echo $@
 	@./venv/bin/python $<
 
-index.js unfccc_groups/__init__.py: scripts/generate_modules.py $(CSV_FILES) datapackage.json
+index.js countrygroups/__init__.py: scripts/generate_modules.py $(CSV_FILES) datapackage.json
 	@echo $@
 	@./venv/bin/python $<
 
