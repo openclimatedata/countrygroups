@@ -23,7 +23,8 @@ def get_date(item):
     # <strong>EU member country since</strong> 1 January 1973
     return item.find(
         'p[1]').text_content().rsplit(":")[-1].rsplit(
-        "since")[-1].strip().replace("\xa0", " ")
+        "since")[-1].strip().replace("\xa0", " ").replace(
+        " - More information on Brexit", "")
 
 members = {
     i.find('h2/a[1]').text: get_date(i) for i in member_states}
