@@ -1,4 +1,21 @@
-CSV_FILES = data/unfccc.csv data/annex-one.csv data/non-annex-one.csv data/ldcs.csv data/graduated-ldcs.csv data/eu-member-states.csv data/sids.csv data/sids-non-un-or-regional-commissions-associates.csv data/g20.csv data/g7.csv data/oecd.csv data/brics.csv data/umbrella.csv data/opec.csv data/aosis.csv data/eig.csv data/g77.csv
+CSV_FILES = \
+  data/annex-one.csv \
+  data/aosis.csv \
+  data/brics.csv \
+  data/eig.csv \
+  data/eu-member-states.csv \
+  data/g20.csv \
+  data/g7.csv \
+  data/g77.csv \
+  data/graduated-ldcs.csv \
+  data/ldcs.csv \
+  data/non-annex-one.csv \
+  data/oecd.csv \
+  data/opec.csv \
+  data/sids-non-un-or-regional-commissions-associates.csv \
+  data/sids.csv \
+  data/umbrella.csv \
+  data/unfccc.csv
 
 all: $(CSV_FILES) countrygroups/__init__.py index.js
 
