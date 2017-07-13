@@ -102,15 +102,18 @@ Members of the Convention on the Organisation for Economic Co-operation and Deve
 
 [data/aosis.csv](data/aosis.csv)
 
-
 ### Environmental Integrity Group (EIG)
 
 [data/eig.csv](data/eig.csv)
 
-
 ### G77
 
 [data/g77.csv](data/g77.csv)
+
+### Arab Group
+
+[data/arab-group.csv](arab-group.csv)
+
 
 ## Preparation
 
