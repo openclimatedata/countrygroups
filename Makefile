@@ -9,9 +9,10 @@ CSV_FILES = \
   data/eastern-european-group.csv \
   data/european-union.csv \
   data/g20.csv \
-  data/g7.csv \
   data/g77.csv \
+  data/g7.csv \
   data/graduated-ldcs.csv \
+  data/grulac.csv \
   data/ldcs.csv \
   data/non-annex-one.csv \
   data/oecd.csv \
@@ -19,7 +20,8 @@ CSV_FILES = \
   data/sids-non-un-or-regional-commissions-associates.csv \
   data/sids.csv \
   data/umbrella.csv \
-  data/unfccc.csv
+  data/unfccc.csv \
+  data/weog.csv
 
 all: $(CSV_FILES) countrygroups/__init__.py index.js
 
@@ -38,7 +40,7 @@ venv: scripts/requirements.txt
 	touch venv
 
 clean-generated-files:
-	rm -rf index.js data/*.csv
+	rm -rf index.js data/*.csv countrygroups/__init__.py
 
 clean-venv:
 	rm -rf venv

@@ -564,6 +564,50 @@
         ],
         "primaryKey": "Code"
       }
+    },
+    {
+      "name": "grulac",
+      "path": "data/grulac.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 373,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Country Name"
+          }
+        ],
+        "primaryKey": "Code"
+      }
+    },
+    {
+      "name": "weog",
+      "path": "data/weog.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 373,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Country Name"
+          }
+        ],
+        "primaryKey": "Code"
+      }
     }
   ],
   "name": "countrygroups",

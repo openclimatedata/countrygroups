@@ -126,6 +126,14 @@ Members of the Convention on the Organisation for Economic Co-operation and Deve
 
 [data/eastern-european-group.csv](data/eastern-european-group.csv)
 
+### Latin American and Caribbean Group (GRULAC)
+
+[data/grulac.csv](data/grulac.csv)
+
+### Western European and Others Group (WEOG)
+
+[data/weog.csv](data/weog.csv)
+
 
 ## Preparation
 
