@@ -1,4 +1,5 @@
 CSV_FILES = \
+  data/african-group.csv \
   data/annex-one.csv \
   data/aosis.csv \
   data/arab-group.csv \

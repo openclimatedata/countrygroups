@@ -47,8 +47,11 @@
     {
       "name": "The Member States of the Group of 77",
       "web": "http://www.g77.org/doc/members.html"
+    },
+     {
+      "name": "United Nations Regional Groups of Member States",
+      "web": "http://www.un.org/depts/DGACM/RegionalGroups.shtml"
     }
-
   ],
   "resources": [
     {
@@ -478,7 +481,6 @@
       "name": "arab-group",
       "path": "data/arab-group.csv",
       "format": "csv",
-      "version": "0.0.3"
       "mediatype": "text/csv",
       "bytes": 278,
       "schema": {
@@ -496,11 +498,33 @@
         ],
         "primaryKey": "Code"
       }
+    },
+    {
+      "name": "african-group",
+      "path": "data/african-group.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 769,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Country Name"
+          }
+        ],
+        "primaryKey": "Code"
+      }
     }
-
   ],
   "name": "countrygroups",
   "title": "Country Groups",
+  "version": "0.0.3",
   "description": "Ccountry groups, especially those in the United Nations Framework Convention on Climate Change (UNFCCC)",
   "repository": "git://github.com/openclimatedata/unfccc-groups.git"
 }

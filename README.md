@@ -114,6 +114,10 @@ Members of the Convention on the Organisation for Economic Co-operation and Deve
 
 [data/arab-group.csv](arab-group.csv)
 
+### African Group
+
+[data/african-group.csv](african-group.csv)
+
 
 ## Preparation
 
