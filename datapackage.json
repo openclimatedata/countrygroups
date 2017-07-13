@@ -478,6 +478,7 @@
       "name": "arab-group",
       "path": "data/arab-group.csv",
       "format": "csv",
+      "version": "0.0.2"
       "mediatype": "text/csv",
       "bytes": 278,
       "schema": {
