@@ -122,6 +122,10 @@ Members of the Convention on the Organisation for Economic Co-operation and Deve
 
 [data/asia-pacific-group.csv](asia-pacific-group.csv)
 
+### Eastern European Group
+
+[data/eastern-european-group.csv](data/eastern-european-group.csv)
+
 
 ## Preparation
 

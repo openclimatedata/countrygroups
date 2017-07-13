@@ -542,6 +542,28 @@
         ],
         "primaryKey": "Code"
       }
+    },
+    {
+      "name": "eastern-european-group",
+      "path": "data/eastern-european-group.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 373,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Country Name"
+          }
+        ],
+        "primaryKey": "Code"
+      }
     }
   ],
   "name": "countrygroups",
