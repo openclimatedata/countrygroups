@@ -1,6 +1,7 @@
 CSV_FILES = \
   data/annex-one.csv \
   data/aosis.csv \
+  data/arab-group.csv \
   data/brics.csv \
   data/eig.csv \
   data/european-union.csv \

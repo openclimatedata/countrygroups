@@ -97,6 +97,31 @@ AOSIS = [
     "WSM"
 ]
 
+ARAB_GROUP = [
+    "ARE",
+    "BHR",
+    "COM",
+    "DJI",
+    "DZA",
+    "EGY",
+    "IRQ",
+    "JOR",
+    "KWT",
+    "LBN",
+    "LBY",
+    "MAR",
+    "MRT",
+    "OMN",
+    "PSE",
+    "QAT",
+    "SAU",
+    "SDN",
+    "SOM",
+    "SYR",
+    "TUN",
+    "YEM"
+]
+
 BRICS = [
     "BRA",
     "CHN",

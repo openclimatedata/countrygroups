@@ -88,6 +88,31 @@ exports.AOSIS = [
     "WSM"
 ]
 
+exports.ARAB_GROUP = [
+    "ARE",
+    "BHR",
+    "COM",
+    "DJI",
+    "DZA",
+    "EGY",
+    "IRQ",
+    "JOR",
+    "KWT",
+    "LBN",
+    "LBY",
+    "MAR",
+    "MRT",
+    "OMN",
+    "PSE",
+    "QAT",
+    "SAU",
+    "SDN",
+    "SOM",
+    "SYR",
+    "TUN",
+    "YEM"
+]
+
 exports.BRICS = [
     "BRA",
     "CHN",
