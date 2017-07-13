@@ -15,5 +15,5 @@ else
   sed -i -r "s/(\"version\": \").*(\")/\1$version\2/" datapackage.json
   git add datapackage.json
   git commit -m "Update version in datapackage.json"
-  npm version $version
+  npm version $version -m "Update version to %s"
 fi
