@@ -118,6 +118,10 @@ Members of the Convention on the Organisation for Economic Co-operation and Deve
 
 [data/african-group.csv](african-group.csv)
 
+### Asia-Pacific Group
+
+[data/asia-pacific-group.csv](asia-pacific-group.csv)
+
 
 ## Preparation
 

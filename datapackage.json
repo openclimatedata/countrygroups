@@ -520,6 +520,28 @@
         ],
         "primaryKey": "Code"
       }
+    },
+    {
+      "name": "asia-pacific-group",
+      "path": "data/asia-pacific-group.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 845,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Country Name"
+          }
+        ],
+        "primaryKey": "Code"
+      }
     }
   ],
   "name": "countrygroups",
