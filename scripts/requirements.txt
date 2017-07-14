@@ -1,5 +1,5 @@
 unidecode
-git+git://github.com/rgieseke/countrynames/@spelling-variant#egg=countrynames
+git+git://github.com/rgieseke/countrynames/@yaml-speedup#egg=countrynames
 pandas
 lxml
 html5lib
