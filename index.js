@@ -1063,7 +1063,7 @@ exports.WEOG = [
     "USA"
 ]
 
-export.shortnames = {
+exports.shortnames = {
     'AFG': 'Afghanistan',
     'AGO': 'Angola',
     'ALB': 'Albania',
