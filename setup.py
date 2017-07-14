@@ -20,12 +20,11 @@ cmdclass = versioneer.get_cmdclass()
 setup(
     name='countrygroups',
     version=versioneer.get_version(),
-    description='ISO-Codes of country groups, especially those related to the UNFCCC negotiation process',
-    long_description=__doc__,
+    description='ISO-Codes of country groups, especially those related to the UNFCCC process',
     url='https://github.com/openclimatedata/countrygroups',
     author='Robert Gieseke',
     author_email='robert.gieseke@pik-potsdam.de',
-    license='BSD',
+    license='CC0',
     platforms='any',
     classifiers=[
         "Development Status :: 3 - Alpha",
