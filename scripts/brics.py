@@ -1,17 +1,12 @@
 # BRICS
 
-import pandas as pd
-from util import to_code, root
 
-brics = ["Brazil", "Russian Federation", "India", "China", "South Africa"]
+from util import to_csv
 
-index = [to_code(name) for name in brics]
+countries = ["Brazil", "Russian Federation", "India", "China", "South Africa"]
 
-df = pd.DataFrame({"Name": brics}, index=index)
-df.index.name = "Code"
+brics = to_csv(countries, "brics.csv")
 
-assert len(df) == 5
-assert len(df.index.unique()) == len(df)
-assert len(df.Name.unique()) == len(df)
-
-df.to_csv(root / "data/brics.csv")
+assert len(brics) == 5
+assert len(brics.index.unique()) == len(brics)
+assert len(brics.Name.unique()) == len(brics)

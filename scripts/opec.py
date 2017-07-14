@@ -1,7 +1,6 @@
 # OPEC countries
 
-import pandas as pd
-from util import to_code, root
+from util import to_csv
 
 
 # http://www.opec.org/opec_web/en/about_us/25.htm
@@ -22,10 +21,6 @@ countries = [
  "Venezuela"
 ]
 
-index = [to_code(country) for country in countries]
-opec = pd. DataFrame({"Name": countries}, index=index)
-opec.index.name = "Code"
-
-opec.to_csv(root / "data/opec.csv")
+opec = to_csv(countries, "opec.csv")
 
 assert len(opec) == 14

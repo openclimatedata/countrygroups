@@ -2,8 +2,7 @@
 
 # http://www.un.org/depts/DGACM/RegionalGroups.shtml
 
-import pandas as pd
-from util import to_code, root
+from util import to_csv
 
 
 countries = """Albania
@@ -28,12 +27,8 @@ Serbia
 Slovakia
 Slovenia
 The former Yugoslav Republic of Macedonia
-Ukraine""".splitlines()
+Ukraine"""
 
-index = [to_code(country) for country in countries]
-eastern_european = pd. DataFrame({"Name": countries}, index=index)
-eastern_european.index.name = "Code"
-
-eastern_european.to_csv(root / "data/eastern-european-group.csv")
+eastern_european = to_csv(countries, "eastern-european-group.csv")
 
 assert len(eastern_european) == 23

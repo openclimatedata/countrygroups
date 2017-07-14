@@ -1,7 +1,6 @@
 # AOSIS
 
-import pandas as pd
-from util import to_code, root
+from util import to_csv
 
 
 countries = [
@@ -53,11 +52,6 @@ countries = [
 # U.S. Virgin Islands
 # Puerto Rico
 
-
-index = [to_code(country) for country in countries]
-aosis = pd. DataFrame({"Name": countries}, index=index)
-aosis.index.name = "Code"
-
-aosis.to_csv(root / "data/aosis.csv")
+aosis = to_csv(countries, "aosis.csv")
 
 assert len(aosis) == 44 - 5  # 44 States and observers

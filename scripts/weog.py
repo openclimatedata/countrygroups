@@ -1,9 +1,8 @@
-# Latin American and Caribbean Group (GRULAC)Western European and Others Group (WEOG)
+# Western European and Others Group (WEOG)
 
 # http://www.un.org/depts/DGACM/RegionalGroups.shtml
 
-import pandas as pd
-from util import to_code, root
+from util import to_csv
 
 
 countries = """Andorra
@@ -34,12 +33,8 @@ Sweden
 Switzerland
 Turkey
 United Kingdom
-United States of America""".splitlines()
+United States of America"""
 
-index = [to_code(country) for country in countries]
-weog = pd. DataFrame({"Name": countries}, index=index)
-weog.index.name = "Code"
-
-weog.to_csv(root / "data/weog.csv")
+weog = to_csv(countries, "weog.csv")
 
 assert len(weog) == 29

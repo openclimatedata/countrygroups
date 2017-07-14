@@ -1,8 +1,6 @@
-# G20
+# G7
 
-import pandas as pd
-
-from util import to_code, root
+from util import to_csv
 
 # https://en.wikipedia.org/wiki/G7
 members = """Canada
@@ -15,15 +13,8 @@ United States
 European Union
 """
 
-g7 = []
+g7 = to_csv(members, "g7.csv")
 
-for member in members.splitlines():
-    g7.append((to_code(member), member))
-
-df = pd.DataFrame(g7, columns=["Code", "Name"])
-
-assert len(df) == 7 + 1  # plus EU
-assert all(df.Code.unique())
-assert all(df.Name.unique())
-
-df.to_csv(root / "data/g7.csv", index=False)
+assert len(g7) == 7 + 1  # plus EU
+assert all(g7.index.unique())
+assert all(g7.Name.unique())

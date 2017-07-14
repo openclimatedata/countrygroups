@@ -2,8 +2,7 @@
 
 # http://www.un.org/depts/DGACM/RegionalGroups.shtml
 
-import pandas as pd
-from util import to_code, root
+from util import to_csv
 
 countries = """Algeria
 Angola
@@ -58,12 +57,8 @@ Tunisia
 Uganda
 United Republic of Tanzania
 Zambia
-Zimbabwe""".splitlines()
+Zimbabwe"""
 
-index = [to_code(country) for country in countries]
-african_group = pd. DataFrame({"Name": countries}, index=index)
-african_group.index.name = "Code"
-
-african_group.to_csv(root / "data/african-group.csv")
+african_group = to_csv(countries, "african-group.csv")
 
 assert len(african_group) == 54

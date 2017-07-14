@@ -1,8 +1,6 @@
 # G20
 
-import pandas as pd
-
-from util import to_code, root
+from util import to_csv
 
 # https://en.wikipedia.org/wiki/G20
 members = """Australia
@@ -24,18 +22,10 @@ South Africa
 South Korea
 Turkey
 United Kingdom
-United States
-"""
+United States"""
 
-g20_list = []
+g20 = to_csv(members, "g20.csv")
 
-for member in members.splitlines():
-    g20_list.append((to_code(member), member))
-
-df = pd.DataFrame(g20_list, columns=["Code", "Name"])
-
-assert len(df) == 20
-assert all(df.Code.unique())
-assert all(df.Name.unique())
-
-df.to_csv(root / "data/g20.csv", index=False)
+assert len(g20) == 20
+assert all(g20.index.unique())
+assert all(g20.Name.unique())

@@ -2,8 +2,7 @@
 
 # http://www.un.org/depts/DGACM/RegionalGroups.shtml
 
-import pandas as pd
-from util import to_code, root
+from util import to_csv
 
 
 countries = """Afghanistan
@@ -60,12 +59,8 @@ United Arab Emirates
 Uzbekistan
 Vanuatu
 Vietnam
-Yemen""".splitlines()
+Yemen"""
 
-index = [to_code(country) for country in countries]
-asia_pacific = pd. DataFrame({"Name": countries}, index=index)
-asia_pacific.index.name = "Code"
-
-asia_pacific.to_csv(root / "data/asia-pacific-group.csv")
+asia_pacific = to_csv(countries, "asia-pacific-group.csv")
 
 assert len(asia_pacific) == 55
