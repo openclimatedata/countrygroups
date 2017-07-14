@@ -35,8 +35,8 @@ assert all([i.split(" ")[0].isdigit() for i in members.values()])
 assert all([i.split(" ")[2].isdigit() for i in members.values()])
 
 df = pd.DataFrame.from_dict(members, orient="index").reset_index()
-df.columns = ["Name", "Member since"]
-df["Member since"] = pd.to_datetime(df["Member since"])
+df.columns = ["Name", "Member-Since"]
+df["Member-Since"] = pd.to_datetime(df["Member-Since"])
 df.index = df["Name"].apply(to_alpha_3)
 df.index.name = "Code"
 

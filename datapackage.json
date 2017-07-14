@@ -218,7 +218,7 @@
             "description": "Country Name"
           },
           {
-            "name": "Member since",
+            "name": "Member-Since",
             "type": "date",
             "description": "EU member country since"
           }
