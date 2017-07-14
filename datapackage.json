@@ -612,7 +612,7 @@
   ],
   "name": "countrygroups",
   "title": "Country Groups",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Ccountry groups, especially those in the United Nations Framework Convention on Climate Change (UNFCCC)",
   "repository": "git://github.com/openclimatedata/unfccc-groups.git"
 }
