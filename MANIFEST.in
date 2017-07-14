@@ -1,2 +1,2 @@
 include versioneer.py
-include unfccc_groups/_version.py
+include countrygroups/_version.py

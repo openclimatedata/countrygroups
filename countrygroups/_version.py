@@ -42,8 +42,8 @@ def get_config():
     cfg.VCS = "git"
     cfg.style = "pep440"
     cfg.tag_prefix = "v"
-    cfg.parentdir_prefix = "unfccc_groups-"
-    cfg.versionfile_source = "unfccc_groups/_version.py"
+    cfg.parentdir_prefix = "countrygroups-"
+    cfg.versionfile_source = "countrygroups/_version.py"
     cfg.verbose = False
     return cfg
 
