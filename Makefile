@@ -63,7 +63,7 @@ publish-on-test-pypi:
 	@status=$$(git status --porcelain); \
 	if test "x$${status}" = x; then \
 		python setup.py bdist_wheel --universal; \
-		twine upload dist/* -r https://testpypi.python.org/pypi; \
+		twine upload -r testpypi dist/*; \
 	else \
 		echo Working directory is dirty >&2; \
 	fi;
