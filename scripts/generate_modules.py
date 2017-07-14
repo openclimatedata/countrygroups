@@ -61,7 +61,7 @@ shortnames = pprint.pformat(
 py_out += "shortnames = {\n "
 py_out += shortnames
 py_out += "\n}\n"
-js_out += "export.shortnames = {\n "
+js_out += "exports.shortnames = {\n "
 js_out += shortnames
 js_out += "\n}\n"
 
