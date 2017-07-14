@@ -58,7 +58,7 @@ Members of the UNFCCC not part of Annex I.
 
 The list of Least Developed Countries (LDCs) is taken from
 <https://www.un.org/development/desa/dpad/least-developed-country-category/ldcs-at-a-glance.html>
-and turned into CSV files for current LDCs and graduated countries.
+Available are current LDCs and graduated countries.
 
 ### Small Island Developing States (SIDS)
 
@@ -66,15 +66,14 @@ and turned into CSV files for current LDCs and graduated countries.
 
 [data/sids-non-un-or-regional-commissions-associates.csv](data/sids-non-un-or-regional-commissions-associates.csv)
 
-List of Small Island Developing States (SIDS) and list of Non-UN Members/Associate Members of Regional Commissions as CSV files, sourced from
+List of Small Island Developing States (SIDS) and list of Non-UN Members/Associate Members of Regional Commissions, sourced from
 <https://sustainabledevelopment.un.org/topics/sids/list>.
 
 ### European Union member states
 
 [data/european-union.csv](data/european-union.csv)
 
-The data is sourced from <https://europa.eu/european-union/about-eu/countries/member-countries_en>
-and turned into a simple CSV file.
+The data is sourced from <https://europa.eu/european-union/about-eu/countries/member-countries_en>.
 
 ### G20 members
 
