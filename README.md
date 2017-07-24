@@ -8,7 +8,14 @@ Some lists contain additional information like data of joining etc.
 
 ## Python Module
 
-The Python module contains lists with three-letter codes and a dictionary
+The Python module can be installed from
+[PyPI](https://pypi.python.org/pypi/countrygroups):
+
+```
+pip install countrygroups
+```
+
+It contains lists with three-letter codes and a dictionary
 mapping to short names: `shortnames`.
 
 ```py
@@ -20,7 +27,13 @@ for member in EUROPEAN_UNION:
 
 ## JavaScript Module
 
-The module contains arrays with three-letter codes and an object mapping to
+The JavaScript module can be installed with npm:
+
+```
+npm install countrygroups
+```
+
+It contains arrays with three-letter codes and an object mapping to
 short names: `shortnames`
 
 ```js
