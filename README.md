@@ -23,6 +23,12 @@ for member in EUROPEAN_UNION:
 The module contains arrays with three-letter codes and an object mapping to
 short names: `shortnames`
 
+```js
+var EU = require("countrygroups").EUROPEAN_UNION
+
+console.log(EU)
+```
+
 ## Data
 
 ### Members of the UNFCCC
