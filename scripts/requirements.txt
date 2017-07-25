@@ -1,5 +1,5 @@
 unidecode
-git+git://github.com/rgieseke/countrynames/@yaml-speedup#egg=countrynames
+git+git://github.com/occrp/countrynames.git@a8cf46efec42dca4798a86029e3e6cc1eccc880f
 pandas
 lxml
 html5lib
