@@ -1,0 +1,193 @@
+Code,Name,Region
+ALB,Albania,OECD
+AUS,Australia,OECD
+AUT,Austria,OECD
+BEL,Belgium,OECD
+BIH,Bosnia & Herzegovina,OECD
+BGR,Bulgaria,OECD
+CAN,Canada,OECD
+HRV,Croatia,OECD
+CYP,Cyprus,OECD
+CZE,Czechia,OECD
+DNK,Denmark,OECD
+EST,Estonia,OECD
+FIN,Finland,OECD
+FRA,France,OECD
+DEU,Germany,OECD
+GRC,Greece,OECD
+GUM,Guam,OECD
+HUN,Hungary,OECD
+ISL,Iceland,OECD
+IRL,Ireland,OECD
+ITA,Italy,OECD
+JPN,Japan,OECD
+LVA,Latvia,OECD
+LTU,Lithuania,OECD
+LUX,Luxembourg,OECD
+MLT,Malta,OECD
+MNE,Montenegro,OECD
+NLD,Netherlands,OECD
+NZL,New Zealand,OECD
+NOR,Norway,OECD
+POL,Poland,OECD
+PRT,Portugal,OECD
+PRI,Puerto Rico,OECD
+ROU,Romania,OECD
+SRB,Serbia,OECD
+SVK,Slovakia,OECD
+SVN,Slovenia,OECD
+ESP,Spain,OECD
+SWE,Sweden,OECD
+CHE,Switzerland,OECD
+MKD,Macedonia,OECD
+TUR,Turkey,OECD
+GBR,United Kingdom,OECD
+USA,United States,OECD
+ARM,Armenia,REF
+AZE,Azerbaijan,REF
+BLR,Belarus,REF
+GEO,Georgia,REF
+KAZ,Kazakhstan,REF
+KGZ,Kyrgyzstan,REF
+MDA,Moldova,REF
+RUS,Russia,REF
+TJK,Tajikistan,REF
+TKM,Turkmenistan,REF
+UKR,Ukraine,REF
+UZB,Uzbekistan,REF
+AFG,Afghanistan,ASIA
+BGD,Bangladesh,ASIA
+BTN,Bhutan,ASIA
+BRN,Brunei,ASIA
+KHM,Cambodia,ASIA
+CHN,China,ASIA
+HKG,Hong Kong,ASIA
+MAC,Macau,ASIA
+PRK,North Korea,ASIA
+FJI,Fiji,ASIA
+PYF,French Polynesia,ASIA
+IND,India,ASIA
+IDN,Indonesia,ASIA
+LAO,Laos,ASIA
+MYS,Malaysia,ASIA
+MDV,Maldives,ASIA
+FSM,Micronesia,ASIA
+MNG,Mongolia,ASIA
+MMR,Myanmar,ASIA
+NPL,Nepal,ASIA
+NCL,New Caledonia,ASIA
+PAK,Pakistan,ASIA
+PNG,Papua New Guinea,ASIA
+PHL,Philippines,ASIA
+KOR,South Korea,ASIA
+WSM,Samoa,ASIA
+SGP,Singapore,ASIA
+SLB,Solomon Islands,ASIA
+LKA,Sri Lanka,ASIA
+TWN,Taiwan,ASIA
+THA,Thailand,ASIA
+TLS,Timor-Leste,ASIA
+VUT,Vanuatu,ASIA
+VNM,Vietnam,ASIA
+DZA,Algeria,MAF
+AGO,Angola,MAF
+BHR,Bahrain,MAF
+BEN,Benin,MAF
+BWA,Botswana,MAF
+BFA,Burkina Faso,MAF
+BDI,Burundi,MAF
+CMR,Cameroon,MAF
+CPV,Cabo Verde,MAF
+CAF,Central African Republic,MAF
+TCD,Chad,MAF
+COM,Comoros,MAF
+COG,Republic of the Congo,MAF
+CIV,Côte d’Ivoire,MAF
+COD,DR Congo,MAF
+DJI,Djibouti,MAF
+EGY,Egypt,MAF
+GNQ,Equatorial Guinea,MAF
+ERI,Eritrea,MAF
+ETH,Ethiopia,MAF
+GAB,Gabon,MAF
+GMB,Gambia,MAF
+GHA,Ghana,MAF
+GIN,Guinea,MAF
+GNB,Guinea-Bissau,MAF
+IRN,Iran,MAF
+IRQ,Iraq,MAF
+ISR,Israel,MAF
+JOR,Jordan,MAF
+KEN,Kenya,MAF
+KWT,Kuwait,MAF
+LBN,Lebanon,MAF
+LSO,Lesotho,MAF
+LBR,Liberia,MAF
+LBY,Libya,MAF
+MDG,Madagascar,MAF
+MWI,Malawi,MAF
+MLI,Mali,MAF
+MRT,Mauritania,MAF
+MUS,Mauritius,MAF
+MYT,Mayotte,MAF
+MAR,Morocco,MAF
+MOZ,Mozambique,MAF
+NAM,Namibia,MAF
+NER,Niger,MAF
+NGA,Nigeria,MAF
+PSE,Palestine,MAF
+OMN,Oman,MAF
+QAT,Qatar,MAF
+RWA,Rwanda,MAF
+REU,Réunion,MAF
+SAU,Saudi Arabia,MAF
+SEN,Senegal,MAF
+SLE,Sierra Leone,MAF
+SOM,Somalia,MAF
+ZAF,South Africa,MAF
+SSD,South Sudan,MAF
+SDN,Sudan,MAF
+SWZ,Swaziland,MAF
+SYR,Syria,MAF
+TGO,Togo,MAF
+TUN,Tunisia,MAF
+UGA,Uganda,MAF
+ARE,United Arab Emirates,MAF
+TZA,Tanzania,MAF
+ESH,Western Sahara,MAF
+YEM,Yemen,MAF
+ZMB,Zambia,MAF
+ZWE,Zimbabwe,MAF
+ARG,Argentina,LAM
+ABW,Aruba,LAM
+BHS,Bahamas,LAM
+BRB,Barbados,LAM
+BLZ,Belize,LAM
+BOL,Bolivia,LAM
+BRA,Brazil,LAM
+CHL,Chile,LAM
+COL,Colombia,LAM
+CRI,Costa Rica,LAM
+CUB,Cuba,LAM
+DOM,Dominican Republic,LAM
+ECU,Ecuador,LAM
+SLV,El Salvador,LAM
+GUF,French Guiana,LAM
+GRD,Grenada,LAM
+GLP,Guadeloupe,LAM
+GTM,Guatemala,LAM
+GUY,Guyana,LAM
+HTI,Haiti,LAM
+HND,Honduras,LAM
+JAM,Jamaica,LAM
+MTQ,Martinique,LAM
+MEX,Mexico,LAM
+NIC,Nicaragua,LAM
+PAN,Panama,LAM
+PRY,Paraguay,LAM
+PER,Peru,LAM
+SUR,Suriname,LAM
+TTO,Trinidad & Tobago,LAM
+VIR,U.S. Virgin Islands,LAM
+URY,Uruguay,LAM
+VEN,Venezuela,LAM

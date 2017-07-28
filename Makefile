@@ -19,6 +19,7 @@ CSV_FILES = \
   data/opec.csv \
   data/sids-non-un-or-regional-commissions-associates.csv \
   data/sids.csv \
+  data/ssp.csv \
   data/umbrella.csv \
   data/unfccc.csv \
   data/weog.csv
