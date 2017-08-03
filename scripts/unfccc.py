@@ -1,5 +1,6 @@
 # UNFCCC signatures and ratification
 
+import re
 import pandas as pd
 
 from shortcountrynames import to_name
@@ -39,6 +40,12 @@ df = df.iloc[1:]
 df.columns = df.iloc[0]
 df = df.reindex(df.index.drop(1))
 df.columns.name = None
+
+# Remove (6)(7) etc.
+def remove_numbers(name):
+    p = re.compile('\(\d\)')
+    return p.sub("", name)
+df.Participant = df.Participant.apply(remove_numbers)
 
 df.index = df.Participant.apply(to_code)
 df.index.name = "Code"

@@ -9,12 +9,7 @@ root = Path(__file__).parents[1]
 
 
 def to_code(name):
-    if name.lower() == "european union":
-        return "EUU"
-    elif name.lower().startswith("united kingdom of great"):
-        return "GBR"
-    else:
-        return to_alpha_3(name, fuzzy=True)
+    return to_alpha_3(name, fuzzy=True)
 
 
 def to_csv(list_or_str, csvname):
