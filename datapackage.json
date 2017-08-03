@@ -608,7 +608,35 @@
         ],
         "primaryKey": "Code"
       }
+    },
+    {
+      "name": "ssp",
+      "path": "data/ssp.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "subregions": true,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Country Name"
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "description": "SSP region classification"
+          }
+        ],
+        "primaryKey": "Code"
+      }
     }
+
   ],
   "name": "countrygroups",
   "title": "Country Groups",
