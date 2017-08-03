@@ -1,4 +1,5 @@
 unidecode
+shortcountrynames
 git+git://github.com/occrp/countrynames.git
 pandas
 lxml

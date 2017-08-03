@@ -14,14 +14,7 @@ def to_code(name):
     elif name.lower().startswith("united kingdom of great"):
         return "GBR"
     else:
-        return to_alpha_3(name)
-
-
-def to_short_name(code):
-    if code == "EUU":
-        return "European Union"
-    else:
-        return countries.get(alpha_3=code).name
+        return to_alpha_3(name, fuzzy=True)
 
 
 def to_csv(list_or_str, csvname):

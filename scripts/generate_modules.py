@@ -56,14 +56,6 @@ for name, df in sorted(dp.items()):
     py_out += "]\n\n"
     js_out += "]\n\n"
 
-shortnames = pprint.pformat(
-    sn.loc[codes].to_dict(orient="dict")["Name"], indent=4)[1:-1]
-py_out += "shortnames = {\n "
-py_out += shortnames
-py_out += "\n}\n"
-js_out += "exports.shortnames = {\n "
-js_out += shortnames
-js_out += "\n}\n"
 
 with open(os.path.join(path, "../countrygroups/__init__.py"), "w") as f:
     f.write(py_out)

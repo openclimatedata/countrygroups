@@ -2,7 +2,8 @@
 
 import pandas as pd
 
-from util import to_code, to_short_name, root
+from shortcountrynames import to_name
+from util import to_code, root
 
 
 # From https://sustainabledevelopment.un.org/topics/sids/list
@@ -52,7 +53,7 @@ sids = []
 
 for party in aims.splitlines():
     code = to_code(party)
-    name = to_short_name(code)
+    name = to_name(code)
     sids.append((
         code,
         name,
@@ -61,12 +62,12 @@ for party in aims.splitlines():
 
 for party in caribbean.splitlines():
     code = to_code(party)
-    name = to_short_name(code)
+    name = to_name(code)
     sids.append((code, name, "Caribbean"))
 
 for party in pacific.splitlines():
     code = to_code(party)
-    name = to_short_name(code)
+    name = to_name(code)
     sids.append((code, name, "Pacific"))
 
 sids_df = pd.DataFrame(sids, columns=["Code", "Name", "Region"])

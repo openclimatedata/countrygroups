@@ -2,7 +2,8 @@
 
 import pandas as pd
 
-from util import to_code, to_short_name, root
+from shortcountrynames import to_name
+from util import to_code, root
 
 
 url = ("http://www.oecd.org/about/membersandpartners/"
@@ -17,7 +18,7 @@ oecd.columns = ["Name", "Ratification"]
 oecd.index = oecd.Name.apply(to_code)
 oecd.index.name = "Code"
 
-oecd.Name = [to_short_name(code) for code in oecd.index]
+oecd.Name = [to_name(code) for code in oecd.index]
 
 oecd.Ratification = pd.to_datetime(oecd.Ratification)
 

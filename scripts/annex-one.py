@@ -2,7 +2,8 @@
 
 import pandas as pd
 
-from util import to_code, to_short_name, root
+from shortcountrynames import to_name
+from util import to_code, root
 
 url = "http://unfccc.int/parties_and_observers/parties/annex_i/items/2774.php"
 
@@ -17,7 +18,7 @@ annex_one = annex_one.apply(lambda x: x.replace(" **", ""))
 annex_one.index = annex_one.apply(to_code)
 
 annex_one = pd.Series(
-    [to_short_name(code) for code in annex_one.index],
+    [to_name(code) for code in annex_one.index],
     index=annex_one.index
 )
 

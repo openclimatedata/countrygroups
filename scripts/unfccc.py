@@ -2,7 +2,8 @@
 
 import pandas as pd
 
-from util import to_code, to_short_name, root
+from shortcountrynames import to_name
+from util import to_code, root
 
 
 def get_kind(datestring):
@@ -45,7 +46,7 @@ df.index.name = "Code"
 # Check that all rows have an index.
 assert all(~df.index.isnull())
 
-df["Participant"] = [to_short_name(i) for i in df.index]
+df["Participant"] = [to_name(i) for i in df.index]
 
 # Check that all rows have a name.
 assert all(~df.Participant.isnull())

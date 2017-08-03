@@ -15,14 +15,13 @@ The Python module can be installed from
 pip install countrygroups
 ```
 
-It contains lists with three-letter codes and a dictionary
-mapping to short names: `shortnames`.
+It contains lists with three-letter codes:
 
 ```py
-from countrygroups import EUROPEAN_UNION, shortnames
+from countrygroups import EUROPEAN_UNION
 
 for member in EUROPEAN_UNION:
-    print(shortnames[member])
+    print(member)
 ```
 
 ## JavaScript Module
@@ -33,8 +32,7 @@ The JavaScript module can be installed with npm:
 npm install countrygroups
 ```
 
-It contains arrays with three-letter codes and an object mapping to
-short names: `shortnames`
+It contains arrays with three-letter codes:
 
 ```js
 var EU = require("countrygroups").EUROPEAN_UNION

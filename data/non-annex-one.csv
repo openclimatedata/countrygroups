@@ -4,7 +4,7 @@ ALB,Albania
 DZA,Algeria
 AND,Andorra
 AGO,Angola
-ATG,Antigua and Barbuda
+ATG,Antigua & Barbuda
 ARG,Argentina
 ARM,Armenia
 AZE,Azerbaijan
@@ -15,11 +15,11 @@ BRB,Barbados
 BLZ,Belize
 BEN,Benin
 BTN,Bhutan
-BOL,"Bolivia, Plurinational State of"
-BIH,Bosnia and Herzegovina
+BOL,Bolivia
+BIH,Bosnia & Herzegovina
 BWA,Botswana
 BRA,Brazil
-BRN,Brunei Darussalam
+BRN,Brunei
 BFA,Burkina Faso
 BDI,Burundi
 KHM,Cambodia
@@ -31,13 +31,13 @@ CHL,Chile
 CHN,China
 COL,Colombia
 COM,Comoros
-COG,Congo
+COG,Republic of the Congo
 COK,Cook Islands
 CRI,Costa Rica
 CUB,Cuba
-CIV,Côte d'Ivoire
-PRK,"Korea, Democratic People's Republic of"
-COD,"Congo, The Democratic Republic of the"
+CIV,Côte d’Ivoire
+PRK,North Korea
+COD,DR Congo
 DJI,Djibouti
 DMA,Dominica
 DOM,Dominican Republic
@@ -61,7 +61,7 @@ HTI,Haiti
 HND,Honduras
 IND,India
 IDN,Indonesia
-IRN,"Iran, Islamic Republic of"
+IRN,Iran
 IRQ,Iraq
 ISR,Israel
 JAM,Jamaica
@@ -71,7 +71,7 @@ KEN,Kenya
 KIR,Kiribati
 KWT,Kuwait
 KGZ,Kyrgyzstan
-LAO,Lao People's Democratic Republic
+LAO,Laos
 LBN,Lebanon
 LSO,Lesotho
 LBR,Liberia
@@ -85,7 +85,7 @@ MHL,Marshall Islands
 MRT,Mauritania
 MUS,Mauritius
 MEX,Mexico
-FSM,"Micronesia, Federated States of"
+FSM,Micronesia
 MNG,Mongolia
 MNE,Montenegro
 MAR,Morocco
@@ -101,22 +101,22 @@ NIU,Niue
 OMN,Oman
 PAK,Pakistan
 PLW,Palau
-PSE,"Palestine, State of"
+PSE,Palestine
 PAN,Panama
 PNG,Papua New Guinea
 PRY,Paraguay
 PER,Peru
 PHL,Philippines
 QAT,Qatar
-KOR,"Korea, Republic of"
-MDA,"Moldova, Republic of"
+KOR,South Korea
+MDA,Moldova
 RWA,Rwanda
-KNA,Saint Kitts and Nevis
-LCA,Saint Lucia
-VCT,Saint Vincent and the Grenadines
+KNA,St. Kitts & Nevis
+LCA,St. Lucia
+VCT,St. Vincent & Grenadines
 WSM,Samoa
 SMR,San Marino
-STP,Sao Tome and Principe
+STP,São Tomé & Príncipe
 SAU,Saudi Arabia
 SEN,Senegal
 SRB,Serbia
@@ -131,25 +131,25 @@ LKA,Sri Lanka
 SDN,Sudan
 SUR,Suriname
 SWZ,Swaziland
-SYR,Syrian Arab Republic
+SYR,Syria
 TJK,Tajikistan
 THA,Thailand
-MKD,"Macedonia, Republic of"
+MKD,Macedonia
 TLS,Timor-Leste
 TGO,Togo
 TON,Tonga
-TTO,Trinidad and Tobago
+TTO,Trinidad & Tobago
 TUN,Tunisia
 TKM,Turkmenistan
 TUV,Tuvalu
 UGA,Uganda
 ARE,United Arab Emirates
-TZA,"Tanzania, United Republic of"
+TZA,Tanzania
 URY,Uruguay
 UZB,Uzbekistan
 VUT,Vanuatu
-VEN,"Venezuela, Bolivarian Republic of"
-VNM,Viet Nam
+VEN,Venezuela
+VNM,Vietnam
 YEM,Yemen
 ZMB,Zambia
 ZWE,Zimbabwe

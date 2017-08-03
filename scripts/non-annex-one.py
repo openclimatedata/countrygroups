@@ -2,7 +2,8 @@
 
 import pandas as pd
 
-from util import to_code, to_short_name, root
+from shortcountrynames import to_name
+from util import to_code, root
 
 
 url = ("http://unfccc.int/parties_and_observers/"
@@ -19,7 +20,7 @@ non_annex_one = non_annex_one.apply(lambda x: x.replace(" **", ""))
 non_annex_one.index = non_annex_one.apply(to_code)
 
 non_annex_one = pd.Series(
-    [to_short_name(code) for code in non_annex_one.index],
+    [to_name(code) for code in non_annex_one.index],
     index=non_annex_one.index
 )
 
