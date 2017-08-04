@@ -500,11 +500,11 @@
       }
     },
     {
-      "name": "african-group",
-      "path": "data/african-group.csv",
+      "name": "un-regional-groups",
+      "path": "data/un-regional-groups.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 769,
+      "subregions": true,
       "schema": {
         "fields": [
           {
@@ -516,94 +516,11 @@
             "name": "Name",
             "type": "string",
             "description": "Country Name"
-          }
-        ],
-        "primaryKey": "Code"
-      }
-    },
-    {
-      "name": "asia-pacific-group",
-      "path": "data/asia-pacific-group.csv",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "bytes": 845,
-      "schema": {
-        "fields": [
-          {
-            "name": "Code",
-            "type": "string",
-            "description": "Country Code (ISO3166-1-Alpha-3)"
           },
           {
-            "name": "Name",
+            "name": "Region",
             "type": "string",
-            "description": "Country Name"
-          }
-        ],
-        "primaryKey": "Code"
-      }
-    },
-    {
-      "name": "eastern-european-group",
-      "path": "data/eastern-european-group.csv",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "bytes": 373,
-      "schema": {
-        "fields": [
-          {
-            "name": "Code",
-            "type": "string",
-            "description": "Country Code (ISO3166-1-Alpha-3)"
-          },
-          {
-            "name": "Name",
-            "type": "string",
-            "description": "Country Name"
-          }
-        ],
-        "primaryKey": "Code"
-      }
-    },
-    {
-      "name": "grulac",
-      "path": "data/grulac.csv",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "bytes": 373,
-      "schema": {
-        "fields": [
-          {
-            "name": "Code",
-            "type": "string",
-            "description": "Country Code (ISO3166-1-Alpha-3)"
-          },
-          {
-            "name": "Name",
-            "type": "string",
-            "description": "Country Name"
-          }
-        ],
-        "primaryKey": "Code"
-      }
-    },
-    {
-      "name": "weog",
-      "path": "data/weog.csv",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "bytes": 373,
-      "schema": {
-        "fields": [
-          {
-            "name": "Code",
-            "type": "string",
-            "description": "Country Code (ISO3166-1-Alpha-3)"
-          },
-          {
-            "name": "Name",
-            "type": "string",
-            "description": "Country Name"
+            "description": "Regional Group Name"
           }
         ],
         "primaryKey": "Code"

@@ -1,18 +1,14 @@
 CSV_FILES = \
-  data/african-group.csv \
-  data/annex-one.csv \
+    data/annex-one.csv \
   data/aosis.csv \
   data/arab-group.csv \
-  data/asia-pacific-group.csv \
   data/brics.csv \
   data/eig.csv \
-  data/eastern-european-group.csv \
   data/european-union.csv \
   data/g20.csv \
   data/g77.csv \
   data/g7.csv \
   data/graduated-ldcs.csv \
-  data/grulac.csv \
   data/ldcs.csv \
   data/non-annex-one.csv \
   data/oecd.csv \
@@ -22,7 +18,7 @@ CSV_FILES = \
   data/ssp.csv \
   data/umbrella.csv \
   data/unfccc.csv \
-  data/weog.csv
+  data/un-regional-groups.csv
 
 all: $(CSV_FILES) countrygroups/__init__.py index.js
 

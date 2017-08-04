@@ -41,7 +41,8 @@ def create_submodule(name, df):
     py_submodule_out += "\n\n"
     grouped = df.groupby("Region")
     for region, group in grouped:
-        py_submodule_out += "{} = [\n".format(region)
+        var_name = region.replace("-", "_").replace(" ", "_").upper()
+        py_submodule_out += "{} = [\n".format(var_name)
         members = sorted(group.index.tolist())
         for idx, member in enumerate(members):
             item_line = '    "{}"'.format(member)
@@ -52,7 +53,8 @@ def create_submodule(name, df):
                 py_submodule_out += "\n"
         py_submodule_out += "]\n\n"
 
-    with open(root / "countrygroups" / (name + ".py"), "w") as f:
+    modulename = name.replace("-", "_")
+    with open(root / "countrygroups" / (modulename + ".py"), "w") as f:
         f.write(py_submodule_out)
 
 for name, df in sorted(dp.items()):
