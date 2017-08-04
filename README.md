@@ -128,27 +128,19 @@ Members of the Convention on the Organisation for Economic Co-operation and Deve
 
 ### Arab Group
 
-[data/arab-group.csv](arab-group.csv)
+[data/arab-group.csv](data/arab-group.csv)
 
-### African Group
+### UN Regional Groups
 
-[data/african-group.csv](african-group.csv)
+[data/un-regional-groups.csv](data/un-regional-groups.csv)
 
-### Asia-Pacific Group
+### IPCC AR5 Region definitions
 
-[data/asia-pacific-group.csv](asia-pacific-group.csv)
+[data/ar5.csv](data/ar5.csv)
 
-### Eastern European Group
+### SSP (Shared Socioeconomic Pathways) Database Region Definitions
 
-[data/eastern-european-group.csv](data/eastern-european-group.csv)
-
-### Latin American and Caribbean Group (GRULAC)
-
-[data/grulac.csv](data/grulac.csv)
-
-### Western European and Others Group (WEOG)
-
-[data/weog.csv](data/weog.csv)
+[data/ssp.csv](data/ssp.csv)
 
 
 ## Preparation

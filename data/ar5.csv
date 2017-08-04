@@ -1,0 +1,247 @@
+Code,Name,Region
+ALB,Albania,EIT
+ARM,Armenia,EIT
+AZE,Azerbaijan,EIT
+BLR,Belarus,EIT
+BIH,Bosnia & Herzegovina,EIT
+BGR,Bulgaria,EIT
+HRV,Croatia,EIT
+CYP,Cyprus,EIT
+CZE,Czechia,EIT
+EST,Estonia,EIT
+GEO,Georgia,EIT
+HUN,Hungary,EIT
+KAZ,Kazakhstan,EIT
+KGZ,Kyrgyzstan,EIT
+LVA,Latvia,EIT
+LTU,Lithuania,EIT
+MKD,Macedonia,EIT
+MLT,Malta,EIT
+MDA,Moldova,EIT
+MNE,Montenegro,EIT
+POL,Poland,EIT
+ROU,Romania,EIT
+RUS,Russia,EIT
+SRB,Serbia,EIT
+SVK,Slovakia,EIT
+SVN,Slovenia,EIT
+TJK,Tajikistan,EIT
+TKM,Turkmenistan,EIT
+UKR,Ukraine,EIT
+UZB,Uzbekistan,EIT
+AFG,Afghanistan,ASIA
+ASM,American Samoa,ASIA
+BGD,Bangladesh,ASIA
+BTN,Bhutan,ASIA
+IOT,British Indian Ocean Territory,ASIA
+BRN,Brunei,ASIA
+KHM,Cambodia,ASIA
+CHN,China,ASIA
+CXR,Christmas Island,ASIA
+CCK,Cocos (Keeling) Islands,ASIA
+COK,Cook Islands,ASIA
+FJI,Fiji,ASIA
+PYF,French Polynesia,ASIA
+HMD,Heard & McDonald Islands,ASIA
+IND,India,ASIA
+IDN,Indonesia,ASIA
+KIR,Kiribati,ASIA
+PRK,North Korea,ASIA
+LAO,Laos,ASIA
+MYS,Malaysia,ASIA
+MDV,Maldives,ASIA
+MHL,Marshall Islands,ASIA
+FSM,Micronesia,ASIA
+MNG,Mongolia,ASIA
+MMR,Myanmar,ASIA
+NRU,Nauru,ASIA
+NPL,Nepal,ASIA
+NCL,New Caledonia,ASIA
+NIU,Niue,ASIA
+NFK,Norfolk Island,ASIA
+MNP,Northern Mariana Islands,ASIA
+PAK,Pakistan,ASIA
+PLW,Palau,ASIA
+PNG,Papua New Guinea,ASIA
+PHL,Philippines,ASIA
+PCN,Pitcairn Islands,ASIA
+WSM,Samoa,ASIA
+SGP,Singapore,ASIA
+SLB,Solomon Islands,ASIA
+KOR,South Korea,ASIA
+LKA,Sri Lanka,ASIA
+THA,Thailand,ASIA
+TLS,Timor-Leste,ASIA
+TKL,Tokelau,ASIA
+TON,Tonga,ASIA
+TUV,Tuvalu,ASIA
+ISL,Iceland,ASIA
+VUT,Vanuatu,ASIA
+VNM,Vietnam,ASIA
+WLF,Wallis & Futuna,ASIA
+GGY,Guernsey,OECD1990
+JEY,Jersey,OECD1990
+ALA,Åland Islands,OECD1990
+AND,Andorra,OECD1990
+AUS,Australia,OECD1990
+AUT,Austria,OECD1990
+BEL,Belgium,OECD1990
+CAN,Canada,OECD1990
+DNK,Denmark,OECD1990
+FRO,Faroe Islands,OECD1990
+FIN,Finland,OECD1990
+FRA,France,OECD1990
+DEU,Germany,OECD1990
+GIB,Gibraltar,OECD1990
+GRC,Greece,OECD1990
+GRL,Greenland,OECD1990
+GUM,Guam,OECD1990
+GGY,Guernsey,OECD1990
+VAT,Vatican City,OECD1990
+ISL,Iceland,OECD1990
+IRL,Ireland,OECD1990
+IMN,Isle of Man,OECD1990
+ITA,Italy,OECD1990
+JPN,Japan,OECD1990
+JEY,Jersey,OECD1990
+LIE,Liechtenstein,OECD1990
+LUX,Luxembourg,OECD1990
+MCO,Monaco,OECD1990
+NLD,Netherlands,OECD1990
+NZL,New Zealand,OECD1990
+NOR,Norway,OECD1990
+PRT,Portugal,OECD1990
+SPM,St. Pierre & Miquelon,OECD1990
+SMR,San Marino,OECD1990
+ESP,Spain,OECD1990
+SJM,Svalbard & Jan Mayen,OECD1990
+SWE,Sweden,OECD1990
+CHE,Switzerland,OECD1990
+TUR,Turkey,OECD1990
+GBR,United Kingdom,OECD1990
+USA,United States,OECD1990
+AIA,Anguilla,LAM
+ATA,Antarctica,LAM
+ATG,Antigua & Barbuda,LAM
+ARG,Argentina,LAM
+ABW,Aruba,LAM
+BHS,Bahamas,LAM
+BRB,Barbados,LAM
+BLZ,Belize,LAM
+BMU,Bermuda,LAM
+BOL,Bolivia,LAM
+BVT,Bouvet Island,LAM
+BRA,Brazil,LAM
+VGB,British Virgin Islands,LAM
+CYM,Cayman Islands,LAM
+CHL,Chile,LAM
+COL,Colombia,LAM
+CRI,Costa Rica,LAM
+CUB,Cuba,LAM
+CUW,Curaçao,LAM
+DMA,Dominica,LAM
+DOM,Dominican Republic,LAM
+ECU,Ecuador,LAM
+SLV,El Salvador,LAM
+FLK,Falkland Islands,LAM
+GUF,French Guiana,LAM
+ATF,French Southern Territories,LAM
+GRD,Grenada,LAM
+GLP,Guadeloupe,LAM
+GTM,Guatemala,LAM
+GUY,Guyana,LAM
+HTI,Haiti,LAM
+HND,Honduras,LAM
+JAM,Jamaica,LAM
+MTQ,Martinique,LAM
+MEX,Mexico,LAM
+MSR,Montserrat,LAM
+BES,Caribbean Netherlands,LAM
+NIC,Nicaragua,LAM
+PAN,Panama,LAM
+PRY,Paraguay,LAM
+PER,Peru,LAM
+PRI,Puerto Rico,LAM
+KNA,St. Kitts & Nevis,LAM
+LCA,St. Lucia,LAM
+VCT,St. Vincent & Grenadines,LAM
+SXM,Sint Maarten,LAM
+SGS,South Georgia & South Sandwich Islands,LAM
+SUR,Suriname,LAM
+TTO,Trinidad & Tobago,LAM
+TCA,Turks & Caicos Islands,LAM
+URY,Uruguay,LAM
+VIR,U.S. Virgin Islands,LAM
+VEN,Venezuela,LAM
+DZA,Algeria,MAF
+AGO,Angola,MAF
+BHR,Bahrain,MAF
+BEN,Benin,MAF
+BWA,Botswana,MAF
+BFA,Burkina Faso,MAF
+BDI,Burundi,MAF
+CMR,Cameroon,MAF
+CPV,Cabo Verde,MAF
+CAF,Central African Republic,MAF
+TCD,Chad,MAF
+COM,Comoros,MAF
+COG,Republic of the Congo,MAF
+COD,DR Congo,MAF
+CIV,Côte d’Ivoire,MAF
+DJI,Djibouti,MAF
+EGY,Egypt,MAF
+GNQ,Equatorial Guinea,MAF
+ERI,Eritrea,MAF
+ETH,Ethiopia,MAF
+GAB,Gabon,MAF
+GMB,Gambia,MAF
+GHA,Ghana,MAF
+GIN,Guinea,MAF
+GNB,Guinea-Bissau,MAF
+IRN,Iran,MAF
+IRQ,Iraq,MAF
+ISR,Israel,MAF
+JOR,Jordan,MAF
+KEN,Kenya,MAF
+KWT,Kuwait,MAF
+LBN,Lebanon,MAF
+LSO,Lesotho,MAF
+LBR,Liberia,MAF
+LBY,Libya,MAF
+MDG,Madagascar,MAF
+MWI,Malawi,MAF
+MLI,Mali,MAF
+MRT,Mauritania,MAF
+MUS,Mauritius,MAF
+MYT,Mayotte,MAF
+MAR,Morocco,MAF
+MOZ,Mozambique,MAF
+NAM,Namibia,MAF
+NER,Niger,MAF
+NGA,Nigeria,MAF
+OMN,Oman,MAF
+PSE,Palestine,MAF
+QAT,Qatar,MAF
+REU,Réunion,MAF
+RWA,Rwanda,MAF
+SHN,St. Helena,MAF
+STP,São Tomé & Príncipe,MAF
+SAU,Saudi Arabia,MAF
+SEN,Senegal,MAF
+SYC,Seychelles,MAF
+SLE,Sierra Leone,MAF
+SOM,Somalia,MAF
+ZAF,South Africa,MAF
+SSD,South Sudan,MAF
+SDN,Sudan,MAF
+SWZ,Swaziland,MAF
+SYR,Syria,MAF
+TZA,Tanzania,MAF
+TGO,Togo,MAF
+TUN,Tunisia,MAF
+UGA,Uganda,MAF
+ARE,United Arab Emirates,MAF
+ESH,Western Sahara,MAF
+YEM,Yemen,MAF
+ZMB,Zambia,MAF
+ZWE,Zimbabwe,MAF

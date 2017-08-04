@@ -51,6 +51,10 @@
      {
       "name": "United Nations Regional Groups of Member States",
       "web": "http://www.un.org/depts/DGACM/RegionalGroups.shtml"
+    },
+    {
+      "name": "AR5 Region Definitions",
+      "web": "https://tntcat.iiasa.ac.at/AR5DB/dsd?Action=htmlpage&page=about"
     }
   ],
   "resources": [
@@ -552,8 +556,34 @@
         ],
         "primaryKey": "Code"
       }
+    },
+    {
+      "name": "ar5",
+      "path": "data/ar5.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "subregions": true,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Country Name"
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "description": "AR5 region definition"
+          }
+        ],
+        "primaryKey": "Code"
+      }
     }
-
   ],
   "name": "countrygroups",
   "title": "Country Groups",
