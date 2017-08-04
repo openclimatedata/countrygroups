@@ -54,7 +54,7 @@ def create_submodule(name, df):
         py_submodule_out += "]\n\n"
 
     modulename = name.replace("-", "_")
-    with open(root / "countrygroups" / (modulename + ".py"), "w") as f:
+    with open(str(root / "countrygroups" / (modulename + ".py")), "w") as f:
         f.write(py_submodule_out)
 
 for name, df in sorted(dp.items()):
@@ -85,8 +85,8 @@ for name, df in sorted(dp.items()):
     js_out += "]\n\n"
 
 
-with open(root / "countrygroups/__init__.py", "w") as f:
+with open(str(root / "countrygroups/__init__.py"), "w") as f:
     f.write(py_out)
 
-with open(root / "index.js", "w") as f:
+with open(str(root / "index.js"), "w") as f:
     f.write(js_out)
