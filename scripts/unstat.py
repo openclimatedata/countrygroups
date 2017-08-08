@@ -1,0 +1,305 @@
+import yaml
+
+unstat = """
+- Africa:
+    Northern Africa:
+        - Algeria
+        - Egypt
+        - Libya
+        - Morocco
+        - Sudan
+        - Tunisia
+        - Western Sahara
+    Sub-Saharan Africa:
+        Eastern Africa:
+            - British Indian Ocean Territory
+            - Burundi
+            - Comoros
+            - Djibouti
+            - Eritrea
+            - Ethiopia
+            - French Southern Territories
+            - Kenya
+            - Madagascar
+            - Malawi
+            - Mauritius
+            - Mayotte
+            - Mozambique
+            - Réunion
+            - Rwanda
+            - Seychelles
+            - Somalia
+            - South Sudan
+            - Uganda
+            - United Republic of Tanzania
+            - Zambia
+            - Zimbabwe
+        Middle Africa:
+            - Angola
+            - Cameroon
+            - Central African Republic
+            - Chad
+            - Congo
+            - Democratic Republic of the Congo
+            - Equatorial Guinea
+            - Gabon
+            - Sao Tome and Principe
+        Southern Africa:
+            - Botswana
+            - Lesotho
+            - Namibia
+            - South Africa
+            - Swaziland
+        Western Africa:
+            - Benin
+            - Burkina Faso
+            - Cabo Verde
+            - Côte d'Ivoire
+            - Gambia
+            - Ghana
+            - Guinea
+            - Guinea-Bissau
+            - Liberia
+            - Mali
+            - Mauritania
+            - Niger
+            - Nigeria
+            - Saint Helena
+            - Senegal
+            - Sierra Leone
+            - Togo
+- Americas:
+    Latin America and the Caribbean:
+        Caribbean:
+            - Anguilla
+            - Antigua and Barbuda
+            - Aruba
+            - Bahamas
+            - Barbados
+            - Bonaire, Sint Eustatius and Saba
+            - British Virgin Islands
+            - Cayman Islands
+            - Cuba
+            - Curaçao
+            - Dominica
+            - Dominican Republic
+            - Grenada
+            - Guadeloupe
+            - Haiti
+            - Jamaica
+            - Martinique
+            - Montserrat
+            - Puerto Rico
+            - Saint Barthélemy
+            - Saint Kitts and Nevis
+            - Saint Lucia
+            - Saint Martin (French Part)
+            - Saint Vincent and the Grenadines
+            - Sint Maarten (Dutch part)
+            - Trinidad and Tobago
+            - Turks and Caicos Islands
+            - United States Virgin Islands
+        Central America:
+            - Belize
+            - Costa Rica
+            - El Salvador
+            - Guatemala
+            - Honduras
+            - Mexico
+            - Nicaragua
+            - Panama
+        South America:
+            - Argentina
+            - Bolivia (Plurinational State of)
+            - Bouvet Island
+            - Brazil
+            - Chile
+            - Colombia
+            - Ecuador
+            - Falkland Islands (Malvinas)
+            - French Guiana
+            - Guyana
+            - Paraguay
+            - Peru
+            - South Georgia and the South Sandwich Islands
+            - Suriname
+            - Uruguay
+            - Venezuela (Bolivarian Republic of)
+    Northern America:
+        - Bermuda
+        - Canada
+        - Greenland
+        - Saint Pierre and Miquelon
+        - United States of America
+- Antarctica
+- Asia:
+    Central Asia:
+        - Kazakhstan
+        - Kyrgyzstan
+        - Tajikistan
+        - Turkmenistan
+        - Uzbekistan
+    Eastern Asia:
+        - China
+        - China, Hong Kong Special Administrative Region
+        - China, Macao Special Administrative Region
+        - Democratic People's Republic of Korea
+        - Japan
+        - Mongolia
+        - Republic of Korea
+    South-eastern Asia:
+        - Brunei Darussalam
+        - Cambodia
+        - Indonesia
+        - Lao People's Democratic Republic
+        - Malaysia
+        - Myanmar
+        - Philippines
+        - Singapore
+        - Thailand
+        - Timor-Leste
+        - Viet Nam
+    Southern Asia:
+        - Afghanistan
+        - Bangladesh
+        - Bhutan
+        - India
+        - Iran (Islamic Republic of)
+        - Maldives
+        - Nepal
+        - Pakistan
+        - Sri Lanka
+    Western Asia:
+        - Armenia
+        - Azerbaijan
+        - Bahrain
+        - Cyprus
+        - Georgia
+        - Iraq
+        - Israel
+        - Jordan
+        - Kuwait
+        - Lebanon
+        - Oman
+        - Qatar
+        - Saudi Arabia
+        - State of Palestine
+        - Syrian Arab Republic
+        - Turkey
+        - United Arab Emirates
+        - Yemen
+- Europe:
+    Eastern Europe:
+        - Belarus
+        - Bulgaria
+        - Czechia
+        - Hungary
+        - Poland
+        - Republic of Moldova
+        - Romania
+        - Russian Federation
+        - Slovakia
+        - Ukraine
+    Northern Europe:
+        - Åland Islands
+        - Channel Islands:
+            - Guernsey
+            - Jersey
+            - Sark
+        - Denmark
+        - Estonia
+        - Faroe Islands
+        - Finland
+        - Iceland
+        - Ireland
+        - Isle of Man
+        - Latvia
+        - Lithuania
+        - Norway
+        - Svalbard and Jan Mayen Islands
+        - Sweden
+        - United Kingdom of Great Britain and Northern Ireland
+    Southern Europe:
+        - Albania
+        - Andorra
+        - Bosnia and Herzegovina
+        - Croatia
+        - Gibraltar
+        - Greece
+        - Holy See
+        - Italy
+        - Malta
+        - Montenegro
+        - Portugal
+        - San Marino
+        - Serbia
+        - Slovenia
+        - Spain
+        - The former Yugoslav Republic of Macedonia
+    Western Europe:
+        - Austria
+        - Belgium
+        - France
+        - Germany
+        - Liechtenstein
+        - Luxembourg
+        - Monaco
+        - Netherlands
+        - Switzerland
+- Oceania:
+    Australia and New Zealand:
+        - Australia
+        - Christmas Island
+        - Cocos (Keeling) Islands
+        - Heard Island and McDonald Islands
+        - New Zealand
+        - Norfolk Island
+    Melanesia:
+        - Fiji
+        - New Caledonia
+        - Papua New Guinea
+        - Solomon Islands
+        - Vanuatu
+    Micronesia:
+        - Guam
+        - Kiribati
+        - Marshall Islands
+        - Micronesia (Federated States of)
+        - Nauru
+        - Northern Mariana Islands
+        - Palau
+        - United States Minor Outlying Islands
+    Polynesia:
+        - American Samoa
+        - Cook Islands
+        - French Polynesia
+        - Niue
+        - Pitcairn
+        - Samoa
+        - Tokelau
+        - Tonga
+        - Tuvalu
+        - Wallis and Futuna Islands
+"""
+
+tree = yaml.load(unstat)
+
+class Group(list):
+    def _add_dict(self, d):
+        for k, v in d.items():
+            k = k.replace(' ', '_').replace('-', '_').upper()
+            v = Group(v)
+            setattr(self, k, v)
+            self += v
+
+    def __init__(self, d):
+        if isinstance(d, dict):
+            self._add_dict(d)
+        else:
+            for v in d:
+                if isinstance(v, dict):
+                    self._add_dict(v)
+                else:
+                    self.append(v)
+
+un = Group(tree)
