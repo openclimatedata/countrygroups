@@ -41,6 +41,7 @@ df.columns = df.iloc[0]
 df = df.reindex(df.index.drop(1))
 df.columns.name = None
 
+
 # Remove (6)(7) etc.
 def remove_numbers(name):
     p = re.compile('\(\d\)')

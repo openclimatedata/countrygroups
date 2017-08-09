@@ -70,12 +70,13 @@ South Georgia and the South Sandwich Islands, Suriname, Trinidad and Tobago,
 Turks and Caicos Islands, Uruguay, US Virgin Islands, Venezuela"""
 
 ar5 = {
-"oecd1990": oecd1990, "eit": eit, "asia": asia, "maf": maf, "lam": lam
+    "oecd1990": oecd1990, "eit": eit, "asia": asia, "maf": maf, "lam": lam
 }
 
 records = []
 for key, countries in ar5.items():
-    items = [(to_code(name), name, key.upper()) for name in countries.replace("\n", " ").split(", ")]
+    items = [(to_code(name), name, key.upper())
+             for name in countries.replace("\n", " ").split(", ")]
     records = records + items
 
 df = pd.DataFrame(records, columns=["Code", "Name", "Region"])

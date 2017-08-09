@@ -2,7 +2,6 @@ import pandas as pd
 
 from pathlib import Path
 from countrynames import to_alpha_3
-from pycountry import countries
 
 
 root = Path(__file__).parents[1]
