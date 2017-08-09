@@ -6,6 +6,7 @@ from util import root, to_code
 regions = yaml.load(
     open(str(root / "archive/unstats-geographical-regions.yaml")))
 
+
 def convert_names(subgroup):
     if isinstance(subgroup, dict):
         for k, v in subgroup.items():
@@ -30,5 +31,6 @@ for key, value in regions.items():
 json.dump(
     regions,
     open(str(root / "data/unstats-geographical-regions.json"), "w"),
-    indent=4
+    indent=4,
+    sort_keys=True
 )

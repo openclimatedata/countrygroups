@@ -6,7 +6,7 @@ listed in Data Package.
 import json
 import pandas as pd
 
-from  pathlib import Path
+from pathlib import Path
 from pandas_datapackage_reader import read_datapackage
 from yapf.yapflib.yapf_api import FormatCode
 
@@ -21,6 +21,8 @@ countrygroups
 -------------
 
 """
+
+from shortcountrynames import to_name
 
 from ._version import get_versions
 __version__ = get_versions()['version']
@@ -44,6 +46,9 @@ class Group(list):
                 else:
                     self.append(v)
 
+    @property
+    def names(self):
+        return [to_name(item) for item in self]
 
 '''
 
@@ -52,6 +57,7 @@ js_out = '''// Country Groups
 '''
 
 py_submodules = []
+
 
 def create_submodule(name, df):
     py_submodule_out = '"""\ncountrygroups.{}\n--------------'.format(
@@ -103,13 +109,15 @@ for name, df in sorted(dp.items()):
     js_out += "]\n\n"
 
 metadata = json.load(open(str(root / "datapackage.json")))
-nested_groups = [item for item in metadata["resources"] if item["format"] == "json"]
+nested_groups = [item for item in metadata["resources"]
+                 if item["format"] == "json"]
 
 for nested_group in nested_groups:
     group_id = nested_group["name"].replace("-", "_").upper()
-    data = json.load(open(nested_group["path"], "r"))
+    with open(nested_group["path"], "r") as f:
+        data = f.read()
     py_out += "{} = Group({{{}}})\n".format(
-        group_id, FormatCode(str(data))[0][1:-2])
+        group_id, FormatCode(data)[0][1:-2])
 
 with open(str(root / "countrygroups/__init__.py"), "w") as f:
     f.write(py_out)

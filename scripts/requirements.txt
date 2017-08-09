@@ -8,4 +8,6 @@ bs4
 requests
 pandas_datapackage_reader
 pyyaml
+yamlordereddictloader
 yapf
+shortcountrynames
