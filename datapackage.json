@@ -55,6 +55,10 @@
     {
       "name": "AR5 Region Definitions",
       "web": "https://tntcat.iiasa.ac.at/AR5DB/dsd?Action=htmlpage&page=about"
+    },
+    {
+      "name": "UN Statistics Division - Standard country or area codes for statistical use (M49)",
+      "web": "https://unstats.un.org/unsd/methodology/m49/"
     }
   ],
   "resources": [
@@ -583,11 +587,17 @@
         ],
         "primaryKey": "Code"
       }
+    },
+    {
+      "name": "unstats-geographical-regions",
+      "path": "data/unstats-geographical-regions.json",
+      "format": "json",
+      "mediatype": "text/json"
     }
   ],
   "name": "countrygroups",
   "title": "Country Groups",
   "version": "0.1.2",
-  "description": "Ccountry groups, especially those in the United Nations Framework Convention on Climate Change (UNFCCC)",
+  "description": "Country groups, especially those in the United Nations Framework Convention on Climate Change (UNFCCC)",
   "repository": "git://github.com/openclimatedata/unfccc-groups.git"
 }

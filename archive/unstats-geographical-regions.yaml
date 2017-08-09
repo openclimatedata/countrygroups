@@ -1,7 +1,4 @@
-import yaml
-
-unstat = """
-- Africa:
+Africa:
     Northern Africa:
         - Algeria
         - Egypt
@@ -68,7 +65,7 @@ unstat = """
             - Senegal
             - Sierra Leone
             - Togo
-- Americas:
+Americas:
     Latin America and the Caribbean:
         Caribbean:
             - Anguilla
@@ -131,8 +128,9 @@ unstat = """
         - Greenland
         - Saint Pierre and Miquelon
         - United States of America
-- Antarctica
-- Asia:
+Antarctica:
+  - Antarctica
+Asia:
     Central Asia:
         - Kazakhstan
         - Kyrgyzstan
@@ -188,7 +186,7 @@ unstat = """
         - Turkey
         - United Arab Emirates
         - Yemen
-- Europe:
+Europe:
     Eastern Europe:
         - Belarus
         - Bulgaria
@@ -246,7 +244,7 @@ unstat = """
         - Monaco
         - Netherlands
         - Switzerland
-- Oceania:
+Oceania:
     Australia and New Zealand:
         - Australia
         - Christmas Island
@@ -280,26 +278,3 @@ unstat = """
         - Tonga
         - Tuvalu
         - Wallis and Futuna Islands
-"""
-
-tree = yaml.load(unstat)
-
-class Group(list):
-    def _add_dict(self, d):
-        for k, v in d.items():
-            k = k.replace(' ', '_').replace('-', '_').upper()
-            v = Group(v)
-            setattr(self, k, v)
-            self += v
-
-    def __init__(self, d):
-        if isinstance(d, dict):
-            self._add_dict(d)
-        else:
-            for v in d:
-                if isinstance(v, dict):
-                    self._add_dict(v)
-                else:
-                    self.append(v)
-
-un = Group(tree)

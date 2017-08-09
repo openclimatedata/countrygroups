@@ -9,6 +9,24 @@ __version__ = get_versions()['version']
 del get_versions
 
 
+class Group(list):
+    def _add_dict_items(self, d):
+        for k, v in d.items():
+            v = Group(v)
+            setattr(self, k, v)
+            self += v
+
+    def __init__(self, group):
+        if isinstance(group, dict):
+            self._add_dict_items(group)
+        else:
+            for v in group:
+                if isinstance(v, dict):
+                    self._add_dict_items(v)
+                else:
+                    self.append(v)
+
+
 ANNEX_ONE = [
     "AUS",
     "AUT",
@@ -862,3 +880,78 @@ UNFCCC = [
     "ZWE"
 ]
 
+UNSTATS_GEOGRAPHICAL_REGIONS = Group({
+    'OCEANIA': {
+        'MELANESIA': ['FJI', 'NCL', 'PNG', 'SLB', 'VUT'],
+        'POLYNESIA':
+        ['ASM', 'COK', 'PYF', 'NIU', 'PCN', 'WSM', 'TKL', 'TON', 'TUV', 'WLF'],
+        'MICRONESIA': ['GUM', 'KIR', 'MHL', 'FSM', 'NRU', 'MNP', 'PLW', 'UMI'],
+        'AUSTRALIA_AND_NEW_ZEALAND':
+        ['AUS', 'CXR', 'CCK', 'HMD', 'NZL', 'NFK']
+    },
+    'EUROPE': {
+        'NORTHERN_EUROPE': [
+            'ALA', {
+                'CHANNEL_ISLANDS': ['GGY', 'JEY']
+            }, 'DNK', 'EST', 'FRO', 'FIN', 'ISL', 'IRL', 'IMN', 'LVA', 'LTU',
+            'NOR', 'SJM', 'SWE', 'GBR'
+        ],
+        'EASTERN_EUROPE':
+        ['BLR', 'BGR', 'CZE', 'HUN', 'POL', 'MDA', 'ROU', 'RUS', 'SVK', 'UKR'],
+        'SOUTHERN_EUROPE': [
+            'ALB', 'AND', 'BIH', 'HRV', 'GIB', 'GRC', 'VAT', 'ITA', 'MLT',
+            'MNE', 'PRT', 'SMR', 'SRB', 'SVN', 'ESP', 'MKD'
+        ],
+        'WESTERN_EUROPE':
+        ['AUT', 'BEL', 'FRA', 'DEU', 'LIE', 'LUX', 'MCO', 'NLD', 'CHE']
+    },
+    'AFRICA': {
+        'NORTHERN_AFRICA': ['DZA', 'EGY', 'LBY', 'MAR', 'SDN', 'TUN', 'ESH'],
+        'SUB_SAHARAN_AFRICA': {
+            'EASTERN_AFRICA': [
+                'IOT', 'BDI', 'COM', 'DJI', 'ERI', 'ETH', 'ATF', 'KEN', 'MDG',
+                'MWI', 'MUS', 'MYT', 'MOZ', 'REU', 'RWA', 'SYC', 'SOM', 'SSD',
+                'UGA', 'TZA', 'ZMB', 'ZWE'
+            ],
+            'SOUTHERN_AFRICA': ['BWA', 'LSO', 'NAM', 'ZAF', 'SWZ'],
+            'WESTERN_AFRICA': [
+                'BEN', 'BFA', 'CPV', 'CIV', 'GMB', 'GHA', 'GIN', 'GNB', 'LBR',
+                'MLI', 'MRT', 'NER', 'RUS', 'SHN', 'SEN', 'SLE', 'TGO'
+            ],
+            'MIDDLE_AFRICA':
+            ['AGO', 'CMR', 'CAF', 'TCD', 'COG', 'COD', 'GNQ', 'GAB', 'STP']
+        }
+    },
+    'AMERICAS': {
+        'NORTHERN_AMERICA': ['BMU', 'CAN', 'GRL', 'SPM', 'USA'],
+        'LATIN_AMERICA_AND_THE_CARIBBEAN': {
+            'SOUTH_AMERICA': [
+                'ARG', 'BOL', 'BVT', 'BRA', 'CHL', 'COL', 'ECU', 'FLK', 'GUF',
+                'GUY', 'PRY', 'PER', 'SGS', 'SUR', 'URY', 'VEN'
+            ],
+            'CENTRAL_AMERICA':
+            ['BLZ', 'CRI', 'SLV', 'GTM', 'IND', 'MEX', 'NIC', 'PAN'],
+            'CARIBBEAN': [
+                'AIA', 'ATG', 'ABW', 'BHS', 'BRB', 'BES', 'VGB', 'CYM', 'CUB',
+                'CUW', 'DMA', 'DOM', 'GRD', 'GLP', 'HTI', 'JAM', 'MTQ', 'MSR',
+                'PRI', 'BLM', 'KNA', 'LCA', 'MAF', 'VCT', 'SXM', 'TTO', 'TCA',
+                'VIR'
+            ]
+        }
+    },
+    'ANTARCTICA': ['ATA'],
+    'ASIA': {
+        'WESTERN_ASIA': [
+            'ARM', 'AZE', 'BHR', 'CYP', 'GEO', 'IRQ', 'ISR', 'JOR', 'KWT',
+            'LBN', 'OMN', 'QAT', 'SAU', 'PSE', 'SYR', 'TUR', 'ARE', 'YEM'
+        ],
+        'EASTERN_ASIA': ['CHN', 'HKG', 'MAC', 'PRK', 'JPN', 'MNG', 'KOR'],
+        'CENTRAL_ASIA': ['KAZ', 'KGZ', 'TJK', 'TKM', 'UZB'],
+        'SOUTH_EASTERN_ASIA': [
+            'BRN', 'KHM', 'IDN', 'LAO', 'MYS', 'MMR', 'PHL', 'SGP', 'THA',
+            'TLS', 'VNM'
+        ],
+        'SOUTHERN_ASIA':
+        ['AFG', 'BGD', 'BTN', 'IND', 'IRN', 'MDV', 'NPL', 'PAK', 'LKA']
+    }
+})

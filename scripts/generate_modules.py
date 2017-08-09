@@ -3,12 +3,12 @@ Generate Python and JavaScript modules with ISO identifier codes of groups
 listed in Data Package.
 """
 
+import json
 import pandas as pd
-import pprint
 
 from  pathlib import Path
 from pandas_datapackage_reader import read_datapackage
-
+from yapf.yapflib.yapf_api import FormatCode
 
 root = Path(__file__).parents[1]
 
@@ -25,6 +25,24 @@ countrygroups
 from ._version import get_versions
 __version__ = get_versions()['version']
 del get_versions
+
+
+class Group(list):
+    def _add_dict_items(self, d):
+        for k, v in d.items():
+            v = Group(v)
+            setattr(self, k, v)
+            self += v
+
+    def __init__(self, group):
+        if isinstance(group, dict):
+            self._add_dict_items(group)
+        else:
+            for v in group:
+                if isinstance(v, dict):
+                    self._add_dict_items(v)
+                else:
+                    self.append(v)
 
 
 '''
@@ -84,6 +102,14 @@ for name, df in sorted(dp.items()):
     py_out += "]\n\n"
     js_out += "]\n\n"
 
+metadata = json.load(open(str(root / "datapackage.json")))
+nested_groups = [item for item in metadata["resources"] if item["format"] == "json"]
+
+for nested_group in nested_groups:
+    group_id = nested_group["name"].replace("-", "_").upper()
+    data = json.load(open(nested_group["path"], "r"))
+    py_out += "{} = Group({{{}}})\n".format(
+        group_id, FormatCode(str(data))[0][1:-2])
 
 with open(str(root / "countrygroups/__init__.py"), "w") as f:
     f.write(py_out)

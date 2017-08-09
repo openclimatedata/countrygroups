@@ -142,6 +142,10 @@ Members of the Convention on the Organisation for Economic Co-operation and Deve
 
 [data/ssp.csv](data/ssp.csv)
 
+### UN Statistical Division Geographical Regions
+
+[data/unstats-geographical-regions.json](data/unstats-geographical-regions.json)
+
 
 ## Preparation
 
