@@ -25,6 +25,7 @@ setup(
     author='Robert Gieseke',
     author_email='robert.gieseke@pik-potsdam.de',
     license='CC0',
+    install_requires=['shortcountrynames']
     platforms='any',
     classifiers=[
         "Development Status :: 3 - Alpha",

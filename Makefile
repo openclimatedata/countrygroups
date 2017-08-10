@@ -56,6 +56,7 @@ tag:
 	./scripts/create_tag.sh
 
 publish-on-pypi:
+	-rm -rf build dist
 	@status=$$(git status --porcelain); \
 	if test "x$${status}" = x; then \
 		python setup.py bdist_wheel --universal; \
@@ -65,6 +66,7 @@ publish-on-pypi:
 	fi;
 
 publish-on-test-pypi:
+	-rm -rf build dist
 	@status=$$(git status --porcelain); \
 	if test "x$${status}" = x; then \
 		python setup.py bdist_wheel --universal; \
