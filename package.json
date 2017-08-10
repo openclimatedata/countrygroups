@@ -1,6 +1,6 @@
 {
   "name": "countrygroups",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "ISO-Codes of country groups, especially those related to the UNFCCC negotiation process",
   "main": "index.js",
   "scripts": {
