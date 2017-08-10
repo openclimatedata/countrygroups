@@ -22,9 +22,10 @@ def convert_names(subgroup):
                 else:
                     subgroup[idx] = to_code(item)
         subgroup.sort(key=lambda x: x if isinstance(x, str)
-                                      else list(x.keys())[0])
+                      else list(x.keys())[0])
 
     return(subgroup)
+
 
 for key in list(regions.keys()):
     new_name = key.replace(' ', '_').replace('-', '_').upper()

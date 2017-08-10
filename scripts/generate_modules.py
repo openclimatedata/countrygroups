@@ -4,7 +4,6 @@ listed in Data Package.
 """
 
 import json
-import pandas as pd
 
 from pathlib import Path
 from pandas_datapackage_reader import read_datapackage
