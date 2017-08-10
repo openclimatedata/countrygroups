@@ -9,4 +9,5 @@ requests
 shortcountrynames
 twine
 unidecode
+wheel
 yapf
