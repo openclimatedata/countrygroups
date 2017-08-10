@@ -279,35 +279,35 @@ UNFCCC = Group([
 
 UNSTATS_GEOGRAPHICAL_REGIONS = Group({
     "AFRICA": {
-        "NORTHERN_AFRICA": ["DZA", "EGY", "LBY", "MAR", "SDN", "TUN", "ESH"],
+        "NORTHERN_AFRICA": ["DZA", "EGY", "ESH", "LBY", "MAR", "SDN", "TUN"],
         "SUB_SAHARAN_AFRICA": {
             "EASTERN_AFRICA": [
-                "IOT", "BDI", "COM", "DJI", "ERI", "ETH", "ATF", "KEN", "MDG",
-                "MWI", "MUS", "MYT", "MOZ", "REU", "RWA", "SYC", "SOM", "SSD",
-                "UGA", "TZA", "ZMB", "ZWE"
+                "ATF", "BDI", "COM", "DJI", "ERI", "ETH", "IOT", "KEN", "MDG",
+                "MOZ", "MUS", "MWI", "MYT", "REU", "RWA", "SOM", "SSD", "SYC",
+                "TZA", "UGA", "ZMB", "ZWE"
             ],
             "MIDDLE_AFRICA":
-            ["AGO", "CMR", "CAF", "TCD", "COG", "COD", "GNQ", "GAB", "STP"],
-            "SOUTHERN_AFRICA": ["BWA", "LSO", "NAM", "ZAF", "SWZ"],
+            ["AGO", "CAF", "CMR", "COD", "COG", "GAB", "GNQ", "STP", "TCD"],
+            "SOUTHERN_AFRICA": ["BWA", "LSO", "NAM", "SWZ", "ZAF"],
             "WESTERN_AFRICA": [
-                "BEN", "BFA", "CPV", "CIV", "GMB", "GHA", "GIN", "GNB", "LBR",
-                "MLI", "MRT", "NER", "NGA", "SHN", "SEN", "SLE", "TGO"
+                "BEN", "BFA", "CIV", "CPV", "GHA", "GIN", "GMB", "GNB", "LBR",
+                "MLI", "MRT", "NER", "NGA", "SEN", "SHN", "SLE", "TGO"
             ]
         }
     },
     "AMERICAS": {
         "LATIN_AMERICA_AND_THE_CARIBBEAN": {
             "CARIBBEAN": [
-                "AIA", "ATG", "ABW", "BHS", "BRB", "BES", "VGB", "CYM", "CUB",
-                "CUW", "DMA", "DOM", "GRD", "GLP", "HTI", "JAM", "MTQ", "MSR",
-                "PRI", "BLM", "KNA", "LCA", "MAF", "VCT", "SXM", "TTO", "TCA",
+                "ABW", "AIA", "ATG", "BES", "BHS", "BLM", "BRB", "CUB", "CUW",
+                "CYM", "DMA", "DOM", "GLP", "GRD", "HTI", "JAM", "KNA", "LCA",
+                "MAF", "MSR", "MTQ", "PRI", "SXM", "TCA", "TTO", "VCT", "VGB",
                 "VIR"
             ],
             "CENTRAL_AMERICA":
-            ["BLZ", "CRI", "SLV", "GTM", "HND", "MEX", "NIC", "PAN"],
+            ["BLZ", "CRI", "GTM", "HND", "MEX", "NIC", "PAN", "SLV"],
             "SOUTH_AMERICA": [
-                "ARG", "BOL", "BVT", "BRA", "CHL", "COL", "ECU", "FLK", "GUF",
-                "GUY", "PRY", "PER", "SGS", "SUR", "URY", "VEN"
+                "ARG", "BOL", "BRA", "BVT", "CHL", "COL", "ECU", "FLK", "GUF",
+                "GUY", "PER", "PRY", "SGS", "SUR", "URY", "VEN"
             ]
         },
         "NORTHERN_AMERICA": ["BMU", "CAN", "GRL", "SPM", "USA"]
@@ -315,40 +315,40 @@ UNSTATS_GEOGRAPHICAL_REGIONS = Group({
     "ANTARCTICA": ["ATA"],
     "ASIA": {
         "CENTRAL_ASIA": ["KAZ", "KGZ", "TJK", "TKM", "UZB"],
-        "EASTERN_ASIA": ["CHN", "HKG", "MAC", "PRK", "JPN", "MNG", "KOR"],
+        "EASTERN_ASIA": ["CHN", "HKG", "JPN", "KOR", "MAC", "MNG", "PRK"],
         "SOUTHERN_ASIA":
-        ["AFG", "BGD", "BTN", "IND", "IRN", "MDV", "NPL", "PAK", "LKA"],
+        ["AFG", "BGD", "BTN", "IND", "IRN", "LKA", "MDV", "NPL", "PAK"],
         "SOUTH_EASTERN_ASIA": [
-            "BRN", "KHM", "IDN", "LAO", "MYS", "MMR", "PHL", "SGP", "THA",
+            "BRN", "IDN", "KHM", "LAO", "MMR", "MYS", "PHL", "SGP", "THA",
             "TLS", "VNM"
         ],
         "WESTERN_ASIA": [
-            "ARM", "AZE", "BHR", "CYP", "GEO", "IRQ", "ISR", "JOR", "KWT",
-            "LBN", "OMN", "QAT", "SAU", "PSE", "SYR", "TUR", "ARE", "YEM"
+            "ARE", "ARM", "AZE", "BHR", "CYP", "GEO", "IRQ", "ISR", "JOR",
+            "KWT", "LBN", "OMN", "PSE", "QAT", "SAU", "SYR", "TUR", "YEM"
         ]
     },
     "EUROPE": {
         "EASTERN_EUROPE":
-        ["BLR", "BGR", "CZE", "HUN", "POL", "MDA", "ROU", "RUS", "SVK", "UKR"],
+        ["BGR", "BLR", "CZE", "HUN", "MDA", "POL", "ROU", "RUS", "SVK", "UKR"],
         "NORTHERN_EUROPE": [
             "ALA", {
                 "CHANNEL_ISLANDS": ["GGY", "JEY"]
-            }, "DNK", "EST", "FRO", "FIN", "ISL", "IRL", "IMN", "LVA", "LTU",
-            "NOR", "SJM", "SWE", "GBR"
+            }, "DNK", "EST", "FIN", "FRO", "GBR", "IMN", "IRL", "ISL", "LTU",
+            "LVA", "NOR", "SJM", "SWE"
         ],
         "SOUTHERN_EUROPE": [
-            "ALB", "AND", "BIH", "HRV", "GIB", "GRC", "VAT", "ITA", "MLT",
-            "MNE", "PRT", "SMR", "SRB", "SVN", "ESP", "MKD"
+            "ALB", "AND", "BIH", "ESP", "GIB", "GRC", "HRV", "ITA", "MKD",
+            "MLT", "MNE", "PRT", "SMR", "SRB", "SVN", "VAT"
         ],
         "WESTERN_EUROPE":
-        ["AUT", "BEL", "FRA", "DEU", "LIE", "LUX", "MCO", "NLD", "CHE"]
+        ["AUT", "BEL", "CHE", "DEU", "FRA", "LIE", "LUX", "MCO", "NLD"]
     },
     "OCEANIA": {
         "AUSTRALIA_AND_NEW_ZEALAND":
-        ["AUS", "CXR", "CCK", "HMD", "NZL", "NFK"],
+        ["AUS", "CCK", "CXR", "HMD", "NFK", "NZL"],
         "MELANESIA": ["FJI", "NCL", "PNG", "SLB", "VUT"],
-        "MICRONESIA": ["GUM", "KIR", "MHL", "FSM", "NRU", "MNP", "PLW", "UMI"],
+        "MICRONESIA": ["FSM", "GUM", "KIR", "MHL", "MNP", "NRU", "PLW", "UMI"],
         "POLYNESIA":
-        ["ASM", "COK", "PYF", "NIU", "PCN", "WSM", "TKL", "TON", "TUV", "WLF"]
+        ["ASM", "COK", "NIU", "PCN", "PYF", "TKL", "TON", "TUV", "WLF", "WSM"]
     }
 })

@@ -21,6 +21,9 @@ def convert_names(subgroup):
                     subgroup.pop(idx)
                 else:
                     subgroup[idx] = to_code(item)
+        subgroup.sort(key=lambda x: x if isinstance(x, str)
+                                      else list(x.keys())[0])
+
     return(subgroup)
 
 for key in list(regions.keys()):
