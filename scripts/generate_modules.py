@@ -14,8 +14,6 @@ root = Path(__file__).parents[1]
 
 dp = read_datapackage(root / "datapackage.json")
 
-codes = []
-
 py_out = '''"""
 countrygroups
 -------------
@@ -56,57 +54,25 @@ js_out = '''// Country Groups
 
 '''
 
-py_submodules = []
-
-
-def create_submodule(name, df):
-    py_submodule_out = '"""\ncountrygroups.{}\n--------------'.format(
-        name) + len(name) * "-" + '\n"""'
-    py_submodule_out += "\n\n"
-    grouped = df.groupby("Region")
-    for region, group in grouped:
-        var_name = region.replace("-", "_").replace(" ", "_").upper()
-        py_submodule_out += "{} = [\n".format(var_name)
-        members = sorted(group.index.tolist())
-        for idx, member in enumerate(members):
-            item_line = '    "{}"'.format(member)
-            py_submodule_out += item_line
-            if idx < len(members) - 1:
-                py_submodule_out += ",\n"
-            else:
-                py_submodule_out += "\n"
-        py_submodule_out += "]\n\n"
-
-    modulename = name.replace("-", "_")
-    with open(str(root / "countrygroups" / (modulename + ".py")), "w") as f:
-        f.write(py_submodule_out)
-
 for name, df in sorted(dp.items()):
-    if "subregions" in df.metadata:
-        create_submodule(name, df)
-        continue
 
-    if isinstance(df.index, pd.RangeIndex):
-        continue
+    if "subregions" in df.metadata:
+        members = {}
+        df = df.reset_index().sort_values(["Region", "Code"]).set_index("Code")
+        for code, region in df.Region.items():
+            region = region.replace(' ', '_').replace('-', '_').upper()
+            if region not in members:
+                members[region] = [code]
+            else:
+                members[region].append(code)
+    else:
+        members = sorted(df.index.tolist())
+
     group_id = name.replace("-", "_").upper()
-    members = sorted(df.index.tolist())
-    for member in members:
-        if member not in codes:
-            codes.append(member)
-    py_out += "{} = [\n".format(group_id)
-    js_out += "exports.{} = [\n".format(group_id)
-    for idx, item in enumerate(members):
-        item_line = '    "{}"'.format(item)
-        py_out += item_line
-        js_out += item_line
-        if idx < len(members) - 1:
-            py_out += ",\n"
-            js_out += ",\n"
-        else:
-            py_out += "\n"
-            js_out += "\n"
-    py_out += "]\n\n"
-    js_out += "]\n\n"
+    py_out += "{} = Group({})\n\n".format(
+        group_id, members)
+
+    js_out += "exports.{} = {}\n\n".format(group_id, members)
 
 metadata = json.load(open(str(root / "datapackage.json")))
 nested_groups = [item for item in metadata["resources"]
@@ -117,10 +83,12 @@ for nested_group in nested_groups:
     with open(nested_group["path"], "r") as f:
         data = f.read()
     py_out += "{} = Group({{{}}})\n".format(
-        group_id, FormatCode(data)[0][1:-2])
+        group_id, data[1:-2])
+    js_out += "{} = {}\n\n".format(group_id, data)
+
 
 with open(str(root / "countrygroups/__init__.py"), "w") as f:
-    f.write(py_out)
+    f.write(FormatCode(py_out)[0])
 
 with open(str(root / "index.js"), "w") as f:
     f.write(js_out)

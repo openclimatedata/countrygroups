@@ -81,6 +81,7 @@ for key, countries in ar5.items():
 
 df = pd.DataFrame(records, columns=["Code", "Name", "Region"])
 df = df.set_index("Code")
-df.Name = [to_name(code) for code in df.index]
-
+df.Name = [to_name(code) if len(code) == 3 else df.loc[code].Name
+           for code in df.index]
+df = df.sort_values(["Region", "Name"])
 df.to_csv(root / "data/ar5.csv")
