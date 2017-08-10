@@ -30,7 +30,7 @@ class Group(list):
 
     @property
     def names(self):
-        return [to_name(item) for item in self]
+        return sorted([to_name(item) for item in self])
 
 
 ANNEX_ONE = Group([
