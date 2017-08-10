@@ -56,6 +56,11 @@ AR5 = Group({
         'NRU', 'PAK', 'PCN', 'PHL', 'PLW', 'PNG', 'PRK', 'PYF', 'SGP', 'SLB',
         'THA', 'TKL', 'TLS', 'TON', 'TUV', 'UMI', 'VNM', 'VUT', 'WLF', 'WSM'
     ],
+    'EIT': [
+        'ALB', 'ARM', 'AZE', 'BGR', 'BIH', 'BLR', 'CYP', 'CZE', 'EST', 'GEO',
+        'HRV', 'HUN', 'KAZ', 'KGZ', 'LTU', 'LVA', 'MDA', 'MKD', 'MLT', 'MNE',
+        'POL', 'ROU', 'RUS', 'SRB', 'SVK', 'SVN', 'TJK', 'TKM', 'UKR', 'UZB'
+    ],
     'LAM': [
         'ABW', 'AIA', 'ANHH', 'ARG', 'ATA', 'ATF', 'ATG', 'BHS', 'BLZ', 'BMU',
         'BOL', 'BRA', 'BRB', 'BVT', 'CHL', 'COL', 'CRI', 'CUB', 'CUW', 'CYM',
@@ -63,13 +68,6 @@ AR5 = Group({
         'HTI', 'JAM', 'KNA', 'LCA', 'MEX', 'MSR', 'MTQ', 'NIC', 'PAN', 'PER',
         'PRI', 'PRY', 'SGS', 'SLV', 'SUR', 'SXM', 'TCA', 'TTO', 'URY', 'VCT',
         'VEN', 'VGB', 'VIR'
-    ],
-    'OECD1990': [
-        'ALA', 'AND', 'AUS', 'AUT', 'BEL', 'CAN', 'CHE', 'DEU', 'DNK', 'ESP',
-        'FIN', 'FRA', 'FRO', 'GBR', 'GGY', 'GGY', 'GIB', 'GRC', 'GRL', 'GUM',
-        'IMN', 'IRL', 'ISL', 'ITA', 'JEY', 'JEY', 'JPN', 'LIE', 'LUX', 'MCO',
-        'NLD', 'NOR', 'NZL', 'PRT', 'SJM', 'SMR', 'SPM', 'SWE', 'TUR', 'USA',
-        'VAT'
     ],
     'MAF': [
         'AGO', 'ARE', 'BDI', 'BEN', 'BFA', 'BHR', 'BWA', 'CAF', 'CIV', 'CMR',
@@ -81,10 +79,12 @@ AR5 = Group({
         'SWZ', 'SYC', 'SYR', 'TCD', 'TGO', 'TUN', 'TZA', 'UGA', 'YEM', 'ZAF',
         'ZMB', 'ZWE'
     ],
-    'EIT': [
-        'ALB', 'ARM', 'AZE', 'BGR', 'BIH', 'BLR', 'CYP', 'CZE', 'EST', 'GEO',
-        'HRV', 'HUN', 'KAZ', 'KGZ', 'LTU', 'LVA', 'MDA', 'MKD', 'MLT', 'MNE',
-        'POL', 'ROU', 'RUS', 'SRB', 'SVK', 'SVN', 'TJK', 'TKM', 'UKR', 'UZB'
+    'OECD1990': [
+        'ALA', 'AND', 'AUS', 'AUT', 'BEL', 'CAN', 'CHE', 'DEU', 'DNK', 'ESP',
+        'FIN', 'FRA', 'FRO', 'GBR', 'GGY', 'GGY', 'GIB', 'GRC', 'GRL', 'GUM',
+        'IMN', 'IRL', 'ISL', 'ITA', 'JEY', 'JEY', 'JPN', 'LIE', 'LUX', 'MCO',
+        'NLD', 'NOR', 'NZL', 'PRT', 'SJM', 'SMR', 'SPM', 'SWE', 'TUR', 'USA',
+        'VAT'
     ]
 })
 
@@ -188,13 +188,6 @@ SSP = Group({
         'NPL', 'PAK', 'PHL', 'PNG', 'PRK', 'PYF', 'SGP', 'SLB', 'THA', 'TLS',
         'TWN', 'VNM', 'VUT', 'WSM'
     ],
-    'OECD': [
-        'ALB', 'AUS', 'AUT', 'BEL', 'BGR', 'BIH', 'CAN', 'CHE', 'CYP', 'CZE',
-        'DEU', 'DNK', 'ESP', 'EST', 'FIN', 'FRA', 'GBR', 'GRC', 'GUM', 'HRV',
-        'HUN', 'IRL', 'ISL', 'ITA', 'JPN', 'LTU', 'LUX', 'LVA', 'MKD', 'MLT',
-        'MNE', 'NLD', 'NOR', 'NZL', 'POL', 'PRI', 'PRT', 'ROU', 'SRB', 'SVK',
-        'SVN', 'SWE', 'TUR', 'USA'
-    ],
     'LAM': [
         'ABW', 'ARG', 'BHS', 'BLZ', 'BOL', 'BRA', 'BRB', 'CHL', 'COL', 'CRI',
         'CUB', 'DOM', 'ECU', 'GLP', 'GRD', 'GTM', 'GUF', 'GUY', 'HND', 'HTI',
@@ -209,6 +202,13 @@ SSP = Group({
         'MRT', 'MUS', 'MWI', 'MYT', 'NAM', 'NER', 'NGA', 'OMN', 'PSE', 'QAT',
         'REU', 'RWA', 'SAU', 'SDN', 'SEN', 'SLE', 'SOM', 'SSD', 'SWZ', 'SYR',
         'TCD', 'TGO', 'TUN', 'TZA', 'UGA', 'YEM', 'ZAF', 'ZMB', 'ZWE'
+    ],
+    'OECD': [
+        'ALB', 'AUS', 'AUT', 'BEL', 'BGR', 'BIH', 'CAN', 'CHE', 'CYP', 'CZE',
+        'DEU', 'DNK', 'ESP', 'EST', 'FIN', 'FRA', 'GBR', 'GRC', 'GUM', 'HRV',
+        'HUN', 'IRL', 'ISL', 'ITA', 'JPN', 'LTU', 'LUX', 'LVA', 'MKD', 'MLT',
+        'MNE', 'NLD', 'NOR', 'NZL', 'POL', 'PRI', 'PRT', 'ROU', 'SRB', 'SVK',
+        'SVN', 'SWE', 'TUR', 'USA'
     ],
     'REF': [
         'ARM', 'AZE', 'BLR', 'GEO', 'KAZ', 'KGZ', 'MDA', 'RUS', 'TJK', 'TKM',
@@ -228,12 +228,6 @@ UN_REGIONAL_GROUPS = Group({
         'SLE', 'SOM', 'SSD', 'STP', 'SWZ', 'SYC', 'TCD', 'TGO', 'TUN', 'TZA',
         'UGA', 'ZAF', 'ZMB', 'ZWE'
     ],
-    'GRULAC': [
-        'ARG', 'ATG', 'BHS', 'BLZ', 'BOL', 'BRA', 'BRB', 'CHL', 'COL', 'CRI',
-        'CUB', 'DMA', 'DOM', 'ECU', 'GRD', 'GTM', 'GUY', 'HND', 'HTI', 'JAM',
-        'KNA', 'LCA', 'MEX', 'NIC', 'PAN', 'PER', 'PRY', 'SLV', 'SUR', 'TTO',
-        'URY', 'VCT', 'VCT', 'VEN'
-    ],
     'ASIA_PACIFIC_GROUP': [
         'AFG', 'ARE', 'BGD', 'BHR', 'BRN', 'BTN', 'CHN', 'CYP', 'FJI', 'FSM',
         'IDN', 'IND', 'IRN', 'IRQ', 'JOR', 'JPN', 'KAZ', 'KGZ', 'KHM', 'KIR',
@@ -242,15 +236,21 @@ UN_REGIONAL_GROUPS = Group({
         'SGP', 'SLB', 'SYR', 'THA', 'TJK', 'TKM', 'TLS', 'TON', 'TUR', 'TUV',
         'UZB', 'VNM', 'VUT', 'WSM', 'YEM'
     ],
-    'WEOG': [
-        'AND', 'AUS', 'AUT', 'BEL', 'CAN', 'CHE', 'DEU', 'DNK', 'ESP', 'FIN',
-        'FRA', 'GBR', 'GRC', 'IRL', 'ISL', 'ISR', 'ITA', 'LIE', 'LUX', 'MCO',
-        'MLT', 'NLD', 'NOR', 'NZL', 'PRT', 'SMR', 'SWE', 'TUR', 'USA'
-    ],
     'EASTERN_EUROPEAN_GROUP': [
         'ALB', 'ARM', 'AZE', 'BGR', 'BIH', 'BLR', 'CZE', 'EST', 'GEO', 'HRV',
         'HUN', 'LTU', 'LVA', 'MDA', 'MKD', 'MNE', 'POL', 'ROU', 'RUS', 'SRB',
         'SVK', 'SVN', 'UKR'
+    ],
+    'GRULAC': [
+        'ARG', 'ATG', 'BHS', 'BLZ', 'BOL', 'BRA', 'BRB', 'CHL', 'COL', 'CRI',
+        'CUB', 'DMA', 'DOM', 'ECU', 'GRD', 'GTM', 'GUY', 'HND', 'HTI', 'JAM',
+        'KNA', 'LCA', 'MEX', 'NIC', 'PAN', 'PER', 'PRY', 'SLV', 'SUR', 'TTO',
+        'URY', 'VCT', 'VCT', 'VEN'
+    ],
+    'WEOG': [
+        'AND', 'AUS', 'AUT', 'BEL', 'CAN', 'CHE', 'DEU', 'DNK', 'ESP', 'FIN',
+        'FRA', 'GBR', 'GRC', 'IRL', 'ISL', 'ISR', 'ITA', 'LIE', 'LUX', 'MCO',
+        'MLT', 'NLD', 'NOR', 'NZL', 'PRT', 'SMR', 'SWE', 'TUR', 'USA'
     ]
 })
 

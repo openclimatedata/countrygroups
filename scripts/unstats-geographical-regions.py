@@ -9,7 +9,7 @@ regions = yaml.load(
 
 def convert_names(subgroup):
     if isinstance(subgroup, dict):
-        for k, v in subgroup.items():
+        for k in list(subgroup.keys()):
             new_name = k.replace(' ', '_').replace('-', '_').upper()
             subgroup[new_name] = convert_names(subgroup.pop(k))
     elif isinstance(subgroup, list):
@@ -23,10 +23,9 @@ def convert_names(subgroup):
                     subgroup[idx] = to_code(item)
     return(subgroup)
 
-for key, value in regions.items():
+for key in list(regions.keys()):
     new_name = key.replace(' ', '_').replace('-', '_').upper()
-    del regions[key]
-    regions[new_name] = convert_names(value)
+    regions[new_name] = convert_names(regions.pop(key))
 
 json.dump(
     regions,
