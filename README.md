@@ -1,4 +1,8 @@
-Data Package, Python and JavaScript module with country groups, especially those in the United Nations Framework Convention on Climate Change (UNFCCC).
+[![PyPI](https://img.shields.io/pypi/v/countrygroups.svg)](https://pypi.python.org/pypi/countrygroups/)
+[![npm](https://img.shields.io/npm/v/countrygroups.svg)](https://www.npmjs.com/package/countrygroups)
+
+
+Data Package, Python and JavaScript module with country groups.
 
 ## Data Package
 
