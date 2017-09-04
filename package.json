@@ -1,7 +1,7 @@
 {
   "name": "countrygroups",
   "version": "0.2.5",
-  "description": "ISO-Codes of country groups, especially those related to the UNFCCC negotiation process",
+  "description": "Country groups as arrays of country codes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,9 +11,8 @@
     "url": "git+https://github.com/openclimatedata/countrygroups.git"
   },
   "keywords": [
-    "climate",
-    "change",
-    "unfccc"
+    "country groups",
+    "country names"
   ],
   "author": "Robert Gieseke",
   "license": "CC0",
