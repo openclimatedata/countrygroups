@@ -245,7 +245,7 @@ UN_REGIONAL_GROUPS = Group({
         'ARG', 'ATG', 'BHS', 'BLZ', 'BOL', 'BRA', 'BRB', 'CHL', 'COL', 'CRI',
         'CUB', 'DMA', 'DOM', 'ECU', 'GRD', 'GTM', 'GUY', 'HND', 'HTI', 'JAM',
         'KNA', 'LCA', 'MEX', 'NIC', 'PAN', 'PER', 'PRY', 'SLV', 'SUR', 'TTO',
-        'URY', 'VCT', 'VCT', 'VEN'
+        'URY', 'VCT', 'VEN'
     ],
     'WEOG': [
         'AND', 'AUS', 'AUT', 'BEL', 'CAN', 'CHE', 'DEU', 'DNK', 'ESP', 'FIN',

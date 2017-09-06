@@ -174,8 +174,7 @@ Paraguay
 Peru
 Saint Kitts and Nevis
 Saint Lucia
-Saint Vincent and the
-Grenadines
+Saint Vincent and the Grenadines
 Suriname
 Trinidad and Tobago
 Uruguay
@@ -215,7 +214,7 @@ United States of America""".splitlines()
 assert len(african_group) == 54
 assert len(asia_pacific) == 55
 assert len(eastern_european) == 23
-assert len(grulac) == 34
+assert len(grulac) == 33
 assert len(weog) == 29
 
 african_group = [
