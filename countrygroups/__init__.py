@@ -81,10 +81,9 @@ AR5 = Group({
     ],
     'OECD1990': [
         'ALA', 'AND', 'AUS', 'AUT', 'BEL', 'CAN', 'CHE', 'DEU', 'DNK', 'ESP',
-        'FIN', 'FRA', 'FRO', 'GBR', 'GGY', 'GGY', 'GIB', 'GRC', 'GRL', 'GUM',
-        'IMN', 'IRL', 'ISL', 'ITA', 'JEY', 'JEY', 'JPN', 'LIE', 'LUX', 'MCO',
-        'NLD', 'NOR', 'NZL', 'PRT', 'SJM', 'SMR', 'SPM', 'SWE', 'TUR', 'USA',
-        'VAT'
+        'FIN', 'FRA', 'FRO', 'GBR', 'GGY', 'GIB', 'GRC', 'GRL', 'GUM', 'IMN',
+        'IRL', 'ISL', 'ITA', 'JEY', 'JPN', 'LIE', 'LUX', 'MCO', 'NLD', 'NOR',
+        'NZL', 'PRT', 'SJM', 'SMR', 'SPM', 'SWE', 'TUR', 'USA', 'VAT'
     ]
 })
 

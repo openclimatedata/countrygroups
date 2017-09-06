@@ -10,11 +10,10 @@ from util import root, to_code
 # Channel Islands was replaced with "Guernsey" and "Jersey"
 oecd1990 = """Guernsey, Jersey, Aland Islands, Andorra, Australia, Austria,
 Belgium, Canada, Denmark, Faroe Islands, Finland, France, Germany,
-Gibraltar, Greece, Greenland, Guam, Guernsey,
-Holy See (Vatican City State), Iceland, Ireland, Isle of Man, Italy,
-Japan, Jersey, Liechtenstein, Luxembourg, Monaco, Netherlands,
-New Zealand, Norway, Portugal, Saint Pierre and Miquelon, San Marino,
-Spain, Svalbard and Jan Mayen, Sweden, Switzerland, Turkey,
+Gibraltar, Greece, Greenland, Guam, Holy See (Vatican City State), Iceland,
+Ireland, Isle of Man, Italy, Japan, Liechtenstein, Luxembourg, Monaco,
+Netherlands, New Zealand, Norway, Portugal, Saint Pierre and Miquelon,
+San Marino, Spain, Svalbard and Jan Mayen, Sweden, Switzerland, Turkey,
 United Kingdom, United States"""
 
 # EIT = Economies in Transition. This region is sometimes also referred to as
