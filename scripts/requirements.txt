@@ -11,3 +11,4 @@ twine
 unidecode
 wheel
 yapf
+goodtables

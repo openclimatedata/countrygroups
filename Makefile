@@ -82,5 +82,7 @@ test-pypi-install:
 	$(TEMPVENV)/bin/pip install countrygroups
 	$(TEMPVENV)/bin/python -c "import sys; sys.path.remove(''); import countrygroups; print(countrygroups.__version__)"
 
+validate:
+	./venv/bin/python scripts/validate.py
 
 .PHONY: clean clean-generated-files clean-venv tag publish-on-pypi publish-on-test-pypi test-pypi-install
