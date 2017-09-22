@@ -4,7 +4,6 @@ sed="sed";
 uname=$(uname);
 case "$uname" in
     (*Darwin*) sed='gsed'; ;;
-
 esac;
 
 
@@ -25,4 +24,3 @@ else
   git commit -m "Update version in datapackage.json"
   npm version "$version" -m "Update version to %s"
 fi
-
