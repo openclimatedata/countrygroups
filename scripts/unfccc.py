@@ -56,10 +56,10 @@ df.index.name = "Code"
 # Check that all rows have an index.
 assert all(~df.index.isnull())
 
-df["Participant"] = [to_name(i) for i in df.index]
+df["Name"] = [to_name(i) for i in df.index]
 
 # Check that all rows have a name.
-assert all(~df.Participant.isnull())
+assert all(~df.Name.isnull())
 
 # "Ratification  Acceptance (A)  Accession (a)  Approval (AA)  Succession (d)"
 df["Kind"] = df.iloc[:, 2].apply(get_kind)
@@ -80,7 +80,7 @@ df = df.rename(columns={
 })
 
 df = df[[
-    'Participant',
+    'Name',
     'Signature',
     'Ratification-Acceptance-Accession-Approval-Succession',
     'Kind',
@@ -89,5 +89,5 @@ df = df[[
 
 assert len(df) == 197
 assert sum(~df.Signature.isnull()) == 165
-assert len(df.Participant.unique()) == len(df)
+assert len(df.Name.unique()) == len(df)
 df.to_csv(root / "data/unfccc.csv")
