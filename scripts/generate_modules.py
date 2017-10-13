@@ -86,7 +86,7 @@ for nested_group in nested_groups:
     js_out += "{} = {}\n\n".format(group_id, data)
 
 
-with open(str(root / "countrygroups/__init__.py"), "w") as f:
+with open(str(root / "py/countrygroups/__init__.py"), "w") as f:
     f.write(FormatCode(py_out)[0])
 
 with open(str(root / "index.js"), "w") as f:

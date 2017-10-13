@@ -24,7 +24,7 @@ CSV_FILES = \
 JSON_FILES = \
   data/unstats-geographical-regions.json
 
-all: $(CSV_FILES) countrygroups/__init__.py index.js
+all: $(CSV_FILES) py/countrygroups/__init__.py index.js
 
 data/%.csv: scripts/%.py scripts/util.py venv
 	@echo $@
@@ -34,7 +34,7 @@ data/%.json: scripts/%.py scripts/util.py venv
 	@echo $@
 	@./venv/bin/python $<
 
-index.js countrygroups/__init__.py: scripts/generate_modules.py $(CSV_FILES) $(JSON_FILES) datapackage.json
+index.js py/countrygroups/__init__.py: scripts/generate_modules.py $(CSV_FILES) $(JSON_FILES) datapackage.json
 	@echo $@
 	@./venv/bin/python $<
 
@@ -59,7 +59,7 @@ publish-on-pypi:
 	-rm -rf build dist
 	@status=$$(git status --porcelain); \
 	if test "x$${status}" = x; then \
-		./venv/bin/python setup.py bdist_wheel --universal; \
+		./venv/bin/python py/setup.py bdist_wheel --universal; \
 		./venv/bin/twine upload dist/*; \
 	else \
 		echo Working directory is dirty >&2; \
@@ -69,7 +69,7 @@ publish-on-test-pypi:
 	-rm -rf build dist
 	@status=$$(git status --porcelain); \
 	if test "x$${status}" = x; then \
-		./venv/bin/python setup.py bdist_wheel --universal; \
+		./venv/bin/python py/setup.py bdist_wheel --universal; \
 		./venv/bin/twine upload -r testpypi dist/*; \
 	else \
 		echo Working directory is dirty >&2; \
