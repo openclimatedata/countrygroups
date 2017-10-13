@@ -24,7 +24,7 @@ CSV_FILES = \
 JSON_FILES = \
   data/unstats-geographical-regions.json
 
-all: $(CSV_FILES) py/countrygroups/__init__.py index.js
+all: $(CSV_FILES) py/countrygroups/__init__.py js/index.js
 
 data/%.csv: scripts/%.py scripts/util.py venv
 	@echo $@
@@ -34,7 +34,7 @@ data/%.json: scripts/%.py scripts/util.py venv
 	@echo $@
 	@./venv/bin/python $<
 
-index.js py/countrygroups/__init__.py: scripts/generate_modules.py $(CSV_FILES) $(JSON_FILES) datapackage.json
+js/index.js py/countrygroups/__init__.py: scripts/generate_modules.py $(CSV_FILES) $(JSON_FILES) datapackage.json
 	@echo $@
 	@./venv/bin/python $<
 
@@ -45,7 +45,7 @@ venv: scripts/requirements.txt
 	touch venv
 
 clean-generated-files:
-	rm -rf index.js data/*.csv data/*.json countrygroups/__init__.py
+	rm -rf js/index.js data/*.csv data/*.json py/countrygroups/__init__.py
 
 clean-venv:
 	rm -rf venv
