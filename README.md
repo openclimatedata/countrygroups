@@ -59,13 +59,13 @@ Accession, Approval, or Succession to the Convention, and Entry into Force.
 For an explanation of the legal terms of ratification instruments see
 <https://treaties.un.org/Pages/Overview.aspx?path=overview/glossary/page1_en.xml>
 
-### Annex I parties
+### UNFCCC Annex I parties
 
 [data/annex-one.csv](data/annex-one.csv)
 
-Parties listed in Annex I of the convention are classified as industrialized (developed) countries and "economies in transition".
+Parties listed in Annex I of the UNFCCC classified as industrialized (developed) countries and "economies in transition".
 
-### Non-Annex I parties
+### UNFCCC Non-Annex I parties
 
 [data/non-annex-one.csv](data/non-annex-one.csv)
 
