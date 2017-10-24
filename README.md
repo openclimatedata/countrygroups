@@ -8,7 +8,7 @@ Data Package, Python and JavaScript module with country groups.
 
 The Data Package contains the lists used to build the language modules and can
 be loaded with respective [language tools](http://frictionlessdata.io/tools/).
-Some lists contain additional information like data of joining etc.
+Some lists contain additional information like date of joining etc.
 
 ## Python Module
 
