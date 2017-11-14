@@ -67,14 +67,7 @@ publish-on-pypi:
 	fi;
 
 publish-on-test-pypi:
-	-rm -rf build dist
-	@status=$$(git status --porcelain); \
-	if test "x$${status}" = x; then \
-		cd py; ../venv/bin/python py/setup.py bdist_wheel --universal; \
-		cd py; ../venv/bin/twine upload -r testpypi dist/*; \
-	else \
-		echo Working directory is dirty >&2; \
-	fi;
+	./scripts/publish-on-test-pypi.sh
 
 test-pypi-install:
 	$(eval TEMPVENV := $(shell mktemp -d))
