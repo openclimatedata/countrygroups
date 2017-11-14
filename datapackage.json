@@ -9,6 +9,10 @@
       "web": "http://unfccc.int/parties_and_observers/parties/annex_i/items/2774.php"
     },
     {
+      "title": "Greenhouse gas inventory submissions from non-Annex I Parties",
+      "web": "http://unfccc.int/ghg_data/items/3962.php"
+    },
+    {
       "title": "List of Non-Annex I Parties to the Convention",
       "web": "http://unfccc.int/parties_and_observers/parties/non_annex_i/items/2833.php"
     },
@@ -110,6 +114,27 @@
       "format": "csv",
       "mediatype": "text/csv",
       "bytes": 568,
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3) or EUU for European Union"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Party Name"
+          }
+        ],
+        "primaryKey": "Code"
+      }
+    },
+    {
+      "name": "annex-one-kaz",
+      "path": "data/annex-one-kaz.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
       "schema": {
         "fields": [
           {

@@ -26,5 +26,4 @@ annex_one.index.name = "Code"
 annex_one.name = "Name"
 
 assert len(annex_one) == 43
-
 annex_one.to_csv(root / "data/annex-one.csv", header=True)

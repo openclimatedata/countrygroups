@@ -62,8 +62,11 @@ For an explanation of the legal terms of ratification instruments see
 ### UNFCCC Annex I parties
 
 [data/annex-one.csv](data/annex-one.csv)
+[data/annex-one-kaz.csv](data/annex-one.csv)
 
 Parties listed in Annex I of the UNFCCC classified as industrialized (developed) countries and "economies in transition".
+After ratifying the Kyoto Protocol Kazakhstan is considered an Annex I Party for the
+purposes of the Protocol but remains to be a non-Annex I Party for the purposes of the Convention, the second version includes Kazakhstan.
 
 ### UNFCCC Non-Annex I parties
 

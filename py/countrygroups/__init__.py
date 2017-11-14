@@ -41,6 +41,14 @@ ANNEX_ONE = Group([
     'TUR', 'UKR', 'USA'
 ])
 
+ANNEX_ONE_KAZ = Group([
+    'AUS', 'AUT', 'BEL', 'BGR', 'BLR', 'CAN', 'CHE', 'CYP', 'CZE', 'DEU',
+    'DNK', 'ESP', 'EST', 'EUU', 'FIN', 'FRA', 'GBR', 'GRC', 'HRV', 'HUN',
+    'IRL', 'ISL', 'ITA', 'JPN', 'KAZ', 'LIE', 'LTU', 'LUX', 'LVA', 'MCO',
+    'MLT', 'NLD', 'NOR', 'NZL', 'POL', 'PRT', 'ROU', 'RUS', 'SVK', 'SVN',
+    'SWE', 'TUR', 'UKR', 'USA'
+])
+
 AOSIS = Group([
     'ATG', 'BHS', 'BLZ', 'BRB', 'COK', 'COM', 'CPV', 'CUB', 'DMA', 'DOM',
     'FJI', 'FSM', 'GNB', 'GRD', 'GUY', 'HTI', 'JAM', 'KIR', 'KNA', 'LCA',
