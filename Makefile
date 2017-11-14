@@ -57,14 +57,7 @@ tag:
 	./scripts/create_tag.sh
 
 publish-on-pypi:
-	-rm -rf build dist
-	@status=$$(git status --porcelain); \
-	if test "x$${status}" = x; then \
-		./venv/bin/python py/setup.py bdist_wheel --universal; \
-		./venv/bin/twine upload dist/*; \
-	else \
-		echo Working directory is dirty >&2; \
-	fi;
+	./scripts/publish-on-pypi.sh
 
 publish-on-test-pypi:
 	./scripts/publish-on-test-pypi.sh
