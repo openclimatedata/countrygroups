@@ -70,7 +70,7 @@ assert all(~df.Kind.isnull())
 df.iloc[:, 2] = pd.to_datetime(df.iloc[:, 2].apply(get_date_only))
 
 # Replace Uzbekistan's "---" Signature value.
-df.set_value("UZB", "Signature", None)
+df.at["UZB", "Signature"] = None
 df.Signature = pd.to_datetime(df.Signature)
 df["Entry into force"] = pd.to_datetime(df["Entry into force"])
 
