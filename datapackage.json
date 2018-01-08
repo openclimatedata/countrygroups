@@ -210,8 +210,8 @@
       }
     },
     {
-      "name": "ldcs",
-      "path": "data/ldcs.csv",
+      "name": "ldc",
+      "path": "data/ldc.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "bytes": 960,
@@ -237,8 +237,8 @@
       }
     },
     {
-      "name": "lldcs",
-      "path": "data/lldcs.csv",
+      "name": "lldc",
+      "path": "data/lldc.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "schema": {

@@ -11,7 +11,10 @@ from yapf.yapflib.yapf_api import FormatCode
 
 root = Path(__file__).parents[1]
 
+
 dp = read_datapackage(root / "datapackage.json")
+with open(root / "datapackage.json", "r") as f:
+    metadata = json.load(f)
 
 py_out = '''"""
 countrygroups
@@ -53,9 +56,12 @@ js_out = '''// Country Groups
 
 '''
 
-for name, df in sorted(dp.items()):
-
-    if "subregions" in df.metadata:
+for resource in sorted(metadata["resources"], key=lambda x: x["name"]):
+    if resource["format"] == "json":
+        continue
+    name = resource["name"]
+    df = dp[name]
+    if "subregions" in resource:
         members = {}
         df = df.reset_index().sort_values(["Region", "Code"]).set_index("Code")
         for code, region in df.Region.items():
@@ -73,7 +79,6 @@ for name, df in sorted(dp.items()):
 
     js_out += "exports.{} = {}\n\n".format(group_id, members)
 
-metadata = json.load(open(str(root / "datapackage.json")))
 nested_groups = [item for item in metadata["resources"]
                  if item["format"] == "json"]
 

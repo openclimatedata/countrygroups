@@ -68,4 +68,4 @@ for line in ldc_string.splitlines():
 
 df = pd.DataFrame(ldcs, columns=["Code", "Name", "Year-Of-Inclusion"])
 df = df.sort_values("Name")
-df.to_csv(root / "data/ldcs.csv", index=False)
+df.to_csv(root / "data/ldc.csv", index=False)

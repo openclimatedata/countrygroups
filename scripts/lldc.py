@@ -51,4 +51,4 @@ assert len(lldcs) == 16 + 10 + 4 + 2
 
 df = pd.DataFrame(lldcs, columns=["Code", "Name"])
 df = df.sort_values("Name")
-df.to_csv(root / "data/lldcs.csv", index=False)
+df.to_csv(root / "data/lldc.csv", index=False)

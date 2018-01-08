@@ -137,7 +137,7 @@ G77 = Group([
 
 GRADUATED_LDCS = Group(['BWA', 'CPV', 'GNQ', 'MDV', 'WSM'])
 
-LDCS = Group([
+LDC = Group([
     'AFG', 'AGO', 'BDI', 'BEN', 'BFA', 'BGD', 'BTN', 'CAF', 'COD', 'COM',
     'DJI', 'ERI', 'ETH', 'GIN', 'GMB', 'GNB', 'HTI', 'KHM', 'KIR', 'LAO',
     'LBR', 'LSO', 'MDG', 'MLI', 'MMR', 'MOZ', 'MRT', 'MWI', 'NER', 'NPL',
@@ -145,7 +145,7 @@ LDCS = Group([
     'TLS', 'TUV', 'TZA', 'UGA', 'VUT', 'YEM', 'ZMB'
 ])
 
-LLDCS = Group([
+LLDC = Group([
     'AFG', 'ARM', 'AZE', 'BDI', 'BFA', 'BOL', 'BTN', 'BWA', 'CAF', 'ETH',
     'KAZ', 'KGZ', 'LAO', 'LSO', 'MDA', 'MKD', 'MLI', 'MNG', 'MWI', 'NER',
     'NPL', 'PRY', 'RWA', 'SSD', 'SWZ', 'TCD', 'TJK', 'TKM', 'UGA', 'UZB',
