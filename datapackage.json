@@ -25,6 +25,10 @@
       "web": "https://www.un.org/development/desa/dpad/least-developed-country-category/ldcs-at-a-glance.html"
     },
     {
+      "title": "UN-OHRLLS: Landlocked Developing Countries",
+      "web": "http://unohrlls.org/about-lldcs/country-profiles/"
+    },
+    {
       "title": "EU member countries in brief",
       "web": "https://europa.eu/european-union/about-eu/countries/member-countries_en"
     },
@@ -227,6 +231,27 @@
             "name": "Year-Of-Inclusion",
             "type": "integer",
             "description": "Year of inclusion in LDCs"
+          }
+        ],
+        "primaryKey": "Code"
+      }
+    },
+    {
+      "name": "lldcs",
+      "path": "data/lldcs.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Name of country"
           }
         ],
         "primaryKey": "Code"

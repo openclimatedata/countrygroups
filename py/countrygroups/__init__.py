@@ -145,6 +145,13 @@ LDCS = Group([
     'TLS', 'TUV', 'TZA', 'UGA', 'VUT', 'YEM', 'ZMB'
 ])
 
+LLDCS = Group([
+    'AFG', 'ARM', 'AZE', 'BDI', 'BFA', 'BOL', 'BTN', 'BWA', 'CAF', 'ETH',
+    'KAZ', 'KGZ', 'LAO', 'LSO', 'MDA', 'MKD', 'MLI', 'MNG', 'MWI', 'NER',
+    'NPL', 'PRY', 'RWA', 'SSD', 'SWZ', 'TCD', 'TJK', 'TKM', 'UGA', 'UZB',
+    'ZMB', 'ZWE'
+])
+
 NON_ANNEX_ONE = Group([
     'AFG', 'AGO', 'ALB', 'AND', 'ARE', 'ARG', 'ARM', 'ATG', 'AZE', 'BDI',
     'BEN', 'BFA', 'BGD', 'BHR', 'BHS', 'BIH', 'BLZ', 'BOL', 'BRA', 'BRB',

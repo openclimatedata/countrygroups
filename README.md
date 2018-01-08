@@ -84,6 +84,14 @@ The list of Least Developed Countries (LDCs) is taken from
 <https://www.un.org/development/desa/dpad/least-developed-country-category/ldcs-at-a-glance.html>
 Available are current LDCs and graduated countries.
 
+### Landlocked Developing Countries (LLDCs)
+
+[data/lldcs.csv](data/lldcs.csv)
+
+<http://unohrlls.org/about-lldcs/>
+
+<http://unohrlls.org/about-lldcs/country-profiles/>
+
 ### Small Island Developing States (SIDS)
 
 [data/sids.csv](data/sids.csv)

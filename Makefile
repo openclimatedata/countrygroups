@@ -12,6 +12,7 @@ CSV_FILES = \
   data/g7.csv \
   data/graduated-ldcs.csv \
   data/ldcs.csv \
+  data/lldcs.csv \
   data/non-annex-one.csv \
   data/oecd.csv \
   data/opec.csv \
