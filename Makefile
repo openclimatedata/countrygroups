@@ -11,6 +11,7 @@ CSV_FILES = \
   data/g77.csv \
   data/g7.csv \
   data/graduated-ldcs.csv \
+  data/imo.csv \
   data/ldc.csv \
   data/lldc.csv \
   data/non-annex-one.csv \

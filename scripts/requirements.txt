@@ -1,5 +1,5 @@
 bs4
-git+git://github.com/occrp/countrynames.git
+git+git://github.com/alephdata/countrynames.git
 html5lib
 lxml
 pandas

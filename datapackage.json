@@ -67,6 +67,10 @@
     {
       "title": "UN Statistics Division - Standard country or area codes for statistical use (M49)",
       "web": "https://unstats.un.org/unsd/methodology/m49/"
+    },
+    {
+      "title": "http://www.imo.org/en/About/Membership/Pages/MemberStates.aspx",
+      "web": "International Maritime Organization Member States"
     }
   ],
   "resources": [
@@ -643,6 +647,32 @@
       "path": "data/unstats-geographical-regions.json",
       "format": "json",
       "mediatype": "text/json"
+    },
+    {
+      "name": "imo",
+      "path": "data/imo.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Country Name"
+          },
+          {
+            "name": "Year",
+            "type": "integer",
+            "description": "Start year of membership"
+          }
+        ],
+        "primaryKey": "Code"
+      }
     }
   ],
   "name": "countrygroups",
