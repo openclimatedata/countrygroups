@@ -153,6 +153,10 @@ Members of the Convention on the Organisation for Economic Co-operation and Deve
 
 [data/ar5.csv](data/ar5.csv)
 
+### International Maritime Organization
+
+[data/imo.csv](data/imo.csv)
+
 ### SSP (Shared Socioeconomic Pathways) Database Region Definitions
 
 [data/ssp.csv](data/ssp.csv)
