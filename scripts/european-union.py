@@ -1,10 +1,8 @@
 # European Union Member States
 
 import pandas as pd
-import requests
 
 from countrynames import to_alpha_3, to_name
-from lxml import html
 from util import root
 
 

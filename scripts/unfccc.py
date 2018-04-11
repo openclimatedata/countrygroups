@@ -1,6 +1,6 @@
 # UNFCCC signatures and ratification
 
-import re
+import sys
 import pandas as pd
 
 from shortcountrynames import to_name
@@ -16,6 +16,7 @@ except ValueError as e:
     print(e)
     print("Maybe {} is down?".format(url))
     sys.exit()
+
 
 def get_kind(datestring):
     if datestring.endswith(" A"):
