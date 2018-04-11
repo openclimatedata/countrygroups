@@ -1,6 +1,4 @@
 CSV_FILES = \
-  data/annex-one.csv \
-  data/annex-one-kaz.csv \
   data/aosis.csv \
   data/ar5.csv \
   data/arab-group.csv \
@@ -14,7 +12,6 @@ CSV_FILES = \
   data/imo.csv \
   data/ldc.csv \
   data/lldc.csv \
-  data/non-annex-one.csv \
   data/oecd.csv \
   data/opec.csv \
   data/sids-non-un-or-regional-commissions-associates.csv \
@@ -23,6 +20,9 @@ CSV_FILES = \
   data/umbrella.csv \
   data/unfccc.csv \
   data/un-regional-groups.csv
+  #data/annex-one.csv \
+  #data/annex-one-kaz.csv \
+  #data/non-annex-one.csv \
 
 JSON_FILES = \
   data/unstats-geographical-regions.json
