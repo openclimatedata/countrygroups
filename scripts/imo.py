@@ -27,4 +27,6 @@ df["Year"] = df["Year"].apply(str.replace, args=("\u200b", ""))
 df.index = df["Name"].apply(to_alpha_3)
 df.index.name = "Code"
 
+assert len(df) == 173
+
 df.to_csv(root / "data/imo.csv")
