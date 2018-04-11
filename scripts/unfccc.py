@@ -6,6 +6,16 @@ import pandas as pd
 from shortcountrynames import to_name
 from util import to_code, root
 
+url = ("https://treaties.un.org/Pages/ViewDetailsIII.aspx"
+       "?src=IND&mtdsg_no=XXVII-7&chapter=27&Temp=mtdsg3&clang=_en")
+
+# Ratification and Signature status from the UN treaty collection.
+try:
+    tables = pd.read_html(url, encoding="UTF-8")
+except ValueError as e:
+    print(e)
+    print("Maybe {} is down?".format(url))
+    sys.exit()
 
 def get_kind(datestring):
     if datestring.endswith(" A"):
@@ -21,7 +31,9 @@ def get_kind(datestring):
 
 
 def get_date_only(datestring):
-    if datestring[-1] in ["a", "A", "d"]:
+    if pd.isnull(datestring):
+        return None
+    elif datestring[-1] in ["a", "A", "d"]:
         return datestring[:-2]
     elif datestring.endswith(" AA"):
         return datestring[:-3]
@@ -29,65 +41,33 @@ def get_date_only(datestring):
         return datestring
 
 
-url = ("http://unfccc.int/essential_background/convention/"
-       "status_of_ratification/items/2631.php")
-
 print(url)
 
-df = pd.read_html(url, attrs={'class': "unfccc_table"})[0]
-
-df = df.iloc[1:]
-df.columns = df.iloc[0]
-df = df.reindex(df.index.drop(1))
-df.columns.name = None
-
-
-# Remove (6)(7) etc.
-def remove_numbers(name):
-    p = re.compile('\(\d\)')
-    return p.sub("", name)
-
-
-df.Participant = df.Participant.apply(remove_numbers)
+df = tables[8]
+df.columns = df.loc[0]
+df = df.reindex(df.index.drop(0))
 
 df.index = df.Participant.apply(to_code)
 df.index.name = "Code"
 
-# Check that all rows have an index.
-assert all(~df.index.isnull())
+df.columns = [
+    "Name",
+    "Signature",
+    "Ratification-Acceptance-Accession-Approval-Succession"
+]
 
-df["Name"] = [to_name(i) for i in df.index]
+df["Kind"] = df.iloc[:, -1].apply(get_kind)
 
-# Check that all rows have a name.
-assert all(~df.Name.isnull())
+df.iloc[:, 1] = df.iloc[:, 1].apply(get_date_only)
+df.iloc[:, 1] = pd.to_datetime(df.iloc[:, 1])
+df.iloc[:, -2] = df.iloc[:, -2].apply(get_date_only)
+df.iloc[:, -2] = pd.to_datetime(df.iloc[:, -2])
 
-# "Ratification  Acceptance (A)  Accession (a)  Approval (AA)  Succession (d)"
-df["Kind"] = df.iloc[:, 2].apply(get_kind)
+df.Name = [to_name(code) for code in df.index]
 
-# Check that all rows have the kind of ratification set.
-assert all(~df.Kind.isnull())
-
-df.iloc[:, 2] = pd.to_datetime(df.iloc[:, 2].apply(get_date_only))
-
-# Replace Uzbekistan's "---" Signature value.
-df.at["UZB", "Signature"] = None
-df.Signature = pd.to_datetime(df.Signature)
-df["Entry into force"] = pd.to_datetime(df["Entry into force"])
-
-df = df.rename(columns={
-    "Entry into force": "Entry-Into-Force",
-    df.columns[2]: "Ratification-Acceptance-Accession-Approval-Succession"
-})
-
-df = df[[
-    'Name',
-    'Signature',
-    'Ratification-Acceptance-Accession-Approval-Succession',
-    'Kind',
-    'Entry-Into-Force',
-]]
 
 assert len(df) == 197
 assert sum(~df.Signature.isnull()) == 165
 assert len(df.Name.unique()) == len(df)
+
 df.to_csv(root / "data/unfccc.csv")

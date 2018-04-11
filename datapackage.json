@@ -79,7 +79,6 @@
       "path": "data/unfccc.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 11645,
       "schema": {
         "fields": [
           {
@@ -106,11 +105,6 @@
             "name": "Kind",
             "type": "string",
             "description": "Kind of Ratification, Acceptance, Accession, Approval, or Succession to the Convention"
-          },
-          {
-            "name": "Entry-Into-Force",
-            "type": "date",
-            "description": "Date of entry into force"
           }
         ],
         "primaryKey": "Code"
