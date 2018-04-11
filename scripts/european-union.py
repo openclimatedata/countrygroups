@@ -19,32 +19,26 @@ def get_date(item):
         " - More information on Brexit", "")
 
 
-url = "https://europa.eu/european-union/about-eu/countries/member-countries_en"
+url = "https://europa.eu/european-union/about-eu/countries_en"
 
-page = requests.get(url)
-tree = html.fromstring(page.content)
+df = pd.read_html(url, match="Belgium")[1]
 
-member_states = tree.xpath('//div[contains(@class, "member_state")]')
-
-members = {
-    i.find('h2/a[1]').text: get_date(i) for i in member_states}
-
-# Check if all dates start with digit.
-assert all([i.split(" ")[0].isdigit() for i in members.values()])
-# And end with digits.
-assert all([i.split(" ")[2].isdigit() for i in members.values()])
-
-df = pd.DataFrame.from_dict(members, orient="index").reset_index()
-df.columns = ["Name", "Member-Since"]
-df["Member-Since"] = pd.to_datetime(df["Member-Since"])
+df.columns = df.iloc[0]
+df = df.reindex(df.index.drop(0))
+df = df.rename(columns={"Countries": "Name", "Year of entry": "Member-Since"})
 df.index = df["Name"].apply(to_alpha_3)
 df.index.name = "Code"
 
-# Normalize names to ISO standard.
-df.Name = [to_name(i) for i in df.index]
+df["Member-Since"] = df["Member-Since"].fillna(method="ffill")
+df["Member-Since"] = pd.to_datetime(df["Member-Since"], dayfirst=True)
+
+df = df[["Name", "Member-Since"]]
 
 df = df.sort_values("Name")
 
 assert len(df) == 28
+
+# Normalize names to ISO standard.
+df.Name = [to_name(i) for i in df.index]
 
 df.to_csv(root / "data/european-union.csv")
