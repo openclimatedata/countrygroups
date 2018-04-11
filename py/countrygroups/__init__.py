@@ -137,6 +137,27 @@ G77 = Group([
 
 GRADUATED_LDCS = Group(['BWA', 'CPV', 'GNQ', 'MDV', 'WSM'])
 
+IMO = Group([
+    'AGO', 'ALB', 'ARE', 'ARG', 'ARM', 'ATG', 'AUS', 'AUT', 'AZE', 'BEL',
+    'BEN', 'BGD', 'BGR', 'BHR', 'BHS', 'BIH', 'BLR', 'BLZ', 'BOL', 'BRA',
+    'BRB', 'BRN', 'CAN', 'CHE', 'CHL', 'CHN', 'CIV', 'CMR', 'COD', 'COG',
+    'COK', 'COL', 'COM', 'CPV', 'CRI', 'CUB', 'CYP', 'CZE', 'DEU', 'DJI',
+    'DMA', 'DNK', 'DOM', 'DZA', 'ECU', 'EGY', 'ERI', 'ESP', 'EST', 'ETH',
+    'FIN', 'FJI', 'FRA', 'GAB', 'GBR', 'GEO', 'GHA', 'GIN', 'GMB', 'GNB',
+    'GNQ', 'GRC', 'GRD', 'GTM', 'GUY', 'HND', 'HRV', 'HTI', 'HUN', 'IDN',
+    'IND', 'IRL', 'IRN', 'IRQ', 'ISL', 'ISR', 'ITA', 'JAM', 'JOR', 'JPN',
+    'KAZ', 'KEN', 'KHM', 'KIR', 'KNA', 'KOR', 'KWT', 'LBN', 'LBR', 'LBY',
+    'LCA', 'LKA', 'LTU', 'LUX', 'LVA', 'MAR', 'MCO', 'MDA', 'MDG', 'MDV',
+    'MEX', 'MHL', 'MKD', 'MLT', 'MMR', 'MNE', 'MNG', 'MOZ', 'MRT', 'MUS',
+    'MWI', 'MYS', 'NAM', 'NGA', 'NIC', 'NLD', 'NOR', 'NPL', 'NZL', 'OMN',
+    'PAK', 'PAN', 'PER', 'PHL', 'PLW', 'PNG', 'POL', 'PRK', 'PRT', 'PRY',
+    'QAT', 'ROU', 'RUS', 'SAU', 'SDN', 'SEN', 'SGP', 'SLB', 'SLE', 'SLV',
+    'SMR', 'SOM', 'SRB', 'STP', 'SUR', 'SVK', 'SVN', 'SWE', 'SYC', 'SYR',
+    'TGO', 'THA', 'TKM', 'TLS', 'TON', 'TTO', 'TUN', 'TUR', 'TUV', 'TZA',
+    'UGA', 'UKR', 'URY', 'USA', 'VCT', 'VEN', 'VNM', 'VUT', 'WSM', 'YEM',
+    'ZAF', 'ZMB', 'ZWE'
+])
+
 LDC = Group([
     'AFG', 'AGO', 'BDI', 'BEN', 'BFA', 'BGD', 'BTN', 'CAF', 'COD', 'COM',
     'DJI', 'ERI', 'ETH', 'GIN', 'GMB', 'GNB', 'HTI', 'KHM', 'KIR', 'LAO',
