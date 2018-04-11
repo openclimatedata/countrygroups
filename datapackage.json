@@ -671,7 +671,7 @@
   ],
   "name": "countrygroups",
   "title": "Country Groups",
-  "version": "v0.7.0",
+  "version": "0.7.0",
   "description": "Country groups",
   "repository": "git://github.com/openclimatedata/countrygroups.git"
 }
