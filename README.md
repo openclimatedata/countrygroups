@@ -1,4 +1,4 @@
-[![PyPI](https://img.shields.io/pypi/v/countrygroups.svg)](https://pypi.python.org/pypi/countrygroups/)
+[![PyPI](https://img.shields.io/pypi/v/countrygroups.svg)](https://pypi.org/project/countrygroups/)
 [![npm](https://img.shields.io/npm/v/countrygroups.svg)](https://www.npmjs.com/package/countrygroups)
 
 
@@ -13,7 +13,7 @@ Some lists contain additional information like date of joining etc.
 ## Python Module
 
 The Python module can be installed from
-[PyPI](https://pypi.python.org/pypi/countrygroups):
+[PyPI](https://pypi.org/project/countrygroups/):
 
 ```
 pip install countrygroups
