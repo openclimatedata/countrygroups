@@ -11,16 +11,28 @@ See README.md and repository for details:
 """
 
 from setuptools import setup
+import os
 
 import versioneer
 
+path = os.path.abspath(os.path.dirname(__file__))
+
+description = (
+    'Country groups as lists of ISO codes, especially those '
+    'related to the UNFCCC climate policy process'
+)
+
+with open(os.path.join(path, '../README.md'), "r") as f:
+    readme = f.read()
 
 cmdclass = versioneer.get_cmdclass()
 
 setup(
     name='countrygroups',
     version=versioneer.get_version(),
-    description='ISO-Codes of country groups, especially those related to the UNFCCC process',
+    description=description,
+    long_description=readme,
+    long_description_content_type='text/markdown',
     url='https://github.com/openclimatedata/countrygroups',
     author='Robert Gieseke',
     author_email='robert.gieseke@pik-potsdam.de',
