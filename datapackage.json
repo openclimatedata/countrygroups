@@ -1,84 +1,21 @@
 {
-  "sources": [
-    {
-      "title": "Status of Ratification of the Convention",
-      "web": "http://unfccc.int/essential_background/convention/status_of_ratification/items/2631.php"
-    },
-    {
-      "title": "List of Annex I Parties to the Convention",
-      "web": "http://unfccc.int/parties_and_observers/parties/annex_i/items/2774.php"
-    },
-    {
-      "title": "Greenhouse gas inventory submissions from non-Annex I Parties",
-      "web": "http://unfccc.int/ghg_data/items/3962.php"
-    },
-    {
-      "title": "List of Non-Annex I Parties to the Convention",
-      "web": "http://unfccc.int/parties_and_observers/parties/non_annex_i/items/2833.php"
-    },
-    {
-      "title": "LDCs at a Glance: List of all LDCs in PDF format, (updated June 2017)",
-      "web": "https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/publication/ldc_list.pdf"
-    },
-    {
-      "title": "LDCs at a Glance",
-      "web": "https://www.un.org/development/desa/dpad/least-developed-country-category/ldcs-at-a-glance.html"
-    },
-    {
-      "title": "UN-OHRLLS: Landlocked Developing Countries",
-      "web": "http://unohrlls.org/about-lldcs/country-profiles/"
-    },
-    {
-      "title": "EU member countries in brief",
-      "web": "https://europa.eu/european-union/about-eu/countries/member-countries_en"
-    },
-    {
-      "title": "Small Island Developing States, List of SIDS",
-      "web": "https://sustainabledevelopment.un.org/topics/sids/list"
-    },
-    {
-      "title": "List of OECD Member countries - Ratification of the Convention on the OECD",
-      "web": "http://www.oecd.org/about/membersandpartners/list-oecd-member-countries.htm"
-    },
-    {
-      "title": "UNFCCC - Party Groupings",
-      "web": "http://unfccc.int/parties_and_observers/parties/negotiating_groups/items/2714.php"
-    },
-    {
-      "title": "OPEC - Member Countries",
-      "web": "http://www.opec.org/opec_web/en/about_us/25.htm"
-    },
-    {
-      "title": "AOSIS - Members",
-      "web": "http://aosis.org/about/members/"
-    },
-    {
-      "title": "The Member States of the Group of 77",
-      "web": "http://www.g77.org/doc/members.html"
-    },
-     {
-      "title": "United Nations Regional Groups of Member States",
-      "web": "http://www.un.org/depts/DGACM/RegionalGroups.shtml"
-    },
-    {
-      "title": "AR5 Region Definitions",
-      "web": "https://tntcat.iiasa.ac.at/AR5DB/dsd?Action=htmlpage&page=about"
-    },
-    {
-      "title": "UN Statistics Division - Standard country or area codes for statistical use (M49)",
-      "web": "https://unstats.un.org/unsd/methodology/m49/"
-    },
-    {
-      "title": "http://www.imo.org/en/About/Membership/Pages/MemberStates.aspx",
-      "web": "International Maritime Organization Member States"
-    }
-  ],
+  "name": "countrygroups",
+  "title": "Country Groups",
+  "version": "0.7.0",
+  "description": "Country groups",
+  "repository": "git://github.com/openclimatedata/countrygroups.git",
   "resources": [
     {
       "name": "unfccc",
       "path": "data/unfccc.csv",
       "format": "csv",
       "mediatype": "text/csv",
+      "sources": [
+        {
+          "title": "Status of Ratification of the Convention",
+          "path": "http://unfccc.int/essential_background/convention/status_of_ratification/items/2631.php"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -115,7 +52,12 @@
       "path": "data/annex-one.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 568,
+      "sources": [
+        {
+          "title": "List of Annex I Parties to the Convention",
+          "path": "http://unfccc.int/parties_and_observers/parties/annex_i/items/2774.php"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -137,6 +79,12 @@
       "path": "data/annex-one-kaz.csv",
       "format": "csv",
       "mediatype": "text/csv",
+      "sources": [
+        {
+          "title": "Greenhouse gas inventory submissions from non-Annex I Parties",
+          "path": "https://unfccc.int/process/transparency-and-reporting/greenhouse-gas-data/greenhouse-gas-data-unfccc/greenhouse-gas-inventory-submissions-from-non-annex-i-parties"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -158,7 +106,12 @@
       "path": "data/non-annex-one.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 2381,
+      "sources": [
+        {
+          "title": "List of Non-Annex I Parties to the Convention",
+          "path": "http://unfccc.int/parties_and_observers/parties/non_annex_i/items/2833.php"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -180,7 +133,12 @@
       "path": "data/graduated-ldcs.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 162,
+      "sources": [
+        {
+          "title": "LDCs at a Glance",
+          "path": "https://www.un.org/development/desa/dpad/least-developed-country-category/ldcs-at-a-glance.html"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -212,7 +170,12 @@
       "path": "data/ldc.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 960,
+      "sources": [
+        {
+          "title": "LDCs at a Glance: List of all LDCs in PDF format, (updated June 2017)",
+          "path": "https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/publication/ldc_list.pdf"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -239,6 +202,12 @@
       "path": "data/lldc.csv",
       "format": "csv",
       "mediatype": "text/csv",
+      "sources": [
+        {
+        "title": "UN-OHRLLS: Landlocked Developing Countries",
+        "path": "http://unohrlls.org/about-lldcs/country-profiles/"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -260,7 +229,12 @@
       "path": "data/european-union.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 675,
+      "sources": [
+        {
+          "title": "EU member countries in brief",
+          "path": "https://europa.eu/european-union/about-eu/countries/member-countries_en"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -287,7 +261,12 @@
       "path": "data/sids-non-un-or-regional-commissions-associates.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 382,
+      "sources": [
+        {
+          "title": "Small Island Developing States, List of SIDS",
+          "path": "https://sustainabledevelopment.un.org/topics/sids/list"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -309,7 +288,12 @@
       "path": "data/sids.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 1419,
+      "sources": [
+        {
+          "title": "Small Island Developing States, List of SIDS",
+          "path": "https://sustainabledevelopment.un.org/topics/sids/list"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -336,7 +320,6 @@
       "path": "data/g20.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 276,
       "schema": {
         "fields": [
           {
@@ -358,7 +341,6 @@
       "path": "data/g7.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 120,
       "schema": {
         "fields": [
           {
@@ -380,7 +362,12 @@
       "path": "data/oecd.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 856,
+      "sources": [
+        {
+          "title": "List of OECD Member countries - Ratification of the Convention on the OECD",
+        "path": "http://www.oecd.org/about/membersandpartners/list-oecd-member-countries.htm"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -407,7 +394,6 @@
       "path": "data/brics.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 81,
       "schema": {
         "fields": [
           {
@@ -429,7 +415,7 @@
       "path": "data/umbrella.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 133,
+
       "schema": {
         "fields": [
           {
@@ -451,7 +437,12 @@
       "path": "data/opec.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 194,
+      "sources": [
+        {
+          "title": "OPEC - Member Countries",
+          "path": "http://www.opec.org/opec_web/en/about_us/25.htm"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -473,7 +464,12 @@
       "path": "data/aosis.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 618,
+      "sources": [
+        {
+          "title": "AOSIS - Members",
+          "path": "http://aosis.org/about/members/"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -492,10 +488,16 @@
     },
     {
       "name": "eig",
+      "title": "Environmental Integrity Group",
       "path": "data/eig.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 88,
+      "sources": [
+        {
+          "title": "UNFCCC - Party Groupings",
+          "path": "https://unfccc.int/party-groupings"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -517,7 +519,12 @@
       "path": "data/g77.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 2062,
+      "sources": [
+        {
+          "title": "The Member States of the Group of 77",
+          "path": "http://www.g77.org/doc/members.html"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -539,7 +546,12 @@
       "path": "data/arab-group.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 278,
+      "sources": [
+        {
+          "title": "UNFCCC - Party Groupings",
+          "path": "https://unfccc.int/party-groupings"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -562,6 +574,12 @@
       "format": "csv",
       "mediatype": "text/csv",
       "subregions": true,
+      "sources": [
+        {
+          "title": "United Nations Regional Groups of Member States",
+          "path": "http://www.un.org/depts/DGACM/RegionalGroups.shtml"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -615,6 +633,12 @@
       "format": "csv",
       "mediatype": "text/csv",
       "subregions": true,
+      "sources": [
+        {
+          "title": "AR5 Region Definitions",
+          "path": "https://tntcat.iiasa.ac.at/AR5DB/dsd?Action=htmlpage&page=about"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -640,13 +664,25 @@
       "name": "unstats-geographical-regions",
       "path": "data/unstats-geographical-regions.json",
       "format": "json",
-      "mediatype": "text/json"
+      "mediatype": "text/json",
+      "sources": [
+        {
+          "title": "UN Statistics Division - Standard country or area codes for statistical use (M49)",
+          "path": "https://unstats.un.org/unsd/methodology/m49/"
+        }
+      ]
     },
     {
       "name": "imo",
       "path": "data/imo.csv",
       "format": "csv",
       "mediatype": "text/csv",
+      "sources": [
+        {
+          "title": "http://www.imo.org/en/About/Membership/Pages/MemberStates.aspx",
+          "path": "International Maritime Organization Member States"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -668,10 +704,5 @@
         "primaryKey": "Code"
       }
     }
-  ],
-  "name": "countrygroups",
-  "title": "Country Groups",
-  "version": "0.7.0",
-  "description": "Country groups",
-  "repository": "git://github.com/openclimatedata/countrygroups.git"
+  ]
 }
