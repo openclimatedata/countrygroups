@@ -3,7 +3,7 @@
 import pandas as pd
 import requests
 
-from countrynames import to_alpha_3, to_name
+from countrynames import to_alpha_3
 from lxml import etree, html
 from util import root
 
