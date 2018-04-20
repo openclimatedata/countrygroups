@@ -679,8 +679,8 @@
       "mediatype": "text/csv",
       "sources": [
         {
-          "title": "http://www.imo.org/en/About/Membership/Pages/MemberStates.aspx",
-          "path": "International Maritime Organization Member States"
+          "title": "International Maritime Organization Member States",
+          "path": "http://www.imo.org/en/About/Membership/Pages/MemberStates.aspx"
         }
       ],
       "schema": {
