@@ -8,15 +8,14 @@ from util import root, to_code
 from shortcountrynames import to_name
 
 
-url = "http://www.imo.org/en/About/Membership/Pages/MemberStates.aspx"
-
 url = ("https://treaties.un.org/pages/ViewDetails.aspx?"
        "src=TREATY&mtdsg_no=XII-1&chapter=12&clang=_en")
 
 page = requests.get(url)
 tree = html.fromstring(page.content)
 
-member_states = tree.xpath('//table[@id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_tblgrid"]')
+member_states = tree.xpath('//table[@id="'
+    'ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_tblgrid"]')
 table = member_states[0]
 df = pd.read_html(etree.tostring(table), skiprows=1)[0]
 
