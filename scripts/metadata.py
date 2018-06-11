@@ -8,7 +8,7 @@ metadata = json.load(open(root / "datapackage.json"))
 
 out = []
 
-for item in sorted(metadata["resources"], ):
+for item in sorted(metadata["resources"], key=lambda k: k['name']):
     name = item["name"]
     title = item["title"]
     path = item["path"]
@@ -22,8 +22,11 @@ for item in sorted(metadata["resources"], ):
             sources += f"[{source['title']}]({source['path']})\n"
     else:
         sources = "-"
+    idx = name.upper().replace("-", "_")
     template = f"""
 ### {title}
+
+({idx})
 
 [{path}]({path})
 {description}
