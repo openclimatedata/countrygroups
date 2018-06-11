@@ -16,11 +16,9 @@
   ],
   "author": "Robert Gieseke",
   "license": "CC0",
-  {
-    "files": [
-      "../README.md"
-    ]
-  }
+  "files": [
+    "../README.md"
+  ],
   "bugs": {
     "url": "https://github.com/openclimatedata/countrygroups/issues"
   },
