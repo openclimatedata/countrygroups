@@ -20,9 +20,12 @@ CSV_FILES = \
   data/umbrella.csv \
   data/unfccc.csv \
   data/un-regional-groups.csv
-  #data/annex-one.csv \
-  #data/annex-one-kaz.csv \
-  #data/non-annex-one.csv \
+
+# Website currently down.
+	#data/annex-one.csv \
+	#data/annex-one-kaz.csv \
+	#data/non-annex-one.csv \
+
 
 JSON_FILES = \
   data/unstats-geographical-regions.json
