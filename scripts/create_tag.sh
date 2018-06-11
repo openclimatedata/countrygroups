@@ -22,10 +22,8 @@ else
   "$sed" -i -r "s/(\"version\": \").*(\")/\1$version\2/" datapackage.json
   git add datapackage.json
   git commit -m "Update version in datapackage.json"
-  cd js
   npm version "$version" -m "Update version to %s"
   git add package.json
   git commit -m "Update version in package.json"
-  cd -
   git tag v$version
 fi
