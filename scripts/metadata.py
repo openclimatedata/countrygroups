@@ -12,10 +12,6 @@ for item in sorted(metadata["resources"], key=lambda k: k['name']):
     name = item["name"]
     title = item["title"]
     path = item["path"]
-    if "description" in item:
-        description = item["description"]
-    else:
-        description = ""
     if "sources" in item:
         sources = ""
         for source in item["sources"]:
@@ -24,12 +20,10 @@ for item in sorted(metadata["resources"], key=lambda k: k['name']):
         sources = "-"
     idx = name.upper().replace("-", "_")
     template = f"""
-### {title}
-
-({idx})
+### {title} ({idx})
 
 [{path}]({path})
-{description}
+
 Sources:
     {sources}"""
 
