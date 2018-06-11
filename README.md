@@ -1,13 +1,13 @@
 [![PyPI](https://img.shields.io/pypi/v/countrygroups.svg)](https://pypi.org/project/countrygroups/)
 [![npm](https://img.shields.io/npm/v/countrygroups.svg)](https://www.npmjs.com/package/countrygroups)
 
-
 Data Package, Python and JavaScript module with country groups.
 
 ## Data Package
 
-The Data Package contains the lists used to build the language modules and can
-be loaded with respective [language tools](http://frictionlessdata.io/software/).
+The Data Package contains the lists as CSV or JSON file used to build the
+language modules and can be loaded with the respective
+[language tools](http://frictionlessdata.io/software/).
 Some lists contain additional information like date of joining etc.
 
 ## Python Module
@@ -24,8 +24,21 @@ It contains lists with three-letter codes:
 ```py
 from countrygroups import EUROPEAN_UNION
 
-for member in EUROPEAN_UNION:
-    print(member)
+print(EUROPEAN_UNION)
+
+# =>
+# ['AUT', 'BEL', 'BGR', 'CYP', 'CZE', 'DEU', 'DNK', 'ESP', 'EST', 'FIN', 'FRA',
+#  'GBR', 'GRC', 'HRV', 'HUN', 'IRL', 'ITA', 'LTU', 'LUX', 'LVA', 'MLT', 'NLD',
+#  'POL', 'PRT', 'ROU', 'SVK', 'SVN', 'SWE']
+
+print(EUROPEAN_UNION.names)
+
+# =>
+# ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czechia', 'Denmark',
+   'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Ireland',
+   'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands',
+   'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden',
+   'United Kingdom']
 ```
 
 ## JavaScript Module
@@ -39,131 +52,259 @@ npm install countrygroups
 It contains arrays with three-letter codes:
 
 ```js
-var EU = require("countrygroups").EUROPEAN_UNION
+var g7 = require("countrygroups").G7
 
-console.log(EU)
+console.log(g7) // => [ 'CAN', 'DEU', 'EUU', 'FRA', 'GBR', 'ITA', 'JPN', 'USA' ]
 ```
 
 ## Data
 
-### Members of the UNFCCC
 
-[data/unfccc.csv](data/unfccc.csv)
-
-Currently, there are 197 Parties (196 States and the European Union) to the United
-Nations Framework Convention on Climate Change.
-The CSV file contains a list of them and their [status of ratification](http://unfccc.int/essential_background/convention/status_of_ratification/items/2631.php).
-Included are country codes, dates of Signature, Ratification, Acceptance,
-Accession, Approval, or Succession to the Convention, and Entry into Force.
-
-For an explanation of the legal terms of ratification instruments see
-<https://treaties.un.org/Pages/Overview.aspx?path=overview/glossary/page1_en.xml>
 
 ### UNFCCC Annex I parties
 
+(ANNEX_ONE)
+
 [data/annex-one.csv](data/annex-one.csv)
-[data/annex-one-kaz.csv](data/annex-one.csv)
-
 Parties listed in Annex I of the UNFCCC classified as industrialized (developed) countries and "economies in transition".
-After ratifying the Kyoto Protocol Kazakhstan is considered an Annex I Party for the
-purposes of the Protocol but remains to be a non-Annex I Party for the purposes of the Convention, the second version includes Kazakhstan.
+Sources:
+    [List of Annex I Parties to the Convention](http://unfccc.int/parties_and_observers/parties/annex_i/items/2774.php)
 
-### UNFCCC Non-Annex I parties
 
-[data/non-annex-one.csv](data/non-annex-one.csv)
+### UNFCCC Annex I parties incl. Kazakhstan
 
-Members of the UNFCCC not part of Annex I.
+(ANNEX_ONE_KAZ)
 
-### Least Developed Countries (LDCs)
+[data/annex-one-kaz.csv](data/annex-one-kaz.csv)
+After ratifying the Kyoto Protocol Kazakhstan is considered an Annex I Party for the purposes of the Protocol but remains to be a non-Annex I Party for the purposes of the Convention.
+Sources:
+    [Greenhouse gas inventory submissions from non-Annex I Parties](https://unfccc.int/process/transparency-and-reporting/greenhouse-gas-data/greenhouse-gas-data-unfccc/greenhouse-gas-inventory-submissions-from-non-annex-i-parties)
 
-[data/ldcs.csv](data/ldcs.csv)
 
-[data/graduated-ldcs.csv](data/graduated-ldcs.csv)
+### Alliance of Small Island States (AOSIS)
 
-The list of Least Developed Countries (LDCs) is taken from
-<https://www.un.org/development/desa/dpad/least-developed-country-category/ldcs-at-a-glance.html>
-Available are current LDCs and graduated countries.
-
-### Landlocked Developing Countries (LLDCs)
-
-[data/lldcs.csv](data/lldcs.csv)
-
-<http://unohrlls.org/about-lldcs/>
-
-<http://unohrlls.org/about-lldcs/country-profiles/>
-
-### Small Island Developing States (SIDS)
-
-[data/sids.csv](data/sids.csv)
-
-[data/sids-non-un-or-regional-commissions-associates.csv](data/sids-non-un-or-regional-commissions-associates.csv)
-
-List of Small Island Developing States (SIDS) and list of Non-UN Members/Associate Members of Regional Commissions, sourced from
-<https://sustainabledevelopment.un.org/topics/sids/list>.
-
-### European Union member states
-
-[data/european-union.csv](data/european-union.csv)
-
-The data is sourced from <https://europa.eu/european-union/about-eu/countries/member-countries_en>.
-
-### G20 members
-
-[data/g20.csv](data/g20.csv)
-
-### Organisation for Economic Co-operation and Development (OECD)
-
-[data/oecd.csv](data/oecd.csv)
-
-Members of the Convention on the Organisation for Economic Co-operation and Development (OECD) and dates on which they deposited their instruments of ratification, sourced from <http://www.oecd.org/about/membersandpartners/list-oecd-member-countries.htm>.
-
-### BRICS
-
-[data/brics.csv](data/brics.csv)
-
-### Umbrella group
-
-[data/umbrella.csv](data/umbrella.csv)
-
-### OPEC
-
-[data/opec.csv](data/opec.csv)
-
-### AOSIS
+(AOSIS)
 
 [data/aosis.csv](data/aosis.csv)
 
-### Environmental Integrity Group (EIG)
+Sources:
+    [AOSIS - Members](http://aosis.org/about/members/)
 
-[data/eig.csv](data/eig.csv)
 
-### G77
+### Regional groups for the IPCC AR5 report
 
-[data/g77.csv](data/g77.csv)
-
-### Arab Group
-
-[data/arab-group.csv](data/arab-group.csv)
-
-### UN Regional Groups
-
-[data/un-regional-groups.csv](data/un-regional-groups.csv)
-
-### IPCC AR5 Region definitions
+(AR5)
 
 [data/ar5.csv](data/ar5.csv)
 
+Sources:
+    [AR5 Region Definitions](https://tntcat.iiasa.ac.at/AR5DB/dsd?Action=htmlpage&page=about)
+
+
+### Arab Group in the UNFCCC
+
+(ARAB_GROUP)
+
+[data/arab-group.csv](data/arab-group.csv)
+
+Sources:
+    [UNFCCC - Party Groupings](https://unfccc.int/party-groupings)
+
+
+### BRICS (Brazil, Russia, India, China and South Africa)
+
+(BRICS)
+
+[data/brics.csv](data/brics.csv)
+
+Sources:
+    -
+
+### Environmental Integrity Group
+
+(EIG)
+
+[data/eig.csv](data/eig.csv)
+
+Sources:
+    [UNFCCC - Party Groupings](https://unfccc.int/party-groupings)
+
+
+### European Union (EU)
+
+(EUROPEAN_UNION)
+
+[data/european-union.csv](data/european-union.csv)
+
+Sources:
+    [EU member countries in brief](https://europa.eu/european-union/about-eu/countries/member-countries_en)
+
+
+### G20 members
+
+(G20)
+
+[data/g20.csv](data/g20.csv)
+
+Sources:
+    -
+
+### G7 members
+
+(G7)
+
+[data/g7.csv](data/g7.csv)
+
+Sources:
+    -
+
+### G77 members
+
+(G77)
+
+[data/g77.csv](data/g77.csv)
+
+Sources:
+    [The Member States of the Group of 77](http://www.g77.org/doc/members.html)
+
+
+### Countries graduated from Least Developed Countries (LDCs)
+
+(GRADUATED_LDCS)
+
+[data/graduated-ldcs.csv](data/graduated-ldcs.csv)
+
+Sources:
+    [LDCs at a Glance](https://www.un.org/development/desa/dpad/least-developed-country-category/ldcs-at-a-glance.html)
+
+
 ### International Maritime Organization
+
+(IMO)
 
 [data/imo.csv](data/imo.csv)
 
-### SSP (Shared Socioeconomic Pathways) Database Region Definitions
+Sources:
+    [UN Treaty Collection - Convention on the International Maritime Organization](https://treaties.un.org/pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XII-1&chapter=12&clang=_en)
+
+
+### Least Developed Countries (LDCs)
+
+(LDC)
+
+[data/ldc.csv](data/ldc.csv)
+
+Sources:
+    [LDCs at a Glance: List of all LDCs in PDF format, (updated June 2017)](https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/publication/ldc_list.pdf)
+
+
+### Landlocked Developing Countries (LLDCs)
+
+(LLDC)
+
+[data/lldc.csv](data/lldc.csv)
+
+Sources:
+    [UN-OHRLLS: Landlocked Developing Countries](http://unohrlls.org/about-lldcs/country-profiles/)
+
+
+### UNFCCC Non-Annex I parties
+
+(NON_ANNEX_ONE)
+
+[data/non-annex-one.csv](data/non-annex-one.csv)
+Members of the UNFCCC not part of Annex I.
+Sources:
+    [List of Non-Annex I Parties to the Convention](http://unfccc.int/parties_and_observers/parties/non_annex_i/items/2833.php)
+
+
+### Organisation for Economic Co-operation and Development (OECD)
+
+(OECD)
+
+[data/oecd.csv](data/oecd.csv)
+
+Sources:
+    [List of OECD Member countries - Ratification of the Convention on the OECD](http://www.oecd.org/about/membersandpartners/list-oecd-member-countries.htm)
+
+
+### OPEC members
+
+(OPEC)
+
+[data/opec.csv](data/opec.csv)
+
+Sources:
+    [OPEC - Member Countries](http://www.opec.org/opec_web/en/about_us/25.htm)
+
+
+### Small Island Developing States (SIDS)
+
+(SIDS)
+
+[data/sids.csv](data/sids.csv)
+
+Sources:
+    [Small Island Developing States, List of SIDS](https://sustainabledevelopment.un.org/topics/sids/list)
+
+
+### Non-UN Members/Associate Members of Regional Commissions of SIDS
+
+(SIDS_NON_UN_OR_REGIONAL_COMMISSIONS_ASSOCIATES)
+
+[data/sids-non-un-or-regional-commissions-associates.csv](data/sids-non-un-or-regional-commissions-associates.csv)
+
+Sources:
+    [Small Island Developing States, List of SIDS](https://sustainabledevelopment.un.org/topics/sids/list)
+
+
+### Regional groups for the Shared Socioeconomic Pathways (SSPs)
+
+(SSP)
 
 [data/ssp.csv](data/ssp.csv)
 
+Sources:
+    -
+
+### Umbrella group
+
+(UMBRELLA)
+
+[data/umbrella.csv](data/umbrella.csv)
+
+Sources:
+    [UN Climate Change Party Groupings](http://unfccc.int/parties_and_observers/parties/negotiating_groups/items/2714.php)
+
+
+### UN Regional Groups of Member States
+
+(UN_REGIONAL_GROUPS)
+
+[data/un-regional-groups.csv](data/un-regional-groups.csv)
+
+Sources:
+    [United Nations Regional Groups of Member States](http://www.un.org/depts/DGACM/RegionalGroups.shtml)
+
+
+### Members of the UNFCCC
+
+(UNFCCC)
+
+[data/unfccc.csv](data/unfccc.csv)
+The 197 Parties (196 States and the European Union) to the United Nations Framework Convention on Climate Change.
+Sources:
+    [Status of Ratification of the Convention](http://unfccc.int/essential_background/convention/status_of_ratification/items/2631.php)
+
+
 ### UN Statistical Division Geographical Regions
 
+(UNSTATS_GEOGRAPHICAL_REGIONS)
+
 [data/unstats-geographical-regions.json](data/unstats-geographical-regions.json)
+
+Sources:
+    [UN Statistics Division - Standard country or area codes for statistical use (M49)](https://unstats.un.org/unsd/methodology/m49/)
 
 
 ## Preparation
