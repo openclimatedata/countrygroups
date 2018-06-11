@@ -7,6 +7,8 @@
   "resources": [
     {
       "name": "unfccc",
+      "title": "Members of the UNFCCC",
+      "description": "The 197 Parties (196 States and the European Union) to the United Nations Framework Convention on Climate Change.",
       "path": "data/unfccc.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -49,6 +51,8 @@
     },
     {
       "name": "annex-one",
+      "title": "UNFCCC Annex I parties",
+      "description": "Parties listed in Annex I of the UNFCCC classified as industrialized (developed) countries and \"economies in transition\".",
       "path": "data/annex-one.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -76,6 +80,8 @@
     },
     {
       "name": "annex-one-kaz",
+      "title": "UNFCCC Annex I parties incl. Kazakhstan",
+      "description": "After ratifying the Kyoto Protocol Kazakhstan is considered an Annex I Party for the purposes of the Protocol but remains to be a non-Annex I Party for the purposes of the Convention.",
       "path": "data/annex-one-kaz.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -103,6 +109,8 @@
     },
     {
       "name": "non-annex-one",
+      "title": "UNFCCC Non-Annex I parties",
+      "description": "Members of the UNFCCC not part of Annex I.",
       "path": "data/non-annex-one.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -130,6 +138,7 @@
     },
     {
       "name": "graduated-ldcs",
+      "title": "Countries graduated from Least Developed Countries (LDCs)",
       "path": "data/graduated-ldcs.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -167,6 +176,7 @@
     },
     {
       "name": "ldc",
+      "title": "Least Developed Countries (LDCs)",
       "path": "data/ldc.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -199,6 +209,7 @@
     },
     {
       "name": "lldc",
+      "title": "Landlocked Developing Countries (LLDCs)",
       "path": "data/lldc.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -226,6 +237,7 @@
     },
     {
       "name": "european-union",
+      "title": "European Union (EU)",
       "path": "data/european-union.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -258,6 +270,7 @@
     },
     {
       "name": "sids-non-un-or-regional-commissions-associates",
+      "title": "Non-UN Members/Associate Members of Regional Commissions of SIDS",
       "path": "data/sids-non-un-or-regional-commissions-associates.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -285,6 +298,7 @@
     },
     {
       "name": "sids",
+      "title": "Small Island Developing States (SIDS)",
       "path": "data/sids.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -317,6 +331,7 @@
     },
     {
       "name": "g20",
+      "title": "G20 members",
       "path": "data/g20.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -338,6 +353,7 @@
     },
     {
       "name": "g7",
+      "title": "G7 members",
       "path": "data/g7.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -359,6 +375,7 @@
     },
     {
       "name": "oecd",
+      "title": "Organisation for Economic Co-operation and Development (OECD)",
       "path": "data/oecd.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -391,6 +408,7 @@
     },
     {
       "name": "brics",
+      "title": "BRICS (Brazil, Russia, India, China and South Africa)",
       "path": "data/brics.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -412,6 +430,7 @@
     },
     {
       "name": "umbrella",
+      "title": "Umbrella group",
       "path": "data/umbrella.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -434,6 +453,7 @@
     },
     {
       "name": "opec",
+      "title": "OPEC members",
       "path": "data/opec.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -461,6 +481,7 @@
     },
     {
       "name": "aosis",
+      "title": "Alliance of Small Island States (AOSIS)",
       "path": "data/aosis.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -516,6 +537,7 @@
     },
     {
       "name": "g77",
+      "title": "G77 members",
       "path": "data/g77.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -543,6 +565,7 @@
     },
     {
       "name": "arab-group",
+      "title": "Arab Group in the UNFCCC",
       "path": "data/arab-group.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -570,6 +593,7 @@
     },
     {
       "name": "un-regional-groups",
+      "title": "UN Regional Groups of Member States",
       "path": "data/un-regional-groups.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -602,6 +626,7 @@
     },
     {
       "name": "ssp",
+      "title": "Regional groups for the Shared Socioeconomic Pathways (SSPs)",
       "path": "data/ssp.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -629,6 +654,7 @@
     },
     {
       "name": "ar5",
+      "title": "Regional groups for the IPCC AR5 report",
       "path": "data/ar5.csv",
       "format": "csv",
       "mediatype": "text/csv",
@@ -662,6 +688,7 @@
     },
     {
       "name": "unstats-geographical-regions",
+      "title": "UN Statistical Division Geographical Regions",
       "path": "data/unstats-geographical-regions.json",
       "format": "json",
       "mediatype": "text/json",
@@ -674,6 +701,7 @@
     },
     {
       "name": "imo",
+      "title": "International Maritime Organization",
       "path": "data/imo.csv",
       "format": "csv",
       "mediatype": "text/csv",
