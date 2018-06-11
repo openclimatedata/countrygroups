@@ -6,9 +6,10 @@ pandas_datapackage_reader
 pyyaml
 requests
 shortcountrynames
-twine
 unidecode
-wheel
 yapf
 goodtables
 countrynames
+setuptools>=38.6.0
+twine>=1.11.0
+wheel>=0.31.0
