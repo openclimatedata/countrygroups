@@ -35,10 +35,10 @@ print(EUROPEAN_UNION.names)
 
 # =>
 # ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czechia', 'Denmark',
-   'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Ireland',
-   'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands',
-   'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden',
-   'United Kingdom']
+#   'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Ireland',
+#   'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands',
+#   'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden',
+#   'United Kingdom']
 ```
 
 ## JavaScript Module
