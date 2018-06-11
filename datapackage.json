@@ -707,8 +707,8 @@
       "mediatype": "text/csv",
       "sources": [
         {
-          "title": "International Maritime Organization Member States",
-          "path": "http://www.imo.org/en/About/Membership/Pages/MemberStates.aspx"
+          "title": "UN Treaty Collection - Convention on the International Maritime Organization",
+          "path": "https://treaties.un.org/pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XII-1&chapter=12&clang=_en"
         }
       ],
       "schema": {
@@ -724,9 +724,9 @@
             "description": "Country Name"
           },
           {
-            "name": "Year",
-            "type": "integer",
-            "description": "Start year of membership"
+            "name": "Date",
+            "type": "date",
+            "description": "Date of definitive signature or acceptance"
           }
         ],
         "primaryKey": "Code"
