@@ -1,174 +1,175 @@
-Code,Name,Year
-ALB,Albania,1993
-DZA,Algeria,1963
-AGO,Angola,1977
-ATG,Antigua and Barbuda,1986
-ARG,Argentina,1953
-ARM,Armenia,2018
-AUS,Australia,1952
-AUT,Austria,1975
-AZE,Azerbaijan,1995
-BHS,Bahamas,1976
-BHR,Bahrain,1976
-BGD,Bangladesh,1976
-BRB,Barbados,1970
-BLR,Belarus (Republic of),2016
-BEL,Belgium,1951
-BLZ,Belize,1990
-BEN,Benin,1980
-BOL,Bolivia (Plurinational State of),1987
-BIH,Bosnia and Herzegovina,1993
-BRA,Brazil,1963
-BRN,Brunei Darussalam,1984
-BGR,Bulgaria,1960
-CPV,Cabo Verde,1976
-KHM,Cambodia,1961
-CMR,Cameroon,1961
-CAN,Canada,1948
-CHL,Chile,1972
-CHN,China,1973
-COL,Colombia,1974
-COM,Comoros,2001
-COG,Congo,1975
-COK,Cook Islands,2008
-CRI,Costa Rica,1981
-CIV,Côte d'Ivoire,1960
-HRV,Croatia,1992
-CUB,Cuba,1966
-CYP,Cyprus,1973
-CZE,Czechia,1993
-PRK,Democratic People's Republic of Korea,1986
-COD,Democratic Republic of the Congo,1973
-DNK,Denmark,1959
-DJI,Djibouti,1979
-DMA,Dominica,1979
-DOM,Dominican Republic,1953
-ECU,Ecuador,1956
-EGY,Egypt,1958
-SLV,El Salvador,1981
-GNQ,Equatorial Guinea,1972
-ERI,Eritrea,1993
-EST,Estonia,1992
-ETH,Ethiopia,1975
-FJI,Fiji,1983
-FIN,Finland,1959
-FRA,France,1952
-GAB,Gabon,1976
-GMB,Gambia,1979
-GEO,Georgia,1993
-DEU,Germany,1959
-GHA,Ghana,1959
-GRC,Greece,1958
-GRD,Grenada,1998
-GTM,Guatemala,1983
-GIN,Guinea,1975
-GNB,Guinea-Bissau,1977
-GUY,Guyana,1980
-HTI,Haiti,1953
-HND,Honduras,1954
-HUN,Hungary,1970
-ISL,Iceland,1960
-IND,India,1959
-IDN,Indonesia,1961
-IRN,Iran (Islamic Republic of),1958
-IRQ,Iraq,1973
-IRL,Ireland,1951
-ISR,Israel,1952
-ITA,Italy,1957
-JAM,Jamaica,1976
-JPN,Japan,1958
-JOR,Jordan,1973
-KAZ,Kazakhstan,1994
-KEN,Kenya,1973
-KIR,Kiribati,2003
-KWT,Kuwait,1960
-LVA,Latvia,1993
-LBN,Lebanon,1966
-LBR,Liberia,1959
-LBY,Libya,1970
-LTU,Lithuania,1995
-LUX,Luxembourg,1991
-MDG,Madagascar,1961
-MWI,Malawi,1989
-MYS,Malaysia,1971
-MDV,Maldives,1967
-MLT,Malta,1966
-MHL,Marshall Islands,1998
-MRT,Mauritania,1961
-MUS,Mauritius,1978
-MEX,Mexico,1954
-MCO,Monaco,1989
-MNG,Mongolia,1996
-MNE,Montenegro,2006
-MAR,Morocco,1962
-MOZ,Mozambique,1979
-MMR,Myanmar,1951
-NAM,Namibia,1994
-NPL,Nepal,1979
-NLD,Netherlands,1949
-NZL,New Zealand,1960
-NIC,Nicaragua,1982
-NGA,Nigeria,1962
-NOR,Norway,1958
-OMN,Oman,1974
-PAK,Pakistan,1958
-PLW,Palau,2011
-PAN,Panama,1958
-PNG,Papua New Guinea,1976
-PRY,Paraguay,1993
-PER,Peru,1968
-PHL,Philippines,1964
-POL,Poland,1960
-PRT,Portugal,1976
-QAT,Qatar,1977
-KOR,Republic of Korea,1962
-MDA,Republic of Moldova,2001
-ROU,Romania,1965
-RUS,Russian Federation,1958
-KNA,Saint Kitts and Nevis,2001
-LCA,Saint Lucia,1980
-VCT,Saint Vincent and the Grenadines,1981
-WSM,Samoa,1996
-SMR,San Marino,2002
-STP,Sao Tome and Principe,1990
-SAU,Saudi Arabia,1969
-SEN,Senegal,1960
-SRB,Serbia,2000
-SYC,Seychelles,1978
-SLE,Sierra Leone,1973
-SGP,Singapore,1966
-SVK,Slovakia,1993
-SVN,Slovenia,1993
-SLB,Solomon Islands,1988
-SOM,Somalia,1978
-ZAF,South Africa,1995
-ESP,Spain,1962
-LKA,Sri Lanka,1972
-SDN,Sudan,1974
-SUR,Suriname,1976
-SWE,Sweden,1959
-CHE,Switzerland,1955
-SYR,Syrian Arab Republic,1963
-THA,Thailand,1973
-MKD,The former Yugoslav Republic of Macedonia,1993
-TLS,Timor-Leste,2005
-TGO,Togo,1983
-TON,Tonga,2000
-TTO,Trinidad and Tobago,1965
-TUN,Tunisia,1963
-TUR,Turkey,1958
-TKM,Turkmenistan,1993
-TUV,Tuvalu,2004
-UGA,Uganda,2009
-UKR,Ukraine,1994
-ARE,United Arab Emirates,1980
-GBR,United Kingdom of Great Britain and Northern Ireland,1949
-TZA,United Republic of Tanzania,1974
-USA,United States of America,1950
-URY,Uruguay,1968
-VUT,Vanuatu,1986
-VEN,Venezuela (Bolivarian Republic of),1975
-VNM,Viet Nam,1984
-YEM,Yemen,1979
-ZMB,Zambia,2014
-ZWE,Zimbabwe,2005
+Code,Name,Date
+ALB,Albania,1993-05-24
+DZA,Algeria,1963-10-31
+AGO,Angola,1977-06-06
+ATG,Antigua & Barbuda,1986-01-13
+ARG,Argentina,1953-06-18
+ARM,Armenia,2018-01-19
+AUS,Australia,1952-02-13
+AUT,Austria,1975-04-02
+AZE,Azerbaijan,1995-05-15
+BHS,Bahamas,1976-07-22
+BHR,Bahrain,1976-09-22
+BGD,Bangladesh,1976-05-27
+BRB,Barbados,1970-01-07
+BLR,Belarus,2016-11-29
+BEL,Belgium,1951-08-09
+BLZ,Belize,1990-09-13
+BEN,Benin,1980-03-19
+BOL,Bolivia,1987-07-06
+BIH,Bosnia & Herzegovina,1993-07-16
+BRA,Brazil,1963-03-04
+BRN,Brunei,1984-12-31
+BGR,Bulgaria,1960-04-05
+CPV,Cabo Verde,1976-08-24
+KHM,Cambodia,1961-01-03
+CMR,Cameroon,1961-05-01
+CAN,Canada,1948-10-15
+CHL,Chile,1972-02-17
+CHN,China,1973-03-01
+COL,Colombia,1974-11-19
+COM,Comoros,2001-08-03
+COG,Republic of the Congo,1975-09-05
+COK,Cook Islands,2008-07-18
+CRI,Costa Rica,1981-03-04
+CIV,Côte d’Ivoire,1960-11-04
+HRV,Croatia,1992-07-08
+CUB,Cuba,1966-05-06
+CYP,Cyprus,1973-11-21
+CZE,Czechia,1993-06-18
+PRK,North Korea,1986-04-16
+COD,DR Congo,1973-08-16
+DNK,Denmark,1959-06-03
+DJI,Djibouti,1979-02-20
+DMA,Dominica,1979-12-18
+DOM,Dominican Republic,1953-08-25
+ECU,Ecuador,1956-07-12
+EGY,Egypt,1958-03-17
+SLV,El Salvador,1981-02-12
+GNQ,Equatorial Guinea,1972-09-06
+ERI,Eritrea,1993-08-31
+EST,Estonia,1992-01-31
+ETH,Ethiopia,1975-07-03
+FJI,Fiji,1983-03-14
+FIN,Finland,1959-04-21
+FRA,France,1952-04-09
+GAB,Gabon,1976-04-01
+GMB,Gambia,1979-01-11
+GEO,Georgia,1993-06-22
+DEU,Germany,1959-01-07
+GHA,Ghana,1959-07-06
+GRC,Greece,1958-12-31
+GRD,Grenada,1998-12-03
+GTM,Guatemala,1983-03-16
+GIN,Guinea,1975-12-03
+GNB,Guinea-Bissau,1977-12-06
+GUY,Guyana,1980-05-13
+HTI,Haiti,1953-06-23
+HND,Honduras,1954-08-23
+HUN,Hungary,1970-06-10
+ISL,Iceland,1960-11-08
+IND,India,1959-01-06
+IDN,Indonesia,1961-01-18
+IRN,Iran,1958-01-02
+IRQ,Iraq,1973-08-28
+IRL,Ireland,1951-02-26
+ISR,Israel,1952-04-24
+ITA,Italy,1957-01-28
+JAM,Jamaica,1976-05-11
+JPN,Japan,1958-03-17
+JOR,Jordan,1973-11-09
+KAZ,Kazakhstan,1994-03-11
+KEN,Kenya,1973-08-22
+KIR,Kiribati,2003-10-28
+KWT,Kuwait,1960-07-05
+LVA,Latvia,1993-03-01
+LBN,Lebanon,1966-05-03
+LBR,Liberia,1959-01-06
+LBY,Libya,1970-02-16
+LTU,Lithuania,1995-12-07
+LUX,Luxembourg,1991-02-14
+MDG,Madagascar,1961-03-08
+MWI,Malawi,1989-01-19
+MYS,Malaysia,1971-06-17
+MDV,Maldives,1967-05-31
+MLT,Malta,1966-06-22
+MHL,Marshall Islands,1998-03-26
+MRT,Mauritania,1961-05-08
+MUS,Mauritius,1978-05-18
+MEX,Mexico,1954-09-21
+MCO,Monaco,1989-12-22
+MNG,Mongolia,1996-12-11
+MNE,Montenegro,2006-10-10
+MAR,Morocco,1962-07-30
+MOZ,Mozambique,1979-01-17
+MMR,Myanmar,1951-07-06
+NAM,Namibia,1994-10-27
+NRU,Nauru,2018-05-14
+NPL,Nepal,1979-01-31
+NLD,Netherlands,1949-03-31
+NZL,New Zealand,1960-11-09
+NIC,Nicaragua,1982-03-17
+NGA,Nigeria,1962-03-15
+NOR,Norway,1958-12-29
+OMN,Oman,1974-01-30
+PAK,Pakistan,1958-11-21
+PLW,Palau,2011-09-08
+PAN,Panama,1958-12-31
+PNG,Papua New Guinea,1976-05-06
+PRY,Paraguay,1993-03-15
+PER,Peru,1968-04-15
+PHL,Philippines,1964-11-09
+POL,Poland,1960-03-16
+PRT,Portugal,1976-03-17
+QAT,Qatar,1977-05-19
+KOR,South Korea,1962-04-10
+MDA,Moldova,2001-12-12
+ROU,Romania,1965-04-28
+RUS,Russia,1958-12-24
+WSM,Samoa,1996-10-25
+SMR,San Marino,2002-03-12
+STP,São Tomé & Príncipe,1990-07-09
+SAU,Saudi Arabia,1969-02-25
+SEN,Senegal,1960-11-07
+SRB,Serbia,2000-12-11
+SYC,Seychelles,1978-06-13
+SLE,Sierra Leone,1973-03-14
+SGP,Singapore,1966-01-17
+SVK,Slovakia,1993-03-24
+SVN,Slovenia,1993-02-10
+SLB,Solomon Islands,1988-06-27
+SOM,Somalia,1978-04-04
+ZAF,South Africa,1995-02-28
+ESP,Spain,1962-01-23
+LKA,Sri Lanka,1972-04-06
+KNA,St. Kitts & Nevis,2001-10-08
+LCA,St. Lucia,1980-04-10
+VCT,St. Vincent & Grenadines,1981-04-29
+SDN,Sudan,1974-07-05
+SUR,Suriname,1976-10-14
+SWE,Sweden,1959-04-27
+CHE,Switzerland,1955-07-20
+SYR,Syria,1963-01-28
+THA,Thailand,1973-09-20
+MKD,Macedonia,1993-10-13
+TLS,Timor-Leste,2005-05-10
+TGO,Togo,1983-06-20
+TON,Tonga,2000-02-23
+TTO,Trinidad & Tobago,1965-04-27
+TUN,Tunisia,1963-05-23
+TUR,Turkey,1958-03-25
+TKM,Turkmenistan,1993-08-26
+TUV,Tuvalu,2004-05-19
+UGA,Uganda,2009-06-30
+UKR,Ukraine,1994-03-28
+ARE,United Arab Emirates,1980-03-04
+GBR,United Kingdom,1949-02-14
+TZA,Tanzania,1974-01-08
+USA,USA,1950-08-17
+URY,Uruguay,1968-05-10
+VUT,Vanuatu,1986-10-21
+VEN,Venezuela,1975-10-27
+VNM,Vietnam,1984-06-12
+YEM,Yemen,1979-03-14
+ZMB,Zambia,2014-10-02
+ZWE,Zimbabwe,2005-08-16
