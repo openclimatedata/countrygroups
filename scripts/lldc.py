@@ -1,9 +1,8 @@
 # Landlocked Developing Countries (LLDCs)
 
 import pandas as pd
-from countrynames import to_alpha_3
 from shortcountrynames import to_name
-from util import root
+from util import root, to_code
 
 # From http://unohrlls.org/about-lldcs/country-profiles/
 lldc_string = """Botswana
@@ -43,7 +42,7 @@ Paraguay
 lldcs = []
 
 for name in lldc_string.splitlines():
-    code = to_alpha_3(name)
+    code = to_code(name)
     iso_name = to_name(code)
     lldcs.append((code, iso_name))
 

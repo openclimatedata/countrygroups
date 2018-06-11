@@ -1,14 +1,14 @@
 import pandas as pd
 
 from pathlib import Path
-from countrynames import to_alpha_3
+from countrynames import to_code_3
 
 
 root = Path(__file__).parents[1]
 
 
 def to_code(name):
-    return to_alpha_3(name, fuzzy=True)
+    return to_code_3(name, fuzzy=True)
 
 
 def to_csv(list_or_str, csvname):

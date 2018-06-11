@@ -2,7 +2,8 @@
 
 import pandas as pd
 
-from countrynames import to_alpha_3, to_name
+from shortcountrynames import to_name
+from countrynames import to_code_3
 from util import root
 
 
@@ -24,7 +25,7 @@ df = pd.read_html(url, match="Belgium")[1]
 df.columns = df.iloc[0]
 df = df.reindex(df.index.drop(0))
 df = df.rename(columns={"Countries": "Name", "Year of entry": "Member-Since"})
-df.index = df["Name"].apply(to_alpha_3)
+df.index = df["Name"].apply(to_code_3)
 df.index.name = "Code"
 
 df["Member-Since"] = df["Member-Since"].fillna(method="ffill")

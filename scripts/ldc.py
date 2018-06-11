@@ -1,8 +1,8 @@
 # LDCs
 
 import pandas as pd
-from countrynames import to_alpha_3, to_name
-from util import root
+from shortcountrynames import to_name
+from util import root, to_code
 
 # Copied from
 # https://www.un.org/development/desa/dpad/wp-content/uploads/
@@ -62,7 +62,7 @@ for line in ldc_string.splitlines():
     name, inclusion = line.split("(")
     name = name.strip()
     inclusion = inclusion[:-1]
-    code = to_alpha_3(name)
+    code = to_code(name)
     iso_name = to_name(code)
     ldcs.append((code, iso_name, inclusion))
 

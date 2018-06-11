@@ -1,8 +1,7 @@
 # Graduated from LDCs
 
 import pandas as pd
-from countrynames import to_alpha_3
-from util import root
+from util import root, to_code
 
 
 # From Factsheets linked at
@@ -20,7 +19,7 @@ grad_df = pd.DataFrame(
     graduated,
     columns=["Name", "Year-Of-Inclusion", "Graduation"]
 )
-grad_df.index = grad_df.Name.apply(to_alpha_3)
+grad_df.index = grad_df.Name.apply(to_code)
 grad_df.index.name = "Code"
 
 grad_df.to_csv(root / "data/graduated-ldcs.csv")

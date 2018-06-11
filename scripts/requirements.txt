@@ -1,5 +1,4 @@
 bs4
-git+git://github.com/alephdata/countrynames.git
 html5lib
 lxml
 pandas
@@ -12,3 +11,4 @@ unidecode
 wheel
 yapf
 goodtables
+countrynames
