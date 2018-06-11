@@ -1,6 +1,15 @@
+venv
+__pycache__
+*.egg-info/
+dist
+build
+*.pyc
 archive
 data
 py
 scripts
 Makefile
 datapackage.json
+.ipynb_checkpoints
+.gitattributes
+*.tgz
