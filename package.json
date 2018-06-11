@@ -12,13 +12,11 @@
   },
   "keywords": [
     "country groups",
-    "country names"
+    "country names",
+    "country codes"
   ],
   "author": "Robert Gieseke",
   "license": "CC0",
-  "files": [
-    "../README.md"
-  ],
   "bugs": {
     "url": "https://github.com/openclimatedata/countrygroups/issues"
   },

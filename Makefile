@@ -30,7 +30,7 @@ CSV_FILES = \
 JSON_FILES = \
   data/unstats-geographical-regions.json
 
-all: $(CSV_FILES) py/countrygroups/__init__.py js/index.js
+all: $(CSV_FILES) py/countrygroups/__init__.py index.js
 
 data/%.csv: scripts/%.py scripts/util.py venv
 	@echo $@
@@ -40,7 +40,7 @@ data/%.json: scripts/%.py scripts/util.py venv
 	@echo $@
 	@./venv/bin/python $<
 
-js/index.js py/countrygroups/__init__.py: scripts/generate_modules.py $(CSV_FILES) $(JSON_FILES) datapackage.json
+index.js py/countrygroups/__init__.py: scripts/generate_modules.py $(CSV_FILES) $(JSON_FILES) datapackage.json
 	@echo $@
 	@./venv/bin/python $<
 

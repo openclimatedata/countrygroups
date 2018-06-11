@@ -94,5 +94,5 @@ for nested_group in nested_groups:
 with open(str(root / "py/countrygroups/__init__.py"), "w") as f:
     f.write(FormatCode(py_out)[0])
 
-with open(str(root / "js/index.js"), "w") as f:
+with open(str(root / "index.js"), "w") as f:
     f.write(js_out)
