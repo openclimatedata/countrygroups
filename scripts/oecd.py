@@ -24,6 +24,6 @@ oecd.Ratification = pd.to_datetime(oecd.Ratification)
 
 oecd.to_csv(root / "data/oecd.csv")
 
-assert len(oecd) == 35
+assert len(oecd) == 36
 assert len(oecd.index.unique()) == len(oecd)
 assert len(oecd.Name.unique()) == len(oecd)
