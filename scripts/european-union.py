@@ -21,14 +21,13 @@ def get_date(item):
 url = "https://europa.eu/european-union/about-eu/countries_en"
 
 df = pd.read_html(url, match="Belgium")[1]
+df["Year of entry"] = df["Year of entry"].ffill()
 
-df.columns = df.iloc[0]
-df = df.reindex(df.index.drop(0))
 df = df.rename(columns={"Countries": "Name", "Year of entry": "Member-Since"})
+
 df.index = df["Name"].apply(to_code_3)
 df.index.name = "Code"
 
-df["Member-Since"] = df["Member-Since"].fillna(method="ffill")
 df["Member-Since"] = pd.to_datetime(df["Member-Since"], dayfirst=True)
 
 df = df[["Name", "Member-Since"]]
