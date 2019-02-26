@@ -11,7 +11,8 @@ url = ("https://treaties.un.org/Pages/ViewDetailsIII.aspx"
 
 # Ratification and Signature status from the UN treaty collection.
 try:
-    tables = pd.read_html(url, encoding="UTF-8")
+    print(url)
+    df = pd.read_html(url, match="Belgium", encoding="UTF-8")[1]
 except ValueError as e:
     print(e)
     print("Maybe {} is down?".format(url))
@@ -41,10 +42,6 @@ def get_date_only(datestring):
     else:
         return datestring
 
-
-print(url)
-
-df = tables[8]
 df.columns = df.loc[0]
 df = df.reindex(df.index.drop(0))
 
