@@ -65,10 +65,10 @@ KAZ,Kazakhstan,EIT
 KGZ,Kyrgyzstan,EIT
 LVA,Latvia,EIT
 LTU,Lithuania,EIT
-MKD,Macedonia,EIT
 MLT,Malta,EIT
 MDA,Moldova,EIT
 MNE,Montenegro,EIT
+MKD,North Macedonia,EIT
 POL,Poland,EIT
 ROU,Romania,EIT
 RUS,Russia,EIT
@@ -150,6 +150,7 @@ DJI,Djibouti,MAF
 EGY,Egypt,MAF
 GNQ,Equatorial Guinea,MAF
 ERI,Eritrea,MAF
+SWZ,Eswatini,MAF
 ETH,Ethiopia,MAF
 GAB,Gabon,MAF
 GMB,Gambia,MAF
@@ -192,7 +193,6 @@ ZAF,South Africa,MAF
 SSD,South Sudan,MAF
 SHN,St. Helena,MAF
 SDN,Sudan,MAF
-SWZ,Swaziland,MAF
 SYR,Syria,MAF
 STP,São Tomé & Príncipe,MAF
 TZA,Tanzania,MAF
