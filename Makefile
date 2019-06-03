@@ -45,7 +45,7 @@ index.js py/countrygroups/__init__.py: scripts/generate_modules.py $(CSV_FILES) 
 	@./venv/bin/python $<
 
 venv: scripts/requirements.txt
-	[ -d ./venv ] || python3.6 -m venv venv
+	[ -d ./venv ] || python3 -m venv venv
 	./venv/bin/pip install --upgrade pip
 	./venv/bin/pip install -Ur $<
 	touch venv
