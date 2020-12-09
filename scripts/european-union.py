@@ -24,9 +24,9 @@ df = pd.read_html(url, match="Belgium")[1]
 df["Year of entry"] = df["Year of entry"].ffill()
 
 df = df.rename(columns={"Countries": "Name", "Year of entry": "Member-Since"})
-
 df.index = df["Name"].apply(to_code_3)
 df.index.name = "Code"
+df = df.reset_index().dropna().set_index("Code")
 
 df["Member-Since"] = pd.to_datetime(df["Member-Since"], dayfirst=True)
 
@@ -34,7 +34,7 @@ df = df[["Name", "Member-Since"]]
 
 df = df.sort_values("Name")
 
-assert len(df) == 28
+assert len(df) == 27
 
 # Normalize names to ISO standard.
 df.Name = [to_name(i) for i in df.index]
