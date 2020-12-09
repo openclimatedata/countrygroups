@@ -28,8 +28,8 @@ print(EUROPEAN_UNION)
 
 # =>
 # ['AUT', 'BEL', 'BGR', 'CYP', 'CZE', 'DEU', 'DNK', 'ESP', 'EST', 'FIN', 'FRA',
-#  'GBR', 'GRC', 'HRV', 'HUN', 'IRL', 'ITA', 'LTU', 'LUX', 'LVA', 'MLT', 'NLD',
-#  'POL', 'PRT', 'ROU', 'SVK', 'SVN', 'SWE']
+#  'GRC', 'HRV', 'HUN', 'IRL', 'ITA', 'LTU', 'LUX', 'LVA', 'MLT', 'NLD', 'POL',
+#  'PRT', 'ROU', 'SVK', 'SVN', 'SWE']
 
 print(EUROPEAN_UNION.names)
 
@@ -37,8 +37,7 @@ print(EUROPEAN_UNION.names)
 # ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czechia', 'Denmark',
 #   'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Ireland',
 #   'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands',
-#   'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden',
-#   'United Kingdom']
+#   'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden']
 ```
 
 ## JavaScript Module
