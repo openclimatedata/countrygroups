@@ -15,7 +15,7 @@ page = requests.get(url)
 tree = html.fromstring(page.content)
 
 member_states = tree.xpath('//table[@id="'
-    'ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_tblgrid"]')
+    'ContentPlaceHolder1_ContentPlaceHolderInnerPage_tblgrid"]')
 table = member_states[0]
 df = pd.read_html(etree.tostring(table), skiprows=1)[0]
 
