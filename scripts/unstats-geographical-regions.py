@@ -4,7 +4,7 @@ import json
 from util import root, to_code
 
 regions = yaml.load(
-    open(str(root / "archive/unstats-geographical-regions.yaml")))
+    open(str(root / "archive/unstats-geographical-regions.yaml")), Loader=yaml.FullLoader)
 
 
 def convert_names(subgroup):
