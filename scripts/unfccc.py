@@ -1,5 +1,6 @@
 # UNFCCC signatures and ratification
 
+import re
 import sys
 import pandas as pd
 
@@ -44,6 +45,11 @@ def get_date_only(datestring):
 
 df.columns = df.loc[0]
 df = df.reindex(df.index.drop(0))
+
+def remove_subscripts(participant):
+    return re.sub('[\d,]', '', participant).strip()
+
+df.Participant = df.Participant.apply(remove_subscripts)
 
 df.index = df.Participant.apply(to_code)
 df.index.name = "Code"
