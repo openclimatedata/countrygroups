@@ -14,6 +14,9 @@ url = ("https://treaties.un.org/pages/ViewDetails.aspx?"
 page = requests.get(url)
 tree = html.fromstring(page.content)
 
+for superscript in tree.xpath("//sup"):
+    superscript.getparent().remove(superscript)
+
 member_states = tree.xpath('//table[@id="'
     'ContentPlaceHolder1_ContentPlaceHolderInnerPage_tblgrid"]')
 table = member_states[0]
