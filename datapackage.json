@@ -381,8 +381,8 @@
       "mediatype": "text/csv",
       "sources": [
         {
-          "title": "List of OECD Member countries - Ratification of the Convention on the OECD",
-        "path": "http://www.oecd.org/about/membersandpartners/list-oecd-member-countries.htm"
+          "title": "List of OECD Member countries",
+        "path": "http://www.oecd.org/about/members-and-partners/"
         }
       ],
       "schema": {
@@ -398,9 +398,9 @@
             "description": "Country Name"
           },
           {
-            "name": "Ratification",
+            "name": "Accession",
             "type": "date",
-            "description": "Dates on which members deposited their instruments of ratification"
+            "description": "Year of accession"
           }
         ],
         "primaryKey": "Code"

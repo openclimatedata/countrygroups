@@ -1,37 +1,38 @@
-Code,Name,Ratification
-AUS,Australia,1971-06-07
-AUT,Austria,1961-09-29
-BEL,Belgium,1961-09-13
-CAN,Canada,1961-04-10
-CHL,Chile,2010-05-07
-CZE,Czechia,1995-12-21
-DNK,Denmark,1961-05-30
-EST,Estonia,2010-12-09
-FIN,Finland,1969-01-28
-FRA,France,1961-08-07
-DEU,Germany,1961-09-27
-GRC,Greece,1961-09-27
-HUN,Hungary,1996-05-07
-ISL,Iceland,1961-06-05
-IRL,Ireland,1961-08-17
-ISR,Israel,2010-09-07
-ITA,Italy,1962-03-29
-JPN,Japan,1964-04-28
-KOR,South Korea,1996-12-12
-LVA,Latvia,2016-07-01
-LTU,Lithuania,2018-07-05
-LUX,Luxembourg,1961-12-07
-MEX,Mexico,1994-05-18
-NLD,Netherlands,1961-11-13
-NZL,New Zealand,1973-05-29
-NOR,Norway,1961-07-04
-POL,Poland,1996-11-22
-PRT,Portugal,1961-08-04
-SVK,Slovakia,2000-12-14
-SVN,Slovenia,2010-07-21
-ESP,Spain,1961-08-03
-SWE,Sweden,1961-09-28
-CHE,Switzerland,1961-09-28
-TUR,Turkey,1961-08-02
-GBR,United Kingdom,1961-05-02
-USA,USA,1961-04-12
+Code,Name,Accession
+AUS,Australia,1971
+AUT,Austria,1961
+BEL,Belgium,1961
+CAN,Canada,1961
+CHL,Chile,2010
+COL,Colombia,2020
+CZE,Czech Republic,1995
+DNK,Denmark,1961
+EST,Estonia,2010
+FIN,Finland,1969
+FRA,France,1961
+DEU,Germany,1961
+GRC,Greece,1961
+HUN,Hungary,1996
+ISL,Iceland,1961
+IRL,Ireland,1961
+ISR,Israel,2010
+ITA,Italy,1962
+JPN,Japan,1964
+KOR,Korea,1996
+LVA,Latvia,2016
+LTU,Lithuania,2018
+LUX,Luxembourg,1961
+MEX,Mexico,1994
+NLD,Netherlands,1961
+NZL,New Zealand,1973
+NOR,Norway,1961
+POL,Poland,1996
+PRT,Portugal,1961
+SVK,Slovak Republic,2000
+SVN,Slovenia,2010
+ESP,Spain,1961
+SWE,Sweden,1961
+CHE,Switzerland,1961
+TUR,Turkey,1961
+GBR,United Kingdom,1961
+USA,United States,1961

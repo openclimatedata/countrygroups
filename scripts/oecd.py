@@ -2,28 +2,35 @@
 
 import pandas as pd
 
+import requests
+
+from lxml import etree, html
+from util import root, to_code
 from shortcountrynames import to_name
-from util import to_code, root
 
+url = "http://www.oecd.org/about/members-and-partners/"
 
-url = ("http://www.oecd.org/about/membersandpartners/"
-       "list-oecd-member-countries.htm")
+page = requests.get(url)
+tree = html.fromstring(page.content)
 
-oecd = pd.read_html(url)[1]
+members = tree.xpath('//div[@id="members"]')[0]
 
-oecd = oecd.iloc[1:-1, 1:3]
+name_year = []
 
-oecd.columns = ["Name", "Ratification"]
+for member in members.xpath('.//div[@class="country-list__row"]'):
+    name = member.xpath(".//a[@class='country-list__country']")[0].text
+    year_div = member.xpath(".//div[@class='country-list__year']")[0]
+    year = list(year_div.itertext())[-1].strip()
+    name_year.append((name, year))
 
-oecd.index = oecd.Name.apply(to_code)
-oecd.index.name = "Code"
+oecd = pd.DataFrame.from_records(name_year)
 
-oecd.Name = [to_name(code) for code in oecd.index]
+oecd.columns = ["Name", "Accession"]
+oecd["Code"] = oecd.Name.apply(to_code)
+oecd = oecd[['Code','Name', "Accession"]]
 
-oecd.Ratification = pd.to_datetime(oecd.Ratification)
-
-oecd.to_csv(root / "data/oecd.csv")
-
-assert len(oecd) == 36
+assert len(oecd) == 37
 assert len(oecd.index.unique()) == len(oecd)
 assert len(oecd.Name.unique()) == len(oecd)
+
+oecd.to_csv(root / "data/oecd.csv", index=False)
