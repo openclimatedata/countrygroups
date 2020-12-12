@@ -107,8 +107,8 @@ EIG = Group(['CHE', 'KOR', 'LIE', 'MCO', 'MEX'])
 
 EUROPEAN_UNION = Group([
     'AUT', 'BEL', 'BGR', 'CYP', 'CZE', 'DEU', 'DNK', 'ESP', 'EST', 'FIN',
-    'FRA', 'GBR', 'GRC', 'HRV', 'HUN', 'IRL', 'ITA', 'LTU', 'LUX', 'LVA',
-    'MLT', 'NLD', 'POL', 'PRT', 'ROU', 'SVK', 'SVN', 'SWE'
+    'FRA', 'GRC', 'HRV', 'HUN', 'IRL', 'ITA', 'LTU', 'LUX', 'LVA', 'MLT',
+    'NLD', 'POL', 'PRT', 'ROU', 'SVK', 'SVN', 'SWE'
 ])
 
 G20 = Group([
@@ -119,8 +119,8 @@ G20 = Group([
 G7 = Group(['CAN', 'DEU', 'EUU', 'FRA', 'GBR', 'ITA', 'JPN', 'USA'])
 
 G77 = Group([
-    'AFG', 'AGO', 'ARE', 'ARG', 'ATG', 'BDI', 'BEN', 'BFA', 'BGD', 'BHR',
-    'BHS', 'BIH', 'BLZ', 'BOL', 'BRA', 'BRB', 'BRN', 'BTN', 'BWA', 'CAF',
+    'AFG', 'AGO', 'ARE', 'ARG', 'ATG', 'AZE', 'BDI', 'BEN', 'BFA', 'BGD',
+    'BHR', 'BHS', 'BLZ', 'BOL', 'BRA', 'BRB', 'BRN', 'BTN', 'BWA', 'CAF',
     'CHL', 'CHN', 'CIV', 'CMR', 'COD', 'COG', 'COL', 'COM', 'CPV', 'CRI',
     'CUB', 'DJI', 'DMA', 'DOM', 'DZA', 'ECU', 'EGY', 'ERI', 'ETH', 'FJI',
     'FSM', 'GAB', 'GHA', 'GIN', 'GMB', 'GNB', 'GNQ', 'GRD', 'GTM', 'GUY',
@@ -193,10 +193,10 @@ NON_ANNEX_ONE = Group([
 ])
 
 OECD = Group([
-    'AUS', 'AUT', 'BEL', 'CAN', 'CHE', 'CHL', 'CZE', 'DEU', 'DNK', 'ESP',
-    'EST', 'FIN', 'FRA', 'GBR', 'GRC', 'HUN', 'IRL', 'ISL', 'ISR', 'ITA',
-    'JPN', 'KOR', 'LTU', 'LUX', 'LVA', 'MEX', 'NLD', 'NOR', 'NZL', 'POL',
-    'PRT', 'SVK', 'SVN', 'SWE', 'TUR', 'USA'
+    'AUS', 'AUT', 'BEL', 'CAN', 'CHE', 'CHL', 'COL', 'CZE', 'DEU', 'DNK',
+    'ESP', 'EST', 'FIN', 'FRA', 'GBR', 'GRC', 'HUN', 'IRL', 'ISL', 'ISR',
+    'ITA', 'JPN', 'KOR', 'LTU', 'LUX', 'LVA', 'MEX', 'NLD', 'NOR', 'NZL',
+    'POL', 'PRT', 'SVK', 'SVN', 'SWE', 'TUR', 'USA'
 ])
 
 OPEC = Group([
