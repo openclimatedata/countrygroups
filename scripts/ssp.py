@@ -29,7 +29,7 @@ Uzbekistan""".replace("\n", " ").split(", ")
 asia = """Afghanistan, Bangladesh, Bhutan, Brunei Darussalam, Cambodia, China,
 Hong Kong, Macao, Democratic People's Republic of Korea, Fiji,
 French Polynesia, India, Indonesia, Lao People's Democratic Republic, Malaysia,
-Maldives, Micronesia (Fed. States of), Mongolia, Myanmar, Nepal, New Caledonia,
+Maldives, Micronesia (Federated States of), Mongolia, Myanmar, Nepal, New Caledonia,
 Pakistan, Papua New Guinea, Philippines, Republic of Korea, Samoa, Singapore,
 Solomon Islands, Sri Lanka, Taiwan, Thailand, Timor-Leste, Vanuatu,
 Viet Nam""".replace("\n", " ").split(", ")
