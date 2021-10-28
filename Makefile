@@ -28,6 +28,7 @@ CSV_FILES = \
 
 
 JSON_FILES = \
+  data/montreal_protocol_countries.json \
   data/unstats-geographical-regions.json
 
 all: $(CSV_FILES) py/countrygroups/__init__.py index.js

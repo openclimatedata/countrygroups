@@ -736,6 +736,26 @@
         ],
         "primaryKey": "Code"
       }
+    },
+    {
+        "name": "montreal_protocol_countries",
+        "title": "Montreal Protocol Article 5 Countries",
+        "path": "data/montreal_protocol_countries.json",
+        "description": "Status of countries under the Montreal Protocol",
+        "format": "json",
+        "mediatype": "text/json",
+        "sources": [
+            {
+                "title": "UNEP Classification of Parties",
+                "path": "https://ozone.unep.org/classification-parties"
+            },
+            {
+                "title": "Decision XXVIII/2: Decision related to the amendment phasing down hydrofluorocarbons | Ozone Secretariat",
+                "path": "https://ozone.unep.org/treaties/montreal-protocol/meetings/twenty-eighth-meeting-parties/decisions/decision-xxviii2-decision-related-amendment-phasing-down-hydrofluorocarbons"
+            }
+
+        ]
     }
+
   ]
 }
