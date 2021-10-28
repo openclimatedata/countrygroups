@@ -7,6 +7,7 @@ countrygroups
 from shortcountrynames import to_name
 
 from ._version import get_versions
+
 __version__ = get_versions()['version']
 del get_versions
 
@@ -193,10 +194,10 @@ NON_ANNEX_ONE = Group([
 ])
 
 OECD = Group([
-    'AUS', 'AUT', 'BEL', 'CAN', 'CHE', 'CHL', 'COL', 'CZE', 'DEU', 'DNK',
-    'ESP', 'EST', 'FIN', 'FRA', 'GBR', 'GRC', 'HUN', 'IRL', 'ISL', 'ISR',
-    'ITA', 'JPN', 'KOR', 'LTU', 'LUX', 'LVA', 'MEX', 'NLD', 'NOR', 'NZL',
-    'POL', 'PRT', 'SVK', 'SVN', 'SWE', 'TUR', 'USA'
+    'AUS', 'AUT', 'BEL', 'CAN', 'CHE', 'CHL', 'COL', 'CRI', 'CZE', 'DEU',
+    'DNK', 'ESP', 'EST', 'FIN', 'FRA', 'GBR', 'GRC', 'HUN', 'IRL', 'ISL',
+    'ISR', 'ITA', 'JPN', 'KOR', 'LTU', 'LUX', 'LVA', 'MEX', 'NLD', 'NOR',
+    'NZL', 'POL', 'PRT', 'SVK', 'SVN', 'SWE', 'TUR', 'USA'
 ])
 
 OPEC = Group([
