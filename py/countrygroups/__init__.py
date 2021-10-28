@@ -7,6 +7,7 @@ countrygroups
 from shortcountrynames import to_name
 
 from ._version import get_versions
+
 __version__ = get_versions()['version']
 del get_versions
 
@@ -171,6 +172,13 @@ LLDC = Group([
     'KAZ', 'KGZ', 'LAO', 'LSO', 'MDA', 'MKD', 'MLI', 'MNG', 'MWI', 'NER',
     'NPL', 'PRY', 'RWA', 'SSD', 'SWZ', 'TCD', 'TJK', 'TKM', 'UGA', 'UZB',
     'ZMB', 'ZWE'
+])
+
+MONTREAL_PROTOCOL_HIGH_AMBIENT_TEMP = Group([
+    'ARE', 'BEN', 'BFA', 'BHR', 'CAF', 'CIV', 'DJI', 'DZA', 'EGY', 'ERI',
+    'GHA', 'GIN', 'GMB', 'GNB', 'IRN', 'IRQ', 'JOR', 'KWT', 'LBY', 'MLI',
+    'MRT', 'NER', 'NGA', 'OMN', 'PAK', 'QAT', 'SAU', 'SDN', 'SEN', 'SYR',
+    'TCD', 'TGO', 'TKM', 'TUN'
 ])
 
 NON_ANNEX_ONE = Group([

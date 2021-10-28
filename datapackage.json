@@ -755,6 +755,36 @@
             }
 
         ]
+    },
+    {
+        "name": "montreal_protocol_high_ambient_temp",
+        "title": "Montreal Protocol High Ambient Temperature Exemption Countries",
+        "path": "data/montreal_protocol_high_ambient_temp.csv",
+        "description": "Countries covered by the Montreal Protocol's High Ambient Temperature Exemption",
+        "format": "csv",
+        "mediatype": "text/csv",
+        "sources": [
+            {
+                "title": "Decision XXVIII/2: Decision related to the amendment phasing down hydrofluorocarbons | Ozone Secretariat",
+                "path": "https://ozone.unep.org/treaties/montreal-protocol/meetings/twenty-eighth-meeting-parties/decisions/decision-xxviii2-decision-related-amendment-phasing-down-hydrofluorocarbons"
+            }
+        ],
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Country Code (ISO3166-1-Alpha-3)"
+          },
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Country Name"
+          }
+        ],
+        "primaryKey": "Code"
+      }
+
     }
 
   ]
