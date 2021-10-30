@@ -21,4 +21,4 @@ df = pd.DataFrame({"Code": [to_code(x) for x in high_amb_list], "Name": high_amb
 
 assert len(df) == 34
 
-df.to_csv(root / "data/montreal_protocol_high_ambient_temp.csv")
+df.to_csv(root / "data/montreal_protocol_high_ambient_temp.csv", index=False)
