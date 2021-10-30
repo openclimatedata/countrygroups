@@ -209,7 +209,7 @@ Sources:
 
 ### Montreal Protocol
 
-[data/montreal_protocol_countries.json](data/montreal_protocol_countries.json])
+[data/montreal_protocol_countries.json](data/montreal_protocol_countries.json)
 
 [data/montreal_protocol_high_ambient_temp.csv](data/montreal_protocol_high_ambient_temp.csv)
 
