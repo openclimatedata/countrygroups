@@ -12,6 +12,7 @@ CSV_FILES = \
   data/imo.csv \
   data/ldc.csv \
   data/lldc.csv \
+  data/montreal_protocol_high_ambient_temp.csv \
   data/oecd.csv \
   data/opec.csv \
   data/sids-non-un-or-regional-commissions-associates.csv \
@@ -28,6 +29,7 @@ CSV_FILES = \
 
 
 JSON_FILES = \
+  data/montreal_protocol_countries.json \
   data/unstats-geographical-regions.json
 
 all: $(CSV_FILES) py/countrygroups/__init__.py index.js

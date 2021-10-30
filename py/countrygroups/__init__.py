@@ -174,6 +174,13 @@ LLDC = Group([
     'ZMB', 'ZWE'
 ])
 
+MONTREAL_PROTOCOL_HIGH_AMBIENT_TEMP = Group([
+    'ARE', 'BEN', 'BFA', 'BHR', 'CAF', 'CIV', 'DJI', 'DZA', 'EGY', 'ERI',
+    'GHA', 'GIN', 'GMB', 'GNB', 'IRN', 'IRQ', 'JOR', 'KWT', 'LBY', 'MLI',
+    'MRT', 'NER', 'NGA', 'OMN', 'PAK', 'QAT', 'SAU', 'SDN', 'SEN', 'SYR',
+    'TCD', 'TGO', 'TKM', 'TUN'
+])
+
 NON_ANNEX_ONE = Group([
     'AFG', 'AGO', 'ALB', 'AND', 'ARE', 'ARG', 'ARM', 'ATG', 'AZE', 'BDI',
     'BEN', 'BFA', 'BGD', 'BHR', 'BHS', 'BIH', 'BLZ', 'BOL', 'BRA', 'BRB',
@@ -386,5 +393,40 @@ UNSTATS_GEOGRAPHICAL_REGIONS = Group({
         "MICRONESIA": ["FSM", "GUM", "KIR", "MHL", "MNP", "NRU", "PLW", "UMI"],
         "POLYNESIA":
         ["ASM", "COK", "NIU", "PCN", "PYF", "TKL", "TON", "TUV", "WLF", "WSM"]
+    }
+})
+MONTREAL_PROTOCOL_COUNTRIES = Group({
+    "ARTICLE_5": {
+        "GROUP_1": [
+            "AFG", "AGO", "ALB", "ARG", "ARM", "ATG", "BDI", "BEN", "BFA",
+            "BGD", "BHS", "BIH", "BLZ", "BOL", "BRA", "BRB", "BRN", "BTN",
+            "BWA", "CAF", "CHL", "CHN", "CIV", "CMR", "COD", "COG", "COK",
+            "COL", "COM", "CPV", "CRI", "CUB", "DJI", "DMA", "DOM", "DZA",
+            "ECU", "EGY", "ERI", "ETH", "FJI", "FSM", "GAB", "GEO", "GHA",
+            "GIN", "GMB", "GNB", "GNQ", "GRD", "GTM", "GUY", "HND", "HTI",
+            "IDN", "JAM", "JOR", "KEN", "KGZ", "KHM", "KIR", "KNA", "KOR",
+            "LAO", "LBN", "LBR", "LBY", "LCA", "LKA", "LSO", "MAR", "MDA",
+            "MDG", "MDV", "MEX", "MHL", "MKD", "MLI", "MMR", "MNE", "MNG",
+            "MOZ", "MRT", "MUS", "MWI", "MYS", "NAM", "NER", "NGA", "NIC",
+            "NIU", "NPL", "NRU", "PAN", "PER", "PHL", "PLW", "PNG", "PRK",
+            "PRY", "RWA", "SDN", "SEN", "SGP", "SLB", "SLE", "SLV", "SOM",
+            "SRB", "SSD", "STP", "SUR", "SWZ", "SYC", "SYR", "TCD", "TGO",
+            "THA", "TKM", "TLS", "TON", "TTO", "TUN", "TUR", "TUV", "TZA",
+            "UGA", "URY", "VCT", "VEN", "VNM", "VUT", "WSM", "YEM", "ZAF",
+            "ZMB", "ZWE"
+        ],
+        "GROUP_2":
+        ["ARE", "BHR", "IND", "IRN", "IRQ", "KWT", "OMN", "PAK", "QAT", "SAU"]
+    },
+    "NON_ARTICLE_5": {
+        "NON_ARTICLE_5_EXCEPTIONS": ["BLR", "KAZ", "RUS", "TJK", "UZB"],
+        "NON_ARTICLE_5_MAIN_GROUP": [
+            "AND", "AUS", "AUT", "AZE", "BEL", "BGR", "CAN", "CHE", "CYP",
+            "CZE", "DEU", "DNK", "ESP", "EST", "EUU", "FIN", "FRA", "GBR",
+            "GRC", "HRV", "HUN", "IRL", "ISL", "ISR", "ITA", "JPN", "LIE",
+            "LTU", "LUX", "LVA", "MCO", "MLT", "NLD", "NOR", "NZL", "POL",
+            "PRT", "PSE", "ROU", "SMR", "SVK", "SVN", "SWE", "UKR", "USA",
+            "VAT"
+        ]
     }
 })
