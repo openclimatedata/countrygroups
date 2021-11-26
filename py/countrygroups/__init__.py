@@ -136,7 +136,7 @@ G77 = Group([
     'YEM', 'ZAF', 'ZMB', 'ZWE'
 ])
 
-GRADUATED_LDCS = Group(['BWA', 'CPV', 'GNQ', 'MDV', 'WSM'])
+GRADUATED_LDCS = Group(['BWA', 'CPV', 'GNQ', 'MDV', 'VUT', 'WSM'])
 
 IMO = Group([
     'AGO', 'ALB', 'ARE', 'ARG', 'ARM', 'ATG', 'AUS', 'AUT', 'AZE', 'BEL',

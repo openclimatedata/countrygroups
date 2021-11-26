@@ -13,6 +13,7 @@ graduated = [
     ("Cabo Verde", 1977, 2007),
     ("Samoa", 1971, 2014),
     ("Equatorial Guinea", 1982, 2017),
+    ("Vanuatu", 1985, 2020),
 ]
 
 grad_df = pd.DataFrame(
