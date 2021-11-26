@@ -164,7 +164,7 @@ LDC = Group([
     'DJI', 'ERI', 'ETH', 'GIN', 'GMB', 'GNB', 'HTI', 'KHM', 'KIR', 'LAO',
     'LBR', 'LSO', 'MDG', 'MLI', 'MMR', 'MOZ', 'MRT', 'MWI', 'NER', 'NPL',
     'RWA', 'SDN', 'SEN', 'SLB', 'SLE', 'SOM', 'SSD', 'STP', 'TCD', 'TGO',
-    'TLS', 'TUV', 'TZA', 'UGA', 'VUT', 'YEM', 'ZMB'
+    'TLS', 'TUV', 'TZA', 'UGA', 'YEM', 'ZMB'
 ])
 
 LLDC = Group([

@@ -164,7 +164,7 @@ Sources:
 [data/ldc.csv](data/ldc.csv)
 
 Sources:
-    [LDCs at a Glance: List of all LDCs in PDF format, (updated June 2017)](https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/publication/ldc_list.pdf)
+    [LDCs at a Glance: List of all LDCs in PDF format, (updated 24 Nov 2021)](https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/publication/ldc_list.pdf)
 
 
 ### Landlocked Developing Countries (LLDCs) (LLDC)
