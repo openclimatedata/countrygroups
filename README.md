@@ -90,6 +90,13 @@ Sources:
     [AR5 Region Definitions](https://tntcat.iiasa.ac.at/AR5DB/dsd?Action=htmlpage&page=about)
 
 
+### Regional groups for the IPCC AR5 report (AR32)
+
+[data/ar32.csv](data/ar32.csv)
+
+Sources:
+    [AR32 Region Definitions](https://tntcat.iiasa.ac.at/SspDb/dsd?Action=htmlpage&page=about#v2)
+
 ### Arab Group in the UNFCCC (ARAB_GROUP)
 
 [data/arab-group.csv](data/arab-group.csv)
