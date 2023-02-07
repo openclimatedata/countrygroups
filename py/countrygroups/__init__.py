@@ -149,7 +149,7 @@ AR32 = Group({
     'LAM-M': [
         'ATG', 'ARG', 'BHS', 'BRB', 'BMU', 'BOL', 'CHL', 'COL', 'CRI', 'CUB',
         'DMA', 'DOM', 'ECU', 'SLV', 'GUF', 'GRD', 'GLP', 'GUY', 'JAM', 'MTQ',
-        'ANHH', 'PAN', 'PRY', 'PER', 'KNA', 'LCA', 'VCT', 'SUR', 'TTO', 'URY',
+        'ANT', 'PAN', 'PRY', 'PER', 'KNA', 'LCA', 'VCT', 'SUR', 'TTO', 'URY',
         'VEN'
     ],
     'MAF': [
