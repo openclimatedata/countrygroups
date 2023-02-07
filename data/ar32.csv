@@ -1,0 +1,202 @@
+Code,Name,Region
+AFG,Afghanistan,PAK
+ASM,American Samoa,OAS-L
+BGD,Bangladesh,OAS-L
+BTN,Bhutan,OAS-M
+BRN,Brunei,OAS-M
+KHM,Cambodia,OAS-CPA
+CHN,China,CHN
+FJI,Fiji,OAS-L
+PYF,French Polynesia,OAS-M
+IND,India,IND
+IDN,Indonesia,IDN
+LAO,Laos,OAS-CPA
+MYS,Malaysia,OAS-M
+MDV,Maldives,OAS-M
+FSM,Micronesia,OAS-L
+MNG,Mongolia,OAS-CPA
+MMR,Myanmar,OAS-L
+NPL,Nepal,OAS-L
+NCL,New Caledonia,OAS-M
+PRK,North Korea,OAS-L
+PAK,Pakistan,PAK
+PNG,Papua New Guinea,OAS-L
+PHL,Philippines,OAS-L
+WSM,Samoa,OAS-L
+SGP,Singapore,OAS-M
+SLB,Solomon Islands,OAS-L
+KOR,South Korea,KOR
+LKA,Sri Lanka,OAS-M
+THA,Thailand,OAS-M
+TLS,Timor-Leste,OAS-L
+TON,Tonga,OAS-L
+VUT,Vanuatu,OAS-L
+VNM,Vietnam,OAS-CPA
+ALB,Albania,EEU
+ARM,Armenia,CAS
+AZE,Azerbaijan,CAS
+BLR,Belarus,EEU-FSU
+BIH,Bosnia & Herzegovina,EEU
+BGR,Bulgaria,EU12-M
+HRV,Croatia,EEU
+CYP,Cyprus,EU12-H
+CZE,Czechia,EU12-H
+EST,Estonia,EU12-H
+GEO,Georgia,CAS
+HUN,Hungary,EU12-H
+KAZ,Kazakhstan,CAS
+KGZ,Kyrgyzstan,CAS
+LVA,Latvia,EU12-M
+LTU,Lithuania,EU12-M
+MLT,Malta,EU12-H
+MDA,Moldova,EEU-FSU
+MNE,Montenegro,EEU
+MKD,North Macedonia,EEU
+POL,Poland,EU12-H
+ROU,Romania,EU12-M
+RUS,Russia,RUS
+SRB,Serbia,EEU
+SVK,Slovakia,EU12-H
+SVN,Slovenia,EU12-H
+TJK,Tajikistan,CAS
+TKM,Turkmenistan,CAS
+UKR,Ukraine,EEU-FSU
+UZB,Uzbekistan,CAS
+ATG,Antigua & Barbuda,LAM-M
+ARG,Argentina,LAM-M
+BHS,Bahamas,LAM-M
+BRB,Barbados,LAM-M
+BLZ,Belize,LAM-L
+BMU,Bermuda,LAM-M
+BOL,Bolivia,LAM-M
+BRA,Brazil,BRA
+CHL,Chile,LAM-M
+COL,Colombia,LAM-M
+CRI,Costa Rica,LAM-M
+CUB,Cuba,LAM-M
+DMA,Dominica,LAM-M
+DOM,Dominican Republic,LAM-M
+ECU,Ecuador,LAM-M
+SLV,El Salvador,LAM-M
+GUF,French Guiana,LAM-M
+GRD,Grenada,LAM-M
+GLP,Guadeloupe,LAM-M
+GTM,Guatemala,LAM-L
+GUY,Guyana,LAM-M
+HTI,Haiti,LAM-L
+HND,Honduras,LAM-L
+JAM,Jamaica,LAM-M
+MTQ,Martinique,LAM-M
+MEX,Mexico,MEX
+ANHH,Netherlands Antilles,LAM-M
+NIC,Nicaragua,LAM-L
+PAN,Panama,LAM-M
+PRY,Paraguay,LAM-M
+PER,Peru,LAM-M
+PRI,Puerto Rico,USA
+KNA,St. Kitts & Nevis,LAM-M
+LCA,St. Lucia,LAM-M
+VCT,St. Vincent & Grenadines,LAM-M
+SUR,Suriname,LAM-M
+TTO,Trinidad & Tobago,LAM-M
+VIR,U.S. Virgin Islands,USA
+URY,Uruguay,LAM-M
+VEN,Venezuela,LAM-M
+DZA,Algeria,NAF
+AGO,Angola,SSA-M
+BHR,Bahrain,MEA-H
+BEN,Benin,SSA-L
+BWA,Botswana,SSA-M
+BFA,Burkina Faso,SSA-L
+BDI,Burundi,SSA-L
+CPV,Cabo Verde,SSA-L
+CMR,Cameroon,SSA-L
+CAF,Central African Republic,SSA-L
+TCD,Chad,SSA-L
+COM,Comoros,SSA-L
+CIV,Côte d’Ivoire,SSA-L
+COD,DR Congo,SSA-L
+DJI,Djibouti,SSA-L
+EGY,Egypt,NAF
+GNQ,Equatorial Guinea,SSA-L
+ERI,Eritrea,SSA-L
+ETH,Ethiopia,SSA-L
+GAB,Gabon,SSA-M
+GMB,Gambia,SSA-L
+GHA,Ghana,SSA-L
+GIN,Guinea,SSA-L
+GNB,Guinea-Bissau,SSA-L
+IRN,Iran,MEA-M
+IRQ,Iraq,MEA-M
+ISR,Israel,MEA-H
+JOR,Jordan,MEA-M
+KEN,Kenya,SSA-L
+KWT,Kuwait,MEA-H
+LBN,Lebanon,MEA-M
+LSO,Lesotho,SSA-L
+LBR,Liberia,SSA-L
+LBY,Libya,NAF
+MDG,Madagascar,SSA-L
+MWI,Malawi,SSA-L
+MLI,Mali,SSA-L
+MRT,Mauritania,SSA-L
+MUS,Mauritius,SSA-M
+MYT,Mayotte,SSA-M
+MAR,Morocco,NAF
+MOZ,Mozambique,SSA-L
+NAM,Namibia,SSA-M
+NER,Niger,SSA-L
+NGA,Nigeria,SSA-L
+OMN,Oman,MEA-H
+PSE,Palestine,MEA-M
+QAT,Qatar,MEA-H
+COG,Republic of the Congo,SSA-L
+RWA,Rwanda,SSA-L
+REU,Réunion,SSA-M
+SAU,Saudi Arabia,MEA-H
+SEN,Senegal,SSA-L
+SYC,Seychelles,SSA-M
+SLE,Sierra Leone,SSA-L
+SOM,Somalia,SSA-L
+ZAF,South Africa,SAF
+SSD,South Sudan,SSA-L
+SHN,St. Helena,MAF
+SDN,Sudan,SSA-L
+SYR,Syria,MEA-M
+STP,São Tomé & Príncipe,SSA-L
+TZA,Tanzania,SSA-L
+TGO,Togo,SSA-L
+TUN,Tunisia,NAF
+UGA,Uganda,SSA-L
+ARE,United Arab Emirates,MEA-H
+ESH,Western Sahara,NAF
+YEM,Yemen,MEA-M
+ZMB,Zambia,SSA-L
+SWZ,Eswatini,SSA-L
+ZWE,Zimbabwe,SSA-L
+AUS,Australia,ANUZ
+AUT,Austria,EU15
+BEL,Belgium,EU15
+CAN,Canada,CAN
+DNK,Denmark,EU15
+FIN,Finland,EU15
+FRA,France,EU15
+DEU,Germany,EU15
+GRC,Greece,EU15
+GUM,Guam,OAS-M
+ISL,Iceland,EFTA
+IRL,Ireland,EU15
+ITA,Italy,EU15
+JPN,Japan,JPN
+LUX,Luxembourg,EU15
+NLD,Netherlands,EU15
+NZL,New Zealand,ANUZ
+NOR,Norway,EFTA
+PRT,Portugal,EU15
+ESP,Spain,EU15
+SWE,Sweden,EU15
+CHE,Switzerland,EFTA
+TUR,Turkey,TUR
+USA,USA,USA
+GBR,United Kingdom,EU15
+TWN,Taiwan,TWN
