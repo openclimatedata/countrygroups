@@ -22,24 +22,24 @@ HRV,Croatia,EEU
 MNE,Montenegro,EEU
 MKD,North Macedonia,EEU
 SRB,Serbia,EEU
-BLR,Belarus,EEU-FSU
-MDA,Moldova,EEU-FSU
-UKR,Ukraine,EEU-FSU
+BLR,Belarus,EEU_FSU
+MDA,Moldova,EEU_FSU
+UKR,Ukraine,EEU_FSU
 ISL,Iceland,EFTA
 NOR,Norway,EFTA
 CHE,Switzerland,EFTA
-CYP,Cyprus,EU12-H
-CZE,Czechia,EU12-H
-EST,Estonia,EU12-H
-HUN,Hungary,EU12-H
-MLT,Malta,EU12-H
-POL,Poland,EU12-H
-SVK,Slovakia,EU12-H
-SVN,Slovenia,EU12-H
-BGR,Bulgaria,EU12-M
-LVA,Latvia,EU12-M
-LTU,Lithuania,EU12-M
-ROU,Romania,EU12-M
+CYP,Cyprus,EU12_H
+CZE,Czechia,EU12_H
+EST,Estonia,EU12_H
+HUN,Hungary,EU12_H
+MLT,Malta,EU12_H
+POL,Poland,EU12_H
+SVK,Slovakia,EU12_H
+SVN,Slovenia,EU12_H
+BGR,Bulgaria,EU12_M
+LVA,Latvia,EU12_M
+LTU,Lithuania,EU12_M
+ROU,Romania,EU12_M
 AUT,Austria,EU15
 BEL,Belgium,EU15
 DNK,Denmark,EU15
@@ -59,56 +59,56 @@ IDN,Indonesia,IDN
 IND,India,IND
 JPN,Japan,JPN
 KOR,South Korea,KOR
-BLZ,Belize,LAM-L
-GTM,Guatemala,LAM-L
-HTI,Haiti,LAM-L
-HND,Honduras,LAM-L
-NIC,Nicaragua,LAM-L
-ATG,Antigua & Barbuda,LAM-M
-ARG,Argentina,LAM-M
-BHS,Bahamas,LAM-M
-BRB,Barbados,LAM-M
-BMU,Bermuda,LAM-M
-BOL,Bolivia,LAM-M
-CHL,Chile,LAM-M
-COL,Colombia,LAM-M
-CRI,Costa Rica,LAM-M
-CUB,Cuba,LAM-M
-DMA,Dominica,LAM-M
-DOM,Dominican Republic,LAM-M
-ECU,Ecuador,LAM-M
-SLV,El Salvador,LAM-M
-GUF,French Guiana,LAM-M
-GRD,Grenada,LAM-M
-GLP,Guadeloupe,LAM-M
-GUY,Guyana,LAM-M
-JAM,Jamaica,LAM-M
-MTQ,Martinique,LAM-M
-ANT,Netherlands Antilles,LAM-M
-PAN,Panama,LAM-M
-PRY,Paraguay,LAM-M
-PER,Peru,LAM-M
-KNA,St. Kitts & Nevis,LAM-M
-LCA,St. Lucia,LAM-M
-VCT,St. Vincent & Grenadines,LAM-M
-SUR,Suriname,LAM-M
-TTO,Trinidad & Tobago,LAM-M
-URY,Uruguay,LAM-M
-VEN,Venezuela,LAM-M
-BHR,Bahrain,MEA-H
-ISR,Israel,MEA-H
-KWT,Kuwait,MEA-H
-OMN,Oman,MEA-H
-QAT,Qatar,MEA-H
-SAU,Saudi Arabia,MEA-H
-ARE,United Arab Emirates,MEA-H
-IRN,Iran,MEA-M
-IRQ,Iraq,MEA-M
-JOR,Jordan,MEA-M
-LBN,Lebanon,MEA-M
-PSE,Palestine,MEA-M
-SYR,Syria,MEA-M
-YEM,Yemen,MEA-M
+BLZ,Belize,LAM_L
+GTM,Guatemala,LAM_L
+HTI,Haiti,LAM_L
+HND,Honduras,LAM_L
+NIC,Nicaragua,LAM_L
+ATG,Antigua & Barbuda,LAM_M
+ARG,Argentina,LAM_M
+BHS,Bahamas,LAM_M
+BRB,Barbados,LAM_M
+BMU,Bermuda,LAM_M
+BOL,Bolivia,LAM_M
+CHL,Chile,LAM_M
+COL,Colombia,LAM_M
+CRI,Costa Rica,LAM_M
+CUB,Cuba,LAM_M
+DMA,Dominica,LAM_M
+DOM,Dominican Republic,LAM_M
+ECU,Ecuador,LAM_M
+SLV,El Salvador,LAM_M
+GUF,French Guiana,LAM_M
+GRD,Grenada,LAM_M
+GLP,Guadeloupe,LAM_M
+GUY,Guyana,LAM_M
+JAM,Jamaica,LAM_M
+MTQ,Martinique,LAM_M
+ANT,Netherlands Antilles,LAM_M
+PAN,Panama,LAM_M
+PRY,Paraguay,LAM_M
+PER,Peru,LAM_M
+KNA,St. Kitts & Nevis,LAM_M
+LCA,St. Lucia,LAM_M
+VCT,St. Vincent & Grenadines,LAM_M
+SUR,Suriname,LAM_M
+TTO,Trinidad & Tobago,LAM_M
+URY,Uruguay,LAM_M
+VEN,Venezuela,LAM_M
+BHR,Bahrain,MEA_H
+ISR,Israel,MEA_H
+KWT,Kuwait,MEA_H
+OMN,Oman,MEA_H
+QAT,Qatar,MEA_H
+SAU,Saudi Arabia,MEA_H
+ARE,United Arab Emirates,MEA_H
+IRN,Iran,MEA_M
+IRQ,Iraq,MEA_M
+JOR,Jordan,MEA_M
+LBN,Lebanon,MEA_M
+PSE,Palestine,MEA_M
+SYR,Syria,MEA_M
+YEM,Yemen,MEA_M
 MEX,Mexico,MEX
 DZA,Algeria,NAF
 EGY,Egypt,NAF
@@ -116,87 +116,87 @@ LBY,Libya,NAF
 MAR,Morocco,NAF
 TUN,Tunisia,NAF
 ESH,Western Sahara,NAF
-KHM,Cambodia,OAS-CPA
-LAO,Laos,OAS-CPA
-MNG,Mongolia,OAS-CPA
-VNM,Vietnam,OAS-CPA
-BGD,Bangladesh,OAS-L
-FJI,Fiji,OAS-L
-FSM,Micronesia,OAS-L
-MMR,Myanmar,OAS-L
-NPL,Nepal,OAS-L
-PRK,North Korea,OAS-L
-PNG,Papua New Guinea,OAS-L
-PHL,Philippines,OAS-L
-WSM,Samoa,OAS-L
-SLB,Solomon Islands,OAS-L
-TLS,Timor-Leste,OAS-L
-TON,Tonga,OAS-L
-VUT,Vanuatu,OAS-L
-BTN,Bhutan,OAS-M
-BRN,Brunei,OAS-M
-PYF,French Polynesia,OAS-M
-GUM,Guam,OAS-M
-MYS,Malaysia,OAS-M
-MDV,Maldives,OAS-M
-NCL,New Caledonia,OAS-M
-SGP,Singapore,OAS-M
-LKA,Sri Lanka,OAS-M
-THA,Thailand,OAS-M
+KHM,Cambodia,OAS_CPA
+LAO,Laos,OAS_CPA
+MNG,Mongolia,OAS_CPA
+VNM,Vietnam,OAS_CPA
+BGD,Bangladesh,OAS_L
+FJI,Fiji,OAS_L
+FSM,Micronesia,OAS_L
+MMR,Myanmar,OAS_L
+NPL,Nepal,OAS_L
+PRK,North Korea,OAS_L
+PNG,Papua New Guinea,OAS_L
+PHL,Philippines,OAS_L
+WSM,Samoa,OAS_L
+SLB,Solomon Islands,OAS_L
+TLS,Timor_Leste,OAS_L
+TON,Tonga,OAS_L
+VUT,Vanuatu,OAS_L
+BTN,Bhutan,OAS_M
+BRN,Brunei,OAS_M
+PYF,French Polynesia,OAS_M
+GUM,Guam,OAS_M
+MYS,Malaysia,OAS_M
+MDV,Maldives,OAS_M
+NCL,New Caledonia,OAS_M
+SGP,Singapore,OAS_M
+LKA,Sri Lanka,OAS_M
+THA,Thailand,OAS_M
 AFG,Afghanistan,PAK
 PAK,Pakistan,PAK
 RUS,Russia,RUS
 ZAF,South Africa,SAF
-BEN,Benin,SSA-L
-BFA,Burkina Faso,SSA-L
-BDI,Burundi,SSA-L
-CPV,Cabo Verde,SSA-L
-CMR,Cameroon,SSA-L
-CAF,Central African Republic,SSA-L
-TCD,Chad,SSA-L
-COM,Comoros,SSA-L
-CIV,Côte d’Ivoire,SSA-L
-COD,DR Congo,SSA-L
-DJI,Djibouti,SSA-L
-ERI,Eritrea,SSA-L
-SWZ,Eswatini,SSA-L
-ETH,Ethiopia,SSA-L
-GMB,Gambia,SSA-L
-GHA,Ghana,SSA-L
-GIN,Guinea,SSA-L
-GNB,Guinea-Bissau,SSA-L
-KEN,Kenya,SSA-L
-LSO,Lesotho,SSA-L
-LBR,Liberia,SSA-L
-MDG,Madagascar,SSA-L
-MWI,Malawi,SSA-L
-MLI,Mali,SSA-L
-MRT,Mauritania,SSA-L
-MOZ,Mozambique,SSA-L
-NER,Niger,SSA-L
-NGA,Nigeria,SSA-L
-COG,Republic of the Congo,SSA-L
-RWA,Rwanda,SSA-L
-SEN,Senegal,SSA-L
-SLE,Sierra Leone,SSA-L
-SOM,Somalia,SSA-L
-SSD,South Sudan,SSA-L
-SDN,Sudan,SSA-L
-STP,São Tomé & Príncipe,SSA-L
-TZA,Tanzania,SSA-L
-TGO,Togo,SSA-L
-UGA,Uganda,SSA-L
-ZMB,Zambia,SSA-L
-ZWE,Zimbabwe,SSA-L
-AGO,Angola,SSA-M
-BWA,Botswana,SSA-M
-GNQ,Equatorial Guinea,SSA-M
-GAB,Gabon,SSA-M
-MUS,Mauritius,SSA-M
-MYT,Mayotte,SSA-M
-NAM,Namibia,SSA-M
-REU,Réunion,SSA-M
-SYC,Seychelles,SSA-M
+BEN,Benin,SSA_L
+BFA,Burkina Faso,SSA_L
+BDI,Burundi,SSA_L
+CPV,Cabo Verde,SSA_L
+CMR,Cameroon,SSA_L
+CAF,Central African Republic,SSA_L
+TCD,Chad,SSA_L
+COM,Comoros,SSA_L
+CIV,Côte d’Ivoire,SSA_L
+COD,DR Congo,SSA_L
+DJI,Djibouti,SSA_L
+ERI,Eritrea,SSA_L
+SWZ,Eswatini,SSA_L
+ETH,Ethiopia,SSA_L
+GMB,Gambia,SSA_L
+GHA,Ghana,SSA_L
+GIN,Guinea,SSA_L
+GNB,Guinea_Bissau,SSA_L
+KEN,Kenya,SSA_L
+LSO,Lesotho,SSA_L
+LBR,Liberia,SSA_L
+MDG,Madagascar,SSA_L
+MWI,Malawi,SSA_L
+MLI,Mali,SSA_L
+MRT,Mauritania,SSA_L
+MOZ,Mozambique,SSA_L
+NER,Niger,SSA_L
+NGA,Nigeria,SSA_L
+COG,Republic of the Congo,SSA_L
+RWA,Rwanda,SSA_L
+SEN,Senegal,SSA_L
+SLE,Sierra Leone,SSA_L
+SOM,Somalia,SSA_L
+SSD,South Sudan,SSA_L
+SDN,Sudan,SSA_L
+STP,São Tomé & Príncipe,SSA_L
+TZA,Tanzania,SSA_L
+TGO,Togo,SSA_L
+UGA,Uganda,SSA_L
+ZMB,Zambia,SSA_L
+ZWE,Zimbabwe,SSA_L
+AGO,Angola,SSA_M
+BWA,Botswana,SSA_M
+GNQ,Equatorial Guinea,SSA_M
+GAB,Gabon,SSA_M
+MUS,Mauritius,SSA_M
+MYT,Mayotte,SSA_M
+NAM,Namibia,SSA_M
+REU,Réunion,SSA_M
+SYC,Seychelles,SSA_M
 TUR,Turkey,TUR
 TWN,Taiwan,TWN
 PRI,Puerto Rico,USA

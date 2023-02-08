@@ -115,16 +115,16 @@ AR32 = Group({
     'EEU': [
         'ALB', 'BIH', 'HRV', 'MNE', 'MKD', 'SRB'
     ],
-    'EEU-FSU': [
+    'EEU_FSU': [
         'BLR', 'MDA', 'UKR'
     ],
     'EFTA': [
         'ISL', 'NOR', 'CHE'
     ],
-    'EU12-H': [
+    'EU12_H': [
         'CYP', 'CZE', 'EST', 'HUN', 'MLT', 'POL', 'SVK', 'SVN'
     ],
-    'EU12-M': [
+    'EU12_M': [
         'BGR', 'LVA', 'LTU', 'ROU'
     ],
     'EU15': [
@@ -143,10 +143,10 @@ AR32 = Group({
     'KOR': [
         'KOR'
     ],
-    'LAM-L': [
+    'LAM_L': [
         'BLZ', 'GTM', 'HTI', 'HND', 'NIC'
     ],
-    'LAM-M': [
+    'LAM_M': [
         'ATG', 'ARG', 'BHS', 'BRB', 'BMU', 'BOL', 'CHL', 'COL', 'CRI', 'CUB',
         'DMA', 'DOM', 'ECU', 'SLV', 'GUF', 'GRD', 'GLP', 'GUY', 'JAM', 'MTQ',
         'ANT', 'PAN', 'PRY', 'PER', 'KNA', 'LCA', 'VCT', 'SUR', 'TTO', 'URY',
@@ -155,10 +155,10 @@ AR32 = Group({
     'MAF': [
         'SHN'
     ],
-    'MEA-H': [
+    'MEA_H': [
         'BHR', 'ISR', 'KWT', 'OMN', 'QAT', 'SAU', 'ARE'
     ],
-    'MEA-M': [
+    'MEA_M': [
         'IRN', 'IRQ', 'JOR', 'LBN', 'PSE', 'SYR', 'YEM'
     ],
     'MEX': [
@@ -167,15 +167,15 @@ AR32 = Group({
     'NAF': [
         'DZA', 'EGY', 'LBY', 'MAR', 'TUN', 'ESH'
     ],
-    'OAS-CPA': [
+    'OAS_CPA': [
         'KHM', 'LAO', 'MNG', 'VNM'
     ],
-    'OAS-L': [
+    'OAS_L': [
         'ASM', 'BGD', 'FJI', 'FSM', 'MMR', 'NPL', 'PRK', 'PNG', 'PHL', 'WSM',
         'SLB', 'TLS', 'TON', 'VUT'
     ]
         ,
-    'OAS-M': [
+    'OAS_M': [
         'BTN', 'BRN', 'PYF', 'MYS', 'MDV', 'NCL', 'SGP', 'LKA', 'THA', 'GUM'
     ]
     ,
@@ -191,14 +191,14 @@ AR32 = Group({
         'ZAF'
     ]
         ,
-    'SSA-L': [
+    'SSA_L': [
         'BEN', 'BFA', 'BDI', 'CPV', 'CMR', 'CAF', 'TCD', 'COM', 'CIV', 'COD',
         'DJI', 'GNQ', 'ERI', 'ETH', 'GMB', 'GHA', 'GIN', 'GNB', 'KEN', 'LSO',
         'LBR', 'MDG', 'MWI', 'MLI', 'MRT', 'MOZ', 'NER', 'NGA', 'COG', 'RWA',
         'SEN', 'SLE', 'SOM', 'SSD', 'SDN', 'STP', 'TZA', 'TGO', 'UGA', 'ZMB',
         'ZWE'
     ],
-    'SSA-M': [
+    'SSA_M': [
         'AGO', 'BWA', 'GAB', 'MUS', 'MYT', 'NAM', 'REU', 'SYC'
     ]
         ,
