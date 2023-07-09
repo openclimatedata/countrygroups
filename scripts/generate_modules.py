@@ -88,7 +88,7 @@ for nested_group in nested_groups:
         data = f.read()
     py_out += "{} = Group({{{}}})\n".format(
         group_id, data[1:-2])
-    js_out += "{} = {}\n\n".format(group_id, data)
+    js_out += "exports.{} = {}\n\n".format(group_id, data)
 
 
 with open(str(root / "py/countrygroups/__init__.py"), "w") as f:
