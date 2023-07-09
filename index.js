@@ -50,7 +50,7 @@ exports.UN_REGIONAL_GROUPS = {'AFRICAN_GROUP': ['AGO', 'BDI', 'BEN', 'BFA', 'BWA
 
 exports.UNFCCC = ['AFG', 'AGO', 'ALB', 'AND', 'ARE', 'ARG', 'ARM', 'ATG', 'AUS', 'AUT', 'AZE', 'BDI', 'BEL', 'BEN', 'BFA', 'BGD', 'BGR', 'BHR', 'BHS', 'BIH', 'BLR', 'BLZ', 'BOL', 'BRA', 'BRB', 'BRN', 'BTN', 'BWA', 'CAF', 'CAN', 'CHE', 'CHL', 'CHN', 'CIV', 'CMR', 'COD', 'COG', 'COK', 'COL', 'COM', 'CPV', 'CRI', 'CUB', 'CYP', 'CZE', 'DEU', 'DJI', 'DMA', 'DNK', 'DOM', 'DZA', 'ECU', 'EGY', 'ERI', 'ESP', 'EST', 'ETH', 'EUU', 'FIN', 'FJI', 'FRA', 'FSM', 'GAB', 'GBR', 'GEO', 'GHA', 'GIN', 'GMB', 'GNB', 'GNQ', 'GRC', 'GRD', 'GTM', 'GUY', 'HND', 'HRV', 'HTI', 'HUN', 'IDN', 'IND', 'IRL', 'IRN', 'IRQ', 'ISL', 'ISR', 'ITA', 'JAM', 'JOR', 'JPN', 'KAZ', 'KEN', 'KGZ', 'KHM', 'KIR', 'KNA', 'KOR', 'KWT', 'LAO', 'LBN', 'LBR', 'LBY', 'LCA', 'LIE', 'LKA', 'LSO', 'LTU', 'LUX', 'LVA', 'MAR', 'MCO', 'MDA', 'MDG', 'MDV', 'MEX', 'MHL', 'MKD', 'MLI', 'MLT', 'MMR', 'MNE', 'MNG', 'MOZ', 'MRT', 'MUS', 'MWI', 'MYS', 'NAM', 'NER', 'NGA', 'NIC', 'NIU', 'NLD', 'NOR', 'NPL', 'NRU', 'NZL', 'OMN', 'PAK', 'PAN', 'PER', 'PHL', 'PLW', 'PNG', 'POL', 'PRK', 'PRT', 'PRY', 'PSE', 'QAT', 'ROU', 'RUS', 'RWA', 'SAU', 'SDN', 'SEN', 'SGP', 'SLB', 'SLE', 'SLV', 'SMR', 'SOM', 'SRB', 'SSD', 'STP', 'SUR', 'SVK', 'SVN', 'SWE', 'SWZ', 'SYC', 'SYR', 'TCD', 'TGO', 'THA', 'TJK', 'TKM', 'TLS', 'TON', 'TTO', 'TUN', 'TUR', 'TUV', 'TZA', 'UGA', 'UKR', 'URY', 'USA', 'UZB', 'VCT', 'VEN', 'VNM', 'VUT', 'WSM', 'YEM', 'ZAF', 'ZMB', 'ZWE']
 
-UNSTATS_GEOGRAPHICAL_REGIONS = {
+exports.UNSTATS_GEOGRAPHICAL_REGIONS = {
     "AFRICA": {
         "NORTHERN_AFRICA": [
             "DZA",
@@ -365,7 +365,7 @@ UNSTATS_GEOGRAPHICAL_REGIONS = {
     }
 }
 
-MONTREAL_PROTOCOL_COUNTRIES = {
+exports.MONTREAL_PROTOCOL_COUNTRIES = {
     "ARTICLE_5": {
         "GROUP_1": [
             "AFG",
@@ -468,6 +468,7 @@ MONTREAL_PROTOCOL_COUNTRIES = {
             "PNG",
             "PRK",
             "PRY",
+            "PSE",
             "RWA",
             "SDN",
             "SEN",
@@ -565,7 +566,6 @@ MONTREAL_PROTOCOL_COUNTRIES = {
             "NZL",
             "POL",
             "PRT",
-            "PSE",
             "ROU",
             "SMR",
             "SVK",

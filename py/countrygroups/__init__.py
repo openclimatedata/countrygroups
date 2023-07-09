@@ -13,6 +13,7 @@ del get_versions
 
 
 class Group(list):
+
     def _add_dict_items(self, d):
         for k, v in d.items():
             v = Group(v)
@@ -409,11 +410,11 @@ MONTREAL_PROTOCOL_COUNTRIES = Group({
             "MDG", "MDV", "MEX", "MHL", "MKD", "MLI", "MMR", "MNE", "MNG",
             "MOZ", "MRT", "MUS", "MWI", "MYS", "NAM", "NER", "NGA", "NIC",
             "NIU", "NPL", "NRU", "PAN", "PER", "PHL", "PLW", "PNG", "PRK",
-            "PRY", "RWA", "SDN", "SEN", "SGP", "SLB", "SLE", "SLV", "SOM",
-            "SRB", "SSD", "STP", "SUR", "SWZ", "SYC", "SYR", "TCD", "TGO",
-            "THA", "TKM", "TLS", "TON", "TTO", "TUN", "TUR", "TUV", "TZA",
-            "UGA", "URY", "VCT", "VEN", "VNM", "VUT", "WSM", "YEM", "ZAF",
-            "ZMB", "ZWE"
+            "PRY", "PSE", "RWA", "SDN", "SEN", "SGP", "SLB", "SLE", "SLV",
+            "SOM", "SRB", "SSD", "STP", "SUR", "SWZ", "SYC", "SYR", "TCD",
+            "TGO", "THA", "TKM", "TLS", "TON", "TTO", "TUN", "TUR", "TUV",
+            "TZA", "UGA", "URY", "VCT", "VEN", "VNM", "VUT", "WSM", "YEM",
+            "ZAF", "ZMB", "ZWE"
         ],
         "GROUP_2":
         ["ARE", "BHR", "IND", "IRN", "IRQ", "KWT", "OMN", "PAK", "QAT", "SAU"]
@@ -425,8 +426,7 @@ MONTREAL_PROTOCOL_COUNTRIES = Group({
             "CZE", "DEU", "DNK", "ESP", "EST", "EUU", "FIN", "FRA", "GBR",
             "GRC", "HRV", "HUN", "IRL", "ISL", "ISR", "ITA", "JPN", "LIE",
             "LTU", "LUX", "LVA", "MCO", "MLT", "NLD", "NOR", "NZL", "POL",
-            "PRT", "PSE", "ROU", "SMR", "SVK", "SVN", "SWE", "UKR", "USA",
-            "VAT"
+            "PRT", "ROU", "SMR", "SVK", "SVN", "SWE", "UKR", "USA", "VAT"
         ]
     }
 })

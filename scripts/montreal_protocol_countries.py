@@ -67,3 +67,6 @@ result = {
 }
 with open(str(root / "data/montreal_protocol_countries.json"), "w") as f:
     json.dump(result, f, indent=4, sort_keys=True)
+
+assert len(result["ARTICLE_5"]["GROUP_1"]) + len(result["ARTICLE_5"]["GROUP_2"]) == 148
+assert len(result["NON_ARTICLE_5"]["NON_ARTICLE_5_MAIN_GROUP"]) + len(result["NON_ARTICLE_5"]["NON_ARTICLE_5_EXCEPTIONS"]) == 50
