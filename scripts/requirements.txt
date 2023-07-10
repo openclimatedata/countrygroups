@@ -9,7 +9,7 @@ shortcountrynames
 unidecode
 yapf
 goodtables
-countrynames
+countrynames@git+https://github.com/rgieseke/countrynames@2f8c8f1e7c5212e6e7626593749a8f3736a70732
 setuptools>=38.6.0
 twine>=1.11.0
 wheel>=0.31.0

@@ -36,10 +36,11 @@ def get_kind(datestring):
 def get_date_only(datestring):
     if pd.isnull(datestring):
         return None
+    datestring = datestring.strip()
+    if datestring.endswith(" AA"):
+        return datestring[:-3]
     elif datestring[-1] in ["a", "A", "d"]:
         return datestring[:-2]
-    elif datestring.endswith(" AA"):
-        return datestring[:-3]
     else:
         return datestring
 
@@ -63,14 +64,17 @@ df.columns = [
 df["Kind"] = df.iloc[:, -1].apply(get_kind)
 
 df.iloc[:, 1] = df.iloc[:, 1].apply(get_date_only)
-df.iloc[:, 1] = pd.to_datetime(df.iloc[:, 1])
+df.iloc[:, 1] = pd.to_datetime(df.iloc[:, 1], dayfirst=True)
 df.iloc[:, -2] = df.iloc[:, -2].apply(get_date_only)
-df.iloc[:, -2] = pd.to_datetime(df.iloc[:, -2])
+df.iloc[:, -2] = pd.to_datetime(df.iloc[:, -2], dayfirst=True)
+
+df.Signature = df.Signature.apply(lambda x: x.to_pydatetime())
+df["Ratification-Acceptance-Accession-Approval-Succession"] = df["Ratification-Acceptance-Accession-Approval-Succession"].apply(lambda x: x.to_pydatetime())
 
 df.Name = [to_name(code) for code in df.index]
 
 
-assert len(df) == 197
+assert len(df) == 198
 assert sum(~df.Signature.isnull()) == 165
 assert len(df.Name.unique()) == len(df)
 
