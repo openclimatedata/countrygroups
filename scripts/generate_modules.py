@@ -56,6 +56,10 @@ js_out = '''// Country Groups
 
 '''
 
+dts_out = '''
+declare module countrygroups {
+'''
+
 for resource in sorted(metadata["resources"], key=lambda x: x["name"]):
     if resource["format"] == "json":
         continue
@@ -77,7 +81,8 @@ for resource in sorted(metadata["resources"], key=lambda x: x["name"]):
     py_out += "{} = Group({})\n\n".format(
         group_id, members)
 
-    js_out += "exports.{} = {}\n\n".format(group_id, members)
+    js_out += "export const {} = {}\n\n".format(group_id, members)
+    dts_out += "  const {}: string[]\n".format(group_id)
 
 nested_groups = [item for item in metadata["resources"]
                  if item["format"] == "json"]
@@ -88,11 +93,18 @@ for nested_group in nested_groups:
         data = f.read()
     py_out += "{} = Group({{{}}})\n".format(
         group_id, data[1:-2])
-    js_out += "exports.{} = {}\n\n".format(group_id, data)
+    js_out += "export const {} = {}\n\n".format(group_id, data)
+    dts_out += "  const {}: {{}}\n".format(group_id)
 
+dts_out += '''}
+export = countrygroups
+'''
 
 with open(str(root / "py/countrygroups/__init__.py"), "w") as f:
     f.write(FormatCode(py_out)[0])
 
 with open(str(root / "index.js"), "w") as f:
     f.write(js_out)
+
+with open(str(root / "index.d.ts"), "w") as f:
+    f.write(dts_out)

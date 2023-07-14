@@ -2,7 +2,9 @@
   "name": "countrygroups",
   "version": "0.15.0",
   "description": "Country groups as arrays of country codes",
+  "type": "module",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
