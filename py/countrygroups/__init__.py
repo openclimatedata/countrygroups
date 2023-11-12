@@ -97,6 +97,125 @@ AR5 = Group({
     ]
 })
 
+AR32 = Group({
+    'ANUZ': [
+        'AUS', 'NZL'
+    ],
+    'BRA': [
+        'BRA'
+    ],
+    'CAN': [
+        'CAN'
+    ],
+    'CAS': [
+        'ARM', 'AZE', 'GEO', 'KAZ', 'KGZ', 'TJK', 'TKM', 'UZB'
+    ],
+    'CHN': [
+        'CHN'
+    ],
+    'EEU': [
+        'ALB', 'BIH', 'HRV', 'MNE', 'MKD', 'SRB'
+    ],
+    'EEU_FSU': [
+        'BLR', 'MDA', 'UKR'
+    ],
+    'EFTA': [
+        'ISL', 'NOR', 'CHE'
+    ],
+    'EU12_H': [
+        'CYP', 'CZE', 'EST', 'HUN', 'MLT', 'POL', 'SVK', 'SVN'
+    ],
+    'EU12_M': [
+        'BGR', 'LVA', 'LTU', 'ROU'
+    ],
+    'EU15': [
+        'AUT', 'BEL', 'DNK', 'FIN', 'FRA', 'DEU', 'GRC', 'IRL', 'ITA', 'LUX',
+        'NLD', 'PRT', 'ESP', 'SWE', 'GBR'
+    ],
+    'IDN': [
+        'IDN'
+    ],
+    'IND': [
+        'IND'
+    ],
+    'JPN': [
+        'JPN'
+    ],
+    'KOR': [
+        'KOR'
+    ],
+    'LAM_L': [
+        'BLZ', 'GTM', 'HTI', 'HND', 'NIC'
+    ],
+    'LAM_M': [
+        'ATG', 'ARG', 'BHS', 'BRB', 'BMU', 'BOL', 'CHL', 'COL', 'CRI', 'CUB',
+        'DMA', 'DOM', 'ECU', 'SLV', 'GUF', 'GRD', 'GLP', 'GUY', 'JAM', 'MTQ',
+        'ANT', 'PAN', 'PRY', 'PER', 'KNA', 'LCA', 'VCT', 'SUR', 'TTO', 'URY',
+        'VEN'
+    ],
+    'MAF': [
+        'SHN'
+    ],
+    'MEA_H': [
+        'BHR', 'ISR', 'KWT', 'OMN', 'QAT', 'SAU', 'ARE'
+    ],
+    'MEA_M': [
+        'IRN', 'IRQ', 'JOR', 'LBN', 'PSE', 'SYR', 'YEM'
+    ],
+    'MEX': [
+        'MEX'
+    ],
+    'NAF': [
+        'DZA', 'EGY', 'LBY', 'MAR', 'TUN', 'ESH'
+    ],
+    'OAS_CPA': [
+        'KHM', 'LAO', 'MNG', 'VNM'
+    ],
+    'OAS_L': [
+        'ASM', 'BGD', 'FJI', 'FSM', 'MMR', 'NPL', 'PRK', 'PNG', 'PHL', 'WSM',
+        'SLB', 'TLS', 'TON', 'VUT'
+    ]
+        ,
+    'OAS_M': [
+        'BTN', 'BRN', 'PYF', 'MYS', 'MDV', 'NCL', 'SGP', 'LKA', 'THA', 'GUM'
+    ]
+    ,
+    'PAK': [
+        'AFG', 'PAK'
+    ]
+        ,
+    'RUS': [
+        'RUS'
+    ]
+        ,
+    'SAF': [
+        'ZAF'
+    ]
+        ,
+    'SSA_L': [
+        'BEN', 'BFA', 'BDI', 'CPV', 'CMR', 'CAF', 'TCD', 'COM', 'CIV', 'COD',
+        'DJI', 'GNQ', 'ERI', 'ETH', 'GMB', 'GHA', 'GIN', 'GNB', 'KEN', 'LSO',
+        'LBR', 'MDG', 'MWI', 'MLI', 'MRT', 'MOZ', 'NER', 'NGA', 'COG', 'RWA',
+        'SEN', 'SLE', 'SOM', 'SSD', 'SDN', 'STP', 'TZA', 'TGO', 'UGA', 'ZMB',
+        'ZWE'
+    ],
+    'SSA_M': [
+        'AGO', 'BWA', 'GAB', 'MUS', 'MYT', 'NAM', 'REU', 'SYC'
+    ]
+        ,
+    'TUR': [
+        'TUR'
+    ]
+        ,
+    'TWN': [
+        'TWN'
+    ]
+        ,
+    'USA': [
+        'PRI', 'VIR', 'USA'
+        ]
+ })
+
 ARAB_GROUP = Group([
     'ARE', 'BHR', 'COM', 'DJI', 'DZA', 'EGY', 'IRQ', 'JOR', 'KWT', 'LBN',
     'LBY', 'MAR', 'MRT', 'OMN', 'PSE', 'QAT', 'SAU', 'SDN', 'SOM', 'SYR',

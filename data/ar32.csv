@@ -1,0 +1,204 @@
+Code,Name,Region
+AUS,Australia,ANUZ
+NZL,New Zealand,ANUZ
+BRA,Brazil,BRA
+CAN,Canada,CAN
+ARM,Armenia,CAS
+AZE,Azerbaijan,CAS
+GEO,Georgia,CAS
+KAZ,Kazakhstan,CAS
+KGZ,Kyrgyzstan,CAS
+TJK,Tajikistan,CAS
+TKM,Turkmenistan,CAS
+UZB,Uzbekistan,CAS
+CHN,China,CHN
+CHN,China,CHN
+CHN,China,CHN
+HKG,Hong Kong,CHN
+MAC,Macau,CHN
+ALB,Albania,EEU
+BIH,Bosnia & Herzegovina,EEU
+HRV,Croatia,EEU
+MNE,Montenegro,EEU
+MKD,North Macedonia,EEU
+SRB,Serbia,EEU
+BLR,Belarus,EEU_FSU
+MDA,Moldova,EEU_FSU
+UKR,Ukraine,EEU_FSU
+ISL,Iceland,EFTA
+NOR,Norway,EFTA
+CHE,Switzerland,EFTA
+CYP,Cyprus,EU12_H
+CZE,Czechia,EU12_H
+EST,Estonia,EU12_H
+HUN,Hungary,EU12_H
+MLT,Malta,EU12_H
+POL,Poland,EU12_H
+SVK,Slovakia,EU12_H
+SVN,Slovenia,EU12_H
+BGR,Bulgaria,EU12_M
+LVA,Latvia,EU12_M
+LTU,Lithuania,EU12_M
+ROU,Romania,EU12_M
+AUT,Austria,EU15
+BEL,Belgium,EU15
+DNK,Denmark,EU15
+FIN,Finland,EU15
+FRA,France,EU15
+DEU,Germany,EU15
+GRC,Greece,EU15
+IRL,Ireland,EU15
+ITA,Italy,EU15
+LUX,Luxembourg,EU15
+NLD,Netherlands,EU15
+PRT,Portugal,EU15
+ESP,Spain,EU15
+SWE,Sweden,EU15
+GBR,United Kingdom,EU15
+IDN,Indonesia,IDN
+IND,India,IND
+JPN,Japan,JPN
+KOR,South Korea,KOR
+BLZ,Belize,LAM_L
+GTM,Guatemala,LAM_L
+HTI,Haiti,LAM_L
+HND,Honduras,LAM_L
+NIC,Nicaragua,LAM_L
+ATG,Antigua & Barbuda,LAM_M
+ARG,Argentina,LAM_M
+BHS,Bahamas,LAM_M
+BRB,Barbados,LAM_M
+BMU,Bermuda,LAM_M
+BOL,Bolivia,LAM_M
+CHL,Chile,LAM_M
+COL,Colombia,LAM_M
+CRI,Costa Rica,LAM_M
+CUB,Cuba,LAM_M
+DMA,Dominica,LAM_M
+DOM,Dominican Republic,LAM_M
+ECU,Ecuador,LAM_M
+SLV,El Salvador,LAM_M
+GUF,French Guiana,LAM_M
+GRD,Grenada,LAM_M
+GLP,Guadeloupe,LAM_M
+GUY,Guyana,LAM_M
+JAM,Jamaica,LAM_M
+MTQ,Martinique,LAM_M
+ANT,Netherlands Antilles,LAM_M
+PAN,Panama,LAM_M
+PRY,Paraguay,LAM_M
+PER,Peru,LAM_M
+KNA,St. Kitts & Nevis,LAM_M
+LCA,St. Lucia,LAM_M
+VCT,St. Vincent & Grenadines,LAM_M
+SUR,Suriname,LAM_M
+TTO,Trinidad & Tobago,LAM_M
+URY,Uruguay,LAM_M
+VEN,Venezuela,LAM_M
+BHR,Bahrain,MEA_H
+ISR,Israel,MEA_H
+KWT,Kuwait,MEA_H
+OMN,Oman,MEA_H
+QAT,Qatar,MEA_H
+SAU,Saudi Arabia,MEA_H
+ARE,United Arab Emirates,MEA_H
+IRN,Iran,MEA_M
+IRQ,Iraq,MEA_M
+JOR,Jordan,MEA_M
+LBN,Lebanon,MEA_M
+PSE,Palestine,MEA_M
+SYR,Syria,MEA_M
+YEM,Yemen,MEA_M
+MEX,Mexico,MEX
+DZA,Algeria,NAF
+EGY,Egypt,NAF
+LBY,Libya,NAF
+MAR,Morocco,NAF
+TUN,Tunisia,NAF
+ESH,Western Sahara,NAF
+KHM,Cambodia,OAS_CPA
+LAO,Laos,OAS_CPA
+MNG,Mongolia,OAS_CPA
+VNM,Vietnam,OAS_CPA
+BGD,Bangladesh,OAS_L
+FJI,Fiji,OAS_L
+FSM,Micronesia,OAS_L
+MMR,Myanmar,OAS_L
+NPL,Nepal,OAS_L
+PRK,North Korea,OAS_L
+PNG,Papua New Guinea,OAS_L
+PHL,Philippines,OAS_L
+WSM,Samoa,OAS_L
+SLB,Solomon Islands,OAS_L
+TLS,Timor_Leste,OAS_L
+TON,Tonga,OAS_L
+VUT,Vanuatu,OAS_L
+BTN,Bhutan,OAS_M
+BRN,Brunei,OAS_M
+PYF,French Polynesia,OAS_M
+GUM,Guam,OAS_M
+MYS,Malaysia,OAS_M
+MDV,Maldives,OAS_M
+NCL,New Caledonia,OAS_M
+SGP,Singapore,OAS_M
+LKA,Sri Lanka,OAS_M
+THA,Thailand,OAS_M
+AFG,Afghanistan,PAK
+PAK,Pakistan,PAK
+RUS,Russia,RUS
+ZAF,South Africa,SAF
+BEN,Benin,SSA_L
+BFA,Burkina Faso,SSA_L
+BDI,Burundi,SSA_L
+CPV,Cabo Verde,SSA_L
+CMR,Cameroon,SSA_L
+CAF,Central African Republic,SSA_L
+TCD,Chad,SSA_L
+COM,Comoros,SSA_L
+CIV,Côte d’Ivoire,SSA_L
+COD,DR Congo,SSA_L
+DJI,Djibouti,SSA_L
+ERI,Eritrea,SSA_L
+SWZ,Eswatini,SSA_L
+ETH,Ethiopia,SSA_L
+GMB,Gambia,SSA_L
+GHA,Ghana,SSA_L
+GIN,Guinea,SSA_L
+GNB,Guinea_Bissau,SSA_L
+KEN,Kenya,SSA_L
+LSO,Lesotho,SSA_L
+LBR,Liberia,SSA_L
+MDG,Madagascar,SSA_L
+MWI,Malawi,SSA_L
+MLI,Mali,SSA_L
+MRT,Mauritania,SSA_L
+MOZ,Mozambique,SSA_L
+NER,Niger,SSA_L
+NGA,Nigeria,SSA_L
+COG,Republic of the Congo,SSA_L
+RWA,Rwanda,SSA_L
+SEN,Senegal,SSA_L
+SLE,Sierra Leone,SSA_L
+SOM,Somalia,SSA_L
+SSD,South Sudan,SSA_L
+SDN,Sudan,SSA_L
+STP,São Tomé & Príncipe,SSA_L
+TZA,Tanzania,SSA_L
+TGO,Togo,SSA_L
+UGA,Uganda,SSA_L
+ZMB,Zambia,SSA_L
+ZWE,Zimbabwe,SSA_L
+AGO,Angola,SSA_M
+BWA,Botswana,SSA_M
+GNQ,Equatorial Guinea,SSA_M
+GAB,Gabon,SSA_M
+MUS,Mauritius,SSA_M
+MYT,Mayotte,SSA_M
+NAM,Namibia,SSA_M
+REU,Réunion,SSA_M
+SYC,Seychelles,SSA_M
+TUR,Turkey,TUR
+TWN,Taiwan,TWN
+PRI,Puerto Rico,USA
+VIR,U.S. Virgin Islands,USA
+USA,USA,USA
