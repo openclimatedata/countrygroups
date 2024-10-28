@@ -1,6 +1,6 @@
 {
   "name": "countrygroups",
-  "version": "0.16.0",
+  "version": "0.14.0",
   "description": "Country groups as arrays of country codes",
   "type": "module",
   "main": "index.js",
