@@ -8,6 +8,7 @@ from util import root, to_code
 # https://www.un.org/development/desa/dpad/
 # least-developed-country-category/ldcs-at-a-glance.html
 graduated = [
+    ("Bhutan", 1971, 2023),
     ("Botswana", 1971, 1994),
     ("Maldives", 1971, 2011),
     ("Cabo Verde", 1977, 2007),
