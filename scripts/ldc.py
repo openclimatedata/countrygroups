@@ -11,7 +11,6 @@ ldc_string = """Afghanistan 1971
 Angola 1994
 Bangladesh 1975
 Benin 1971
-Bhutan2 1971
 Burkina Faso 1971
 Burundi 1971
 Cambodia 1991
@@ -42,7 +41,7 @@ Rwanda 1971
 São Tomé and Príncipe 1982
 Senegal 2000
 Sierra Leone 1982
-Solomon Islands4 1991
+Solomon Islands 1991
 Somalia 1971
 South Sudan 2012
 Sudan 1971
@@ -62,6 +61,8 @@ for line in ldc_string.splitlines():
     code = to_code(name)
     iso_name = to_name(code)
     ldcs.append((code, iso_name, inclusion))
+
+assert len(ldcs) == 45
 
 df = pd.DataFrame(ldcs, columns=["Code", "Name", "Year-Of-Inclusion"])
 df = df.sort_values("Name")
